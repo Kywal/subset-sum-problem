@@ -5,7 +5,7 @@ n = int(input())
 s = []
 
 for i in range (0, n):
-    num = input()
+    num = int(input())
     s.append(num)
 
 t = int(input())
