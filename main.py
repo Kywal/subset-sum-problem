@@ -10,5 +10,5 @@ for i in range (0, n):
 
 t = int(input())
 
-print(approx_subset_sum(s,t,0.05))
+print(approx_subset_sum(s,t,0.4))
 
