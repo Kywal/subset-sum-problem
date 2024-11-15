@@ -1,4 +1,4 @@
-from merge_lists import merge_lists
+from src.merge_lists import merge_lists
 
 print(merge_lists(
     [(1, []), (3, []), (5,[])],

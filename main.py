@@ -1,4 +1,4 @@
-from approx_subset_sum import approx_subset_sum
+from src.approx_subset_sum import approx_subset_sum
 
 n = int(input())
 
