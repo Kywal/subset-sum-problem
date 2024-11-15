@@ -1,3 +1,4 @@
-def merge_lists(l: list[int], r: list[int]):
-    merged_list = sorted(set(l + r))
+def merge_lists(l, r):
+    merged_list = l+r
+    merged_list.sort(key=lambda x: x[0])
     return merged_list
