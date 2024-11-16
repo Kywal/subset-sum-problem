@@ -1,4 +1,6 @@
 import os
+import time
+from src.approx_subset_sum import approx_subset_sum
 
 def read_file(file_name):
     try:
@@ -63,9 +65,52 @@ def print_readme():
     print("(3) Para encerrar digite 3.")
     print("(0) Exibir o menu novamente.")
 
-def menu(item):
-    if item == '1':
-        print("Informe o nome da instância que deseja executar (ex.: p01, p02...):")
-    else:
-        print("")
+def menu(item_menu):
+    while True:  
+        if item_menu == '3':
+            break
+        elif item_menu == '0':
+            print_readme()
+            item_menu = input()
+        elif item_menu == '1': 
+            test_name = input("Informe o nome da instância que deseja executar (ex.: p01, p02...):")
+
+            s = read_file("datatest/" + test_name + "_w.txt")
+            list_t = read_file("datatest/" + test_name + "_c.txt")
+            t = list_t[0] if list_t else -1
+
+            if s and list_t:
+
+                start_time = time.perf_counter_ns()
+                result = approx_subset_sum(s,t,0.4)
+                end_time = time.perf_counter_ns()
+
+                list_o = read_file("datatest/" + test_name + "_o.txt")
+
+                data = {
+                    "t" : t,
+                    "set" : s,
+                    "final_sum": result[0],
+                    "final_config" :str(result[1]),
+                    "duration": end_time - start_time,
+                    "config_o": list_o if list_o != [] else []
+                }
+
+                file_name = test_name + ".txt"
+                write_report(file_name, data)
+                print("------------------------------------------------")
+                item_menu = input("Digite 0 para voltar ao menu ou 3 para encerrar.")
+            else:
+                print("Não foi possível processar a instância especificada. Verifique se ela se encontra em datatest no formato indicado.")
+        elif item_menu == '2':
+            print("Para criar uma nova instância aleatória será necessário informar"
+            f"\n - Quantidade de elementos do conjunto "
+            f"\n - Intervalo no qual os números se encontram (início e fim positivos)")
+            set_len = int(input("Quantidade de elementos do conjunto:"))
+            set_start = int(input("Início do intervalo de números:"))
+            set_end = int(input("Final do intervalo de números:"))
+            item_menu = '1'
+        else:
+            print("Entrada inválida. Escolha um item do menu:")
+            item_menu = input()
 
