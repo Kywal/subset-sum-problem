@@ -1,0 +1,11 @@
+-------------------
+DADOS DA INSTÂNCIA 
+-------------------
+Multiset: []
+Soma objetivo: -1
+-----------
+RESULTADOS
+-----------
+Soma resultante (aproximação): 0
+Configuração geradora da aproximação: []
+Duração da execução (nanosegundos): 47967
