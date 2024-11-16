@@ -4,7 +4,7 @@ from src.trim import trim
 
 def approx_subset_sum(s: list[int], t: int, e: float):
     n = len(s)
-    lists = [[(0, [])]] + [[] for _ in range(n)] # as tuplas aqui eh pra conseguir armazenar a configuracao que deu a soma
+    lists = [[(0, [])]] + [[] for _ in range(n)]
 
     is_less_or_equal_than_t = lambda a : True if a[0] <= t else False 
     for i in range(1, n+1): 
@@ -19,7 +19,6 @@ def approx_subset_sum(s: list[int], t: int, e: float):
         lists[i] = list(
             filter(is_less_or_equal_than_t,lists[i])
         )
-        print ("L", i , ": " , lists[i])
 
     max_tuple = max(lists[n], key=lambda x: x[0]) if lists[n] else (0, [])
     return max_tuple

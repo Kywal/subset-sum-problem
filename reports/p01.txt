@@ -1,16 +1,11 @@
-REPORT
-
 -------------------
 DADOS DA INSTÂNCIA 
 -------------------
-
 Multiset: [15, 22, 14, 26, 32, 9, 16, 8]
 Soma objetivo: 53
-
 -----------
 RESULTADOS
 -----------
-
 Soma resultante (aproximação): 53
 Configuração geradora da aproximação: [22, 14, 9, 8]
-Duração da execução (nanosegundos): 533866
+Duração da execução (nanosegundos): 279788
