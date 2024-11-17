@@ -1,10 +1,13 @@
 import random
-
+from utils.instance_generator.inst_gen_io import write_instance, instance_to_str
 
 def instance_generator(s: int , rng: tuple[int, int]):
     validade_inputs(s, rng)
     multiset = generate_multiset(s, rng)
     optimal_sum = generate_optimal_sum(multiset.copy())
+
+    instance = instance_to_str(multiset, optimal_sum[0], optimal_sum[1])
+    write_instance(instance)
 
     return multiset, optimal_sum
 
