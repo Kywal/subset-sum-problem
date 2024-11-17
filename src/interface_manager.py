@@ -3,16 +3,40 @@ import time
 from src.approx_subset_sum import approx_subset_sum
 
 def read_file(file_name):
+    msg = "Erro: O arquivo para o caso de testes " + file_name + " não está no formato adequado."
     try:
         with open(file_name, 'r') as file:
-            list_s = [int(line.strip()) for line in file]
-        return list_s
+            lines = file.readlines()
+            
+            if len(lines) < 3:
+                print(msg)
+                return [], [], []
+            else:
+                try:
+                    t = int(lines[0].strip())
+                except ValueError:
+                    print(msg)
+                    return [], [], []
+
+                try:
+                    s = [int(x) for x in lines[1].strip()[1:-1].split(",")]
+                except ValueError:
+                    print(msg)
+                    s = []
+                
+                try:
+                    o = [int(x) for x in lines[2].strip()[1:-1].split(",")]
+                except ValueError:
+                    print(msg)
+                    o = []
+        return t, s, o
+
     except FileNotFoundError:
         print(f"O arquivo para o caso de testes '{file_name}' não foi encontrado.")
-        return []
+        return [], [], []
     except ValueError:
-        print(f"Erro: O arquivo para o caso de testes '{file_name}' contém dados não numéricos.")
-        return []
+        print(msg)
+        return [], [], []
 
 
 def write_report(file_name, data, folder="reports"):
@@ -40,7 +64,8 @@ def write_report(file_name, data, folder="reports"):
         f"-----------\n"
         f"Soma resultante (aproximação): {data['final_sum']}\n"
         f"Configuração geradora da aproximação: {data['final_config']}\n"
-        f"Duração da execução (nanosegundos): {data['duration']}\n\n"
+        f"Duração da execução (nanosegundos): {data['duration']}\n"
+        f"Duração da execução (segundos): {data['duration_sec']}\n\n"
         f"Solução aproximada se encontra à {dist}% de distância da solução ótima fornecida.\n" 
     )
     print(content)
@@ -56,14 +81,21 @@ def write_report(file_name, data, folder="reports"):
 
 def print_readme():
     print("----------------------- SUBSET SUM ----------------------")
-    print(f"(INSTRUÇÕES) Para adicionar uma nova instância de teste, crie na pasta datatest os arquivos:",
-      f"\n<nome_da_instância>_c.txt (contendo o número da soma objetivo)",
-      f"\n<nome_da_instância>_w.txt (contendo os valores do conjunto separados por quebra de linha)")
+    print(f"(INSTRUÇÕES) Para adicionar uma nova instância de teste, crie na pasta datatest o arquivo <nome_da_instância>.txt com o seguinte formato:",
+      f"<valor da soma>\n",
+      f"<lista de valores do conjunto>\n",
+      f"<lista com valores da solução ótima, se houver, se não for possível fornecer, deixe uma lista vazia []>\n")
+    print("Exemplo de arquivo:\n",
+      f"53\n",
+      f"[15, 22, 14, 26, 32, 9,16, 8]\n",
+      f"[22,14,9,8]\n")
+
     print("------------------------ MENU ----------------------------")
     print("(1) Se deseja executar numa instância que já se encontra na pasta no formato especificado digite 1.")
     print("(2) Para gerar uma instância digite 2.")
     print("(3) Para encerrar digite 3.")
     print("(0) Exibir o menu novamente.")
+
 
 def menu(item_menu):
     while True:  
@@ -75,17 +107,13 @@ def menu(item_menu):
         elif item_menu == '1': 
             test_name = input("Informe o nome da instância que deseja executar (ex.: p01, p02...):")
 
-            s = read_file("datatest/" + test_name + "_w.txt")
-            list_t = read_file("datatest/" + test_name + "_c.txt")
-            t = list_t[0] if list_t else -1
+            t,s,list_o = read_file("datatest/" + test_name + ".txt")
 
-            if s and list_t:
+            if s and t:
 
                 start_time = time.perf_counter_ns()
                 result = approx_subset_sum(s,t,0.4)
                 end_time = time.perf_counter_ns()
-
-                list_o = read_file("datatest/" + test_name + "_o.txt")
 
                 data = {
                     "t" : t,
@@ -93,6 +121,7 @@ def menu(item_menu):
                     "final_sum": result[0],
                     "final_config" :str(result[1]),
                     "duration": end_time - start_time,
+                    "duration_sec": (end_time - start_time) / 1_000_000_000,
                     "config_o": list_o if list_o != [] else []
                 }
 
