@@ -80,31 +80,33 @@ def write_report(file_name, data, folder="reports"):
     return path
 
 
-def print_readme():
-    print(subset_sum_ascii_banner())
-    print("----------------------- SUBSET SUM ----------------------")
-    print(f"(INSTRUÇÕES) Para adicionar uma nova instância de teste, crie na pasta datatest o arquivo <nome_da_instância>.txt com o seguinte formato:",
-      f"<valor da soma>\n",
-      f"<lista de valores do conjunto>\n",
-      f"<lista com valores da solução ótima, se houver, se não for possível fornecer, deixe uma lista vazia []>\n")
-    print("Exemplo de arquivo:\n",
-      f"53\n",
-      f"[15, 22, 14, 26, 32, 9,16, 8]\n",
-      f"[22,14,9,8]\n")
-
+def print_menu():
     print("------------------------ MENU ----------------------------")
-    print("(1) Se deseja executar numa instância que já se encontra na pasta no formato especificado digite 1.")
-    print("(2) Para gerar uma instância digite 2.")
-    print("(3) Para encerrar digite 3.")
+    print("(1) Se deseja executar numa instância que já se encontra na pasta digite 1.")
+    print("(2) Para gerar uma nova instância aleatória digite 2.")
+    print("(3) Para instruções sobre instâncias específicas.")
+    print("(4) Para encerrar digite 4")
     print("(0) Exibir o menu novamente.")
 
 
 def menu(item_menu):
     while True:  
-        if item_menu == '3':
+        if item_menu == '4':
             break
+        if item_menu == '3':
+            print("-------------------------------------------------------------")
+            print(f"(INSTRUÇÕES) Para adicionar uma instância de teste específica, crie na pasta datatest o arquivo <nome_da_instância>.txt com o seguinte formato:\n",
+            f"<valor da soma>\n",
+            f"<lista de valores do conjunto>\n",
+            f"<lista com valores da solução ótima, se houver, se não for possível fornecer, deixe uma lista vazia []>\n")
+            print("Exemplo de arquivo:\n",
+            f"53\n",
+            f"[15, 22, 14, 26, 32, 9,16, 8]\n",
+            f"[22,14,9,8]\n")
+            print_menu()
+            item_menu = input()
         elif item_menu == '0':
-            print_readme()
+            print_menu()
             item_menu = input()
         elif item_menu == '1': 
             test_name = input("Informe o nome da instância que deseja executar (ex.: p01, p02...):")
@@ -130,10 +132,10 @@ def menu(item_menu):
                 file_name = test_name + ".txt"
                 write_report(file_name, data)
                 print("------------------------------------------------")
-                item_menu = input("Digite 0 para voltar ao menu ou 3 para encerrar.")
+                item_menu = input("Digite 0 para voltar ao menu ou 4 para encerrar.")
             else:
                 print("Não foi possível processar a instância especificada. ")
-                item_menu = input("Digite 0 para voltar ao menu ou 3 para encerrar.")
+                item_menu = input("Digite 0 para voltar ao menu ou 4 para encerrar.")
        
         elif item_menu == '2':
             print("Para criar uma nova instância aleatória será necessário informar"
