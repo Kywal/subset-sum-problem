@@ -1,5 +1,6 @@
 from instance_generator_aux import instance_generator
 from generator_ui import *
+from inst_gen_io import write_instance, instance_to_str
 
 s = int(input(welcome_text()))
 
@@ -9,3 +10,10 @@ rng = (int(input(range_input_message)),int(input()))
 
 result = instance_generator(s,rng)
 print_result(result)
+
+# instance = instance_to_str(result[0], result[1][0], result[1][1])
+# write_instance(instance)
+
+
+
+
