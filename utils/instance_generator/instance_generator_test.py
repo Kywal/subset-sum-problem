@@ -1,4 +1,4 @@
-from instance_generator_aux import instance_generator
+from instance_generator import instance_generator
 from generator_ui import *
 from inst_gen_io import write_instance, instance_to_str
 
