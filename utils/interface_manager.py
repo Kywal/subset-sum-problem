@@ -1,6 +1,7 @@
 import os
 import time
 from src.approx_subset_sum import approx_subset_sum
+from utils.instance_generator.instance_generator import instance_generator
 
 def read_file(file_name):
     msg = "Erro: O arquivo para o caso de testes " + file_name + " não está no formato adequado."
@@ -80,6 +81,7 @@ def write_report(file_name, data, folder="reports"):
 
 
 def print_readme():
+    print(subset_sum_ascii_banner())
     print("----------------------- SUBSET SUM ----------------------")
     print(f"(INSTRUÇÕES) Para adicionar uma nova instância de teste, crie na pasta datatest o arquivo <nome_da_instância>.txt com o seguinte formato:",
       f"<valor da soma>\n",
@@ -137,11 +139,28 @@ def menu(item_menu):
             print("Para criar uma nova instância aleatória será necessário informar"
             f"\n - Quantidade de elementos do conjunto "
             f"\n - Intervalo no qual os números se encontram (início e fim positivos)")
-            set_len = int(input("Quantidade de elementos do conjunto:"))
-            set_start = int(input("Início do intervalo de números:"))
-            set_end = int(input("Final do intervalo de números:"))
+            set_len = int(input("Quantidade de elementos do conjunto: "))
+            set_start = int(input("Início do intervalo de números: "))
+            set_end = int(input("Final do intervalo de números: "))
+
+            instance_generator(set_len, (set_start, set_end))
+
             item_menu = '1'
         else:
             print("Entrada inválida. Escolha um item do menu:")
             item_menu = input()
 
+def subset_sum_ascii_banner():
+
+    subset_sum = (
+        "  █████████  █████  █████ ███████████   █████████  ██████████ ███████████     █████████  █████  █████ ██████   ██████\n"
+        " ███░░░░░███░░███  ░░███ ░░███░░░░░███ ███░░░░░███░░███░░░░░█░█░░░███░░░█    ███░░░░░███░░███  ░░███ ░░██████ ██████\n"
+        "░███    ░░░  ░███   ░███  ░███    ░███░███    ░░░  ░███  █ ░ ░   ░███  ░    ░███    ░░░  ░███   ░███  ░███░█████░███\n"
+        "░░█████████  ░███   ░███  ░██████████ ░░█████████  ░██████       ░███       ░░█████████  ░███   ░███  ░███░░███ ░███\n"
+        " ░░░░░░░░███ ░███   ░███  ░███░░░░░███ ░░░░░░░░███ ░███░░█       ░███        ░░░░░░░░███ ░███   ░███  ░███ ░░░  ░███\n"
+        " ███    ░███ ░███   ░███  ░███    ░███ ███    ░███ ░███ ░   █    ░███        ███    ░███ ░███   ░███  ░███      ░███\n"
+        "░░█████████  ░░████████   ███████████ ░░█████████  ██████████    █████      ░░█████████  ░░████████   █████     █████\n"
+        "  ░░░░░░░░░    ░░░░░░░░   ░░░░░░░░░░░   ░░░░░░░░░  ░░░░░░░░░░    ░░░░░        ░░░░░░░░░    ░░░░░░░░   ░░░░░     ░░░░░"
+    )
+
+    return subset_sum
