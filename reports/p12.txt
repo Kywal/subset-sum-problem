@@ -1,0 +1,16 @@
+-------------------
+DADOS DA INSTÂNCIA 
+-------------------
+Multiset: [11, 8, 18, 28, 22, 17, 22, 13, 19, 9]
+Soma objetivo: 19
+Configuração ótima fornecida: [19]
+Soma da configuração ótima fornecida: 19
+-----------
+RESULTADOS
+-----------
+Soma resultante (aproximação): 19
+Configuração geradora da aproximação: [11, 8]
+Duração da execução (nanosegundos): 250689
+Duração da execução (segundos): 0.000250689
+
+Solução aproximada se encontra à 0.0% de distância da solução ótima fornecida.
