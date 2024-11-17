@@ -3,9 +3,14 @@ DADOS DA INSTÂNCIA
 -------------------
 Multiset: [25, 27, 3, 12, 6, 15, 9, 30, 21, 19]
 Soma objetivo: 50
+Configuração ótima fornecida: [25, 6, 19]
+Soma da configuração ótima fornecida: 50
 -----------
 RESULTADOS
 -----------
 Soma resultante (aproximação): 50
 Configuração geradora da aproximação: [25, 6, 19]
-Duração da execução (nanosegundos): 458071
+Duração da execução (nanosegundos): 328216
+Duração da execução (segundos): 0.000328216
+
+Solução aproximada se encontra à 0.0% de distância da solução ótima fornecida.
