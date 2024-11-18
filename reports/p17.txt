@@ -1,16 +1,20 @@
 -------------------
 DADOS DA INSTÂNCIA 
 -------------------
-Multiset: [73244803741847, 2691442146081, 63920111590565, 99970332226596, 57038341104001, 15485280156220, 65249283673095, 64037876102501, 4394999891882, 45162228748599]
+Tamanho do conjunto: 10 
 Soma objetivo: 347664524492638
-Configuração ótima fornecida: [45162228748599, 64037876102501, 73244803741847, 99970332226596, 65249283673095]
 Soma da configuração ótima fornecida: 347664524492638
 -----------
 RESULTADOS
 -----------
-Soma resultante (aproximação): 338339832341356
-Configuração geradora da aproximação: [63920111590565, 99970332226596, 65249283673095, 64037876102501, 45162228748599]
-Duração da execução (nanosegundos): 882339
-Duração da execução (segundos): 0.000882339
+Soma resultante (aproximação): 345426274379319
+Duração da execução (nanosegundos): 1190428
+Duração da execução (segundos): 0.001190428
 
-Solução aproximada se encontra à 2.68% de distância da solução ótima fornecida.
+Solução aproximada se encontra à 0.64% de distância da solução ótima fornecida.
+-----------
+DETALHAMENTO
+-----------
+Multiset: [73244803741847, 2691442146081, 63920111590565, 99970332226596, 57038341104001, 15485280156220, 65249283673095, 64037876102501, 4394999891882, 45162228748599]
+Configuração ótima fornecida: [45162228748599, 64037876102501, 73244803741847, 99970332226596, 65249283673095]
+Configuração geradora da aproximação: [2691442146081, 63920111590565, 99970332226596, 65249283673095, 64037876102501, 4394999891882, 45162228748599]
