@@ -1,16 +1,20 @@
 -------------------
 DADOS DA INSTÂNCIA 
 -------------------
-Multiset: [15, 22, 14, 26, 32, 9, 16, 8]
+Tamanho do conjunto: 8 
 Soma objetivo: 53
-Configuração ótima fornecida: [22, 14, 9, 8]
 Soma da configuração ótima fornecida: 53
 -----------
 RESULTADOS
 -----------
 Soma resultante (aproximação): 53
-Configuração geradora da aproximação: [22, 14, 9, 8]
-Duração da execução (nanosegundos): 96791
-Duração da execução (segundos): 9.6791e-05
+Duração da execução (nanosegundos): 320326
+Duração da execução (segundos): 0.000320326
 
 Solução aproximada se encontra à 0.0% de distância da solução ótima fornecida.
+-----------
+DETALHAMENTO
+-----------
+Multiset: [15, 22, 14, 26, 32, 9, 16, 8]
+Configuração ótima fornecida: [22, 14, 9, 8]
+Configuração geradora da aproximação: [22, 14, 9, 8]

@@ -8,9 +8,6 @@ def merge_lists(l: list[(int, list[int])], r: list[(int, list[int])]):
     p = 0
     q = 0
 
-    # O endereço após o último endereço de uma das listas vai necessariamente ser acessado
-    # Então, para que um endereço inválido não seja acessado cada um deles recebe "+infinito"
-    # E esse endereço não pode fazer parte da merged_list
     l.append((sys.maxsize, []))
     r.append((sys.maxsize, []))
 
@@ -23,3 +20,8 @@ def merge_lists(l: list[(int, list[int])], r: list[(int, list[int])]):
             q += 1
 
     return merged_list
+
+
+    # O endereço após o último endereço de uma das listas vai necessariamente ser acessado
+    # Então, para que um endereço inválido não seja acessado cada um deles recebe "+infinito"
+    # E esse endereço não pode fazer parte da merged_list

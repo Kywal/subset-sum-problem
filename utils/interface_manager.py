@@ -56,27 +56,33 @@ def write_report(file_name, data, folder="reports"):
         f"-------------------\n"
         f"DADOS DA INSTÂNCIA \n"
         f"-------------------\n"
-        f"Multiset: {data['set']}\n"
+        f"Tamanho do conjunto: {data['len']} \n"
         f"Soma objetivo: {data['t']}\n"
-        f"Configuração ótima fornecida: {config_o}\n" 
         f"Soma da configuração ótima fornecida: {sum_o}\n" 
         f"-----------\n"
         f"RESULTADOS\n"
         f"-----------\n"
         f"Soma resultante (aproximação): {data['final_sum']}\n"
-        f"Configuração geradora da aproximação: {data['final_config']}\n"
         f"Duração da execução (nanosegundos): {data['duration']}\n"
         f"Duração da execução (segundos): {data['duration_sec']}\n\n"
         f"Solução aproximada se encontra à {dist}% de distância da solução ótima fornecida.\n" 
     )
+
+   
     print(content)
+    content += (f"-----------\n"
+        f"DETALHAMENTO\n"
+        f"-----------\n"
+        f"Multiset: {data['set']}\n"
+        f"Configuração ótima fornecida: {config_o}\n" 
+        f"Configuração geradora da aproximação: {data['final_config']}\n")
 
     os.makedirs(folder, exist_ok=True)
     path = os.path.join(folder, file_name)
     with open(path, 'w') as file:
         file.write(content)
 
-    print(f"Arquivo salvo em: {path}")
+    print(f"Arquivo salvo em: {path}. Acesse para mais detalhes.")
     return path
 
 
@@ -120,6 +126,7 @@ def menu(item_menu):
                 end_time = time.perf_counter_ns()
 
                 data = {
+                    "len" : len (s),
                     "t" : t,
                     "set" : s,
                     "final_sum": result[0],

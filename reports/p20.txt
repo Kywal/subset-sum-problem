@@ -1,0 +1,16 @@
+-------------------
+DADOS DA INSTÂNCIA 
+-------------------
+Multiset: [54296225328524, 35785673010614, 71017113938054, 55457813734867, 27356790393771, 34659806699748, 71944231765000, 6634845795904, 93703631312643, 3300093626182]
+Soma objetivo: 97802270104133
+Configuração ótima fornecida: [34659806699748, 35785673010614, 27356790393771]
+Soma da configuração ótima fornecida: 97802270104133
+-----------
+RESULTADOS
+-----------
+Soma resultante (aproximação): 95590877824176
+Configuração geradora da aproximação: [54296225328524, 34659806699748, 6634845795904]
+Duração da execução (nanosegundos): 628373
+Duração da execução (segundos): 0.000628373
+
+Solução aproximada se encontra à 2.26% de distância da solução ótima fornecida.
