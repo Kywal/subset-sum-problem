@@ -37,4 +37,11 @@ Implementação de um esquema aproximativo para o problema da soma de subconjunt
     Final do intervalo de números: 50
     Arquivo salvo como: datatest/p46.txt <<
     Informe o nome da instância que deseja executar (ex.: p01, p02...):p46
-```
+   ```
+
+7. Para adicionar uma instância específica diferente das já disponíveis e não gerada aleatoriamente, basta adicionar na pasta *datatest* um arquivo .txt com o formato abaixo, onde a primeira linha se refere ao valor alvo, a segunda ao conjunto original e a terceira ao subconjunto de solução ótima. Se não houver uma solução ótima para ser fornecida, basta informar uma lista vazia.
+   ```bash
+   53
+   [15, 22, 14, 26, 32, 9,16, 8]
+   [22,14,9,8]
+   ```
