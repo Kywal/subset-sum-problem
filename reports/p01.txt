@@ -10,7 +10,6 @@ RESULTADOS
 -----------
 Soma resultante (aproximação): 53
 Configuração geradora da aproximação: [22, 14, 9, 8]
-Duração da execução (nanosegundos): 297340
-Duração da execução (segundos): 0.00029734
+Duração da execução (nanosegundos): 368469
 
 Solução aproximada se encontra à 0.0% de distância da solução ótima fornecida.
