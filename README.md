@@ -22,7 +22,7 @@ Implementação de um esquema aproximativo para o problema da soma de subconjunt
     (0) Exibir o menu novamente.
     ```
 
-4. Digitando 1 será possível executar o algoritmo em uma instância que já está na pasta *datatest*. Para isso será solicitado informar o nome da instância, isto é, o nome do arquivo sem extensão, como no exemplo abaixo no qual foi escolhida a instância *p01*.
+4. Digitando 1 será possível executar o algoritmo em uma instância que já está na pasta *datatest*. Para isso será solicitado informar o nome da instância, isto é, o nome do arquivo sem extensão, como no exemplo abaixo no qual foi escolhida a instância *p01*. O valor de aproximação está fixado em 0.4.
    ```bash
    Informe o nome da instância que deseja executar (ex.: p01, p02...):p01
    ```
