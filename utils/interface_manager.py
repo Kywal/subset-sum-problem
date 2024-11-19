@@ -130,9 +130,7 @@ def menu(item_menu):
                 print("------------------------------------------------")
                 item_menu = input("Digite 0 para voltar ao menu ou 3 para encerrar.")
             else:
-                print("Não foi possível processar a instância especificada. ")
-                item_menu = input("Digite 0 para voltar ao menu ou 3 para encerrar.")
-       
+                print("Não foi possível processar a instância especificada. Verifique se ela se encontra em datatest no formato indicado.")
         elif item_menu == '2':
             print("Para criar uma nova instância aleatória será necessário informar"
             f"\n - Quantidade de elementos do conjunto "
