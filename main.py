@@ -16,15 +16,12 @@ if s and list_t:
     result = approx_subset_sum(s,t,0.4)
     end_time = time.perf_counter_ns()
 
-    list_o = read_file("datatest/" + test_name + "_o.txt")
-
     data = {
         "t" : t,
         "set" : s,
-        "final_sum": result[0],
+        "final_sum": str(result[0]),
         "final_config" :str(result[1]),
-        "duration": end_time - start_time,
-        "config_o": list_o if list_o != [] else []
+        "duration": end_time - start_time
     }
 
     file_name = test_name + ".txt"

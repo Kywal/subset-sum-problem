@@ -1,14 +1,7 @@
--------------------
-DADOS DA INSTÂNCIA 
--------------------
+REPORT
+-----------
 Multiset: [267, 493, 869, 961, 1000, 1153, 1246, 1598, 1766, 1922]
 Soma objetivo: 5842
-Configuração ótima fornecida: [869, 961, 1000, 1246, 1766]
-Soma da configuração ótima fornecida: 5842
------------
-RESULTADOS
------------
 Soma resultante (aproximação): 5722
 Configuração geradora da aproximação: [493, 869, 961, 1000, 1153, 1246]
-Duração da execução (nanosegundos): 552077
-Solução aproximada se encontra à 2.05% de distância da solução ótima fornecida.
+Duração da execução (nanosegundos): 1502524
