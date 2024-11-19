@@ -6,7 +6,7 @@ def read_file(file_name):
             list_s = [int(line.strip()) for line in file]
         return list_s
     except FileNotFoundError:
-        print(f"O arquivo para o caso de testes '{file_name}' não foi encontrado.")
+        print(f"Erro: O arquivo para o caso de testes '{file_name}' não foi encontrado.")
         return []
     except ValueError:
         print(f"Erro: O arquivo para o caso de testes '{file_name}' contém dados não numéricos.")
@@ -14,32 +14,18 @@ def read_file(file_name):
 
 
 def write_report(file_name, data, folder="reports"):
-
-    if  data['config_o'] != [] :
-        config_o = str(data['config_o'])
-        sum_o = str(sum(data['config_o']))
-        dist = str(round(100*((abs(data['final_sum']-sum(data['config_o'])))/sum(data['config_o'])),2))
-        
-    else:
-        config_o = "Não fornecida."
-        sum_o = "Não fornecida."
-        dist = "--"
-
     content = (
         f"-------------------\n"
         f"DADOS DA INSTÂNCIA \n"
         f"-------------------\n"
         f"Multiset: {data['set']}\n"
         f"Soma objetivo: {data['t']}\n"
-        f"Configuração ótima fornecida: {config_o}\n" 
-        f"Soma da configuração ótima fornecida: {sum_o}\n" 
         f"-----------\n"
         f"RESULTADOS\n"
         f"-----------\n"
         f"Soma resultante (aproximação): {data['final_sum']}\n"
         f"Configuração geradora da aproximação: {data['final_config']}\n"
         f"Duração da execução (nanosegundos): {data['duration']}\n"
-        f"Solução aproximada se encontra à {dist}% de distância da solução ótima fornecida.\n" 
     )
     print(content)
 
