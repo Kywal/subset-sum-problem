@@ -38,7 +38,7 @@ def write_report(file_name, data, folder="reports"):
         f"-----------\n"
         f"Soma resultante (aproximação): {data['final_sum']}\n"
         f"Configuração geradora da aproximação: {data['final_config']}\n"
-        f"Duração da execução (nanosegundos): {data['duration']}\n\n"
+        f"Duração da execução (nanosegundos): {data['duration']}\n"
         f"Solução aproximada se encontra à {dist}% de distância da solução ótima fornecida.\n" 
     )
     print(content)
@@ -53,19 +53,9 @@ def write_report(file_name, data, folder="reports"):
 
 
 def print_readme():
-    print("----------------------- SUBSET SUM ----------------------")
-    print(f"(INSTRUÇÕES) Para adicionar uma nova instância de teste, crie na pasta datatest os arquivos:",
+    print("--------------- SUBSET SUM APROXIMAÇÃO -----------------")
+    print(f"(1) Para adicionar uma nova instância de teste, crie na pasta datatest os arquivos:",
       f"\n<nome_da_instância>_c.txt (contendo o número da soma objetivo)",
       f"\n<nome_da_instância>_w.txt (contendo os valores do conjunto separados por quebra de linha)")
-    print("------------------------ MENU ----------------------------")
-    print("(1) Se deseja executar numa instância que já se encontra na pasta no formato especificado digite 1.")
-    print("(2) Para gerar uma instância digite 2.")
-    print("(3) Para encerrar digite 3.")
-    print("(0) Exibir o menu novamente.")
-
-def menu(item):
-    if item == '1':
-        print("Informe o nome da instância que deseja executar (ex.: p01, p02...):")
-    else:
-        print("")
-
+    print("---------------------------------------------------------")
+    print("(2) Se a instância já se encontra na pasta no formato especificado, selecione-a informando o nome da instância de teste do datatest que deseja executar (ex.: p01, p02...):")

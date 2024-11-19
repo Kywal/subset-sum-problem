@@ -10,6 +10,5 @@ RESULTADOS
 -----------
 Soma resultante (aproximação): 302
 Configuração geradora da aproximação: [201, 101]
-Duração da execução (nanosegundos): 161155
-
+Duração da execução (nanosegundos): 160830
 Solução aproximada se encontra à 1.63% de distância da solução ótima fornecida.
