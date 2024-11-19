@@ -1,5 +1,5 @@
-from src.merge_lists import merge_lists
-from src.trim import trim
+from merge_lists import merge_lists
+from trim import trim
 
 
 def approx_subset_sum(s: list[int], t: int, e: float):
@@ -22,7 +22,9 @@ def approx_subset_sum(s: list[int], t: int, e: float):
         print ("L", i , ": " , lists[i])
 
     max_tuple = max(lists[n], key=lambda x: x[0]) if lists[n] else (0, [])
-    return max_tuple
+    print(max_tuple)
+    
+    return max_tuple[0]
 
 
 
