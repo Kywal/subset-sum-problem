@@ -8,8 +8,8 @@ Soma da configuração ótima fornecida: 53
 RESULTADOS
 -----------
 Soma resultante (aproximação): 53
-Duração da execução (nanosegundos): 320326
-Duração da execução (segundos): 0.000320326
+Duração da execução (nanosegundos): 408520
+Duração da execução (segundos): 0.00040852
 
 Solução aproximada se encontra à 0.0% de distância da solução ótima fornecida.
 -----------
@@ -17,4 +17,4 @@ DETALHAMENTO
 -----------
 Multiset: [15, 22, 14, 26, 32, 9, 16, 8]
 Configuração ótima fornecida: [22, 14, 9, 8]
-Configuração geradora da aproximação: [22, 14, 9, 8]
+Configuração geradora da aproximação: [15, 22, 16]
