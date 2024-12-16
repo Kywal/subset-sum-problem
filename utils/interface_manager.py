@@ -1,6 +1,6 @@
 import os
 import time
-from src.approx_subset_sum import approx_subset_sum
+from cormen_approximation_scheme.src.approx_subset_sum import approx_subset_sum
 from utils.instance_generator.instance_generator import instance_generator
 
 def read_file(file_name):
