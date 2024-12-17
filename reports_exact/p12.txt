@@ -1,0 +1,18 @@
+-------------------
+DADOS DA INSTÂNCIA 
+-------------------
+Tamanho do conjunto: 10 
+Soma objetivo: 19
+Soma da configuração ótima fornecida: 19
+-----------
+RESULTADOS
+-----------
+Soma resultante: 19
+Duração da execução (nanosegundos): 134069
+Duração da execução (segundos): 0.000134069
+
+-----------
+DETALHAMENTO
+-----------
+Multiset: [11, 8, 18, 28, 22, 17, 22, 13, 19, 9]
+Configuração ótima fornecida: [19]

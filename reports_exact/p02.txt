@@ -1,0 +1,18 @@
+-------------------
+DADOS DA INSTÂNCIA 
+-------------------
+Tamanho do conjunto: 10 
+Soma objetivo: 5842
+Soma da configuração ótima fornecida: 5842
+-----------
+RESULTADOS
+-----------
+Soma resultante: 5842
+Duração da execução (nanosegundos): 416655
+Duração da execução (segundos): 0.000416655
+
+-----------
+DETALHAMENTO
+-----------
+Multiset: [267, 493, 869, 961, 1000, 1153, 1246, 1598, 1766, 1922]
+Configuração ótima fornecida: [869, 961, 1000, 1246, 1766]
