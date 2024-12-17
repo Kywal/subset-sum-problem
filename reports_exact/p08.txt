@@ -8,8 +8,8 @@ Soma da configuração ótima fornecida: 307
 RESULTADOS
 -----------
 Soma resultante: 307
-Duração da execução (nanosegundos): 71280
-Duração da execução (segundos): 7.128e-05
+Duração da execução (nanosegundos): 25430
+Duração da execução (segundos): 2.543e-05
 
 -----------
 DETALHAMENTO
