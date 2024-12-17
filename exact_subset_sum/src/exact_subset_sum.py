@@ -22,7 +22,7 @@ def all_subset_sums(S: list[int], u: int):
     print(results)
     final_result = results[0]
     for r in results[1:]:
-        final_result = pairwise_u2(final_result, r, u)
+        final_result = pairwise_u(final_result, r, u)
     max_tuple = (max(final_result))
     return max_tuple 
 
@@ -39,10 +39,10 @@ def all_subset_sums_card(S: set, u:int):
     left = all_subset_sums_card(T, u)
     right = all_subset_sums_card(S - T, u)
 
-    return pairwise_u(left, right, u)
+    return pairwise_u_ari2(left, right, u)
 
 
-def pairwise_u(X, Y, u):
+def pairwise_u_ari2(X, Y, u):
     result = set()
     for (x1, x2) in X:
         for (y1, y2) in Y:
@@ -51,7 +51,7 @@ def pairwise_u(X, Y, u):
     return result
    
 
-def pairwise_u2(X, Y, u):
+def pairwise_u(X, Y, u):
     result = set()
     for x in X:
         for y in Y:
