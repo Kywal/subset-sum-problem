@@ -16,6 +16,7 @@ def all_subset_sums(S, u):
         Q_l = {(x - l) // b for x in S_l}
         S_card = all_subset_sums_card(Q_l, u // b)
         R_l = {z * b + l * j for z, j in S_card if z * b + l * j <= u} # condicao adicionada aqui pra nao ultrapassar o limite
+        print(l,"=",R_l)
         results.append(R_l)
 
     final_result = set()
