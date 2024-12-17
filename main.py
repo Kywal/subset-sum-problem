@@ -1,6 +1,8 @@
 # from utils.interface_manager import read_file, write_report, print_menu, subset_sum_ascii_banner, menu
 from utils.interface_manager_exact import read_file, write_report, menu, subset_sum_ascii_banner,  print_menu
 from exact_subset_sum.src.exact_subset_sum import all_subset_sums_card, all_subset_sums
+import sys
+sys.setrecursionlimit(30000)  # Aumenta o limite de recursão para 10.000 ou o valor desejado
 
 print(subset_sum_ascii_banner())
 print_menu()
