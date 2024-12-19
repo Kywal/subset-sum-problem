@@ -40,7 +40,6 @@ def all_subset_sums_card(S: list, u: int):
     return pairwise_u_ari2(left, right, u)
 
 
-
 def pairwise_u_ari2(X: list, Y: list, u: int):
     result = []
     for (x1, x2) in X:

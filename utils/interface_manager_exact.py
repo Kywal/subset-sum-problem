@@ -1,6 +1,7 @@
 import os
 import time
 from exact_subset_sum.src.exact_subset_sum import all_subset_sums
+from cormen_approximation_scheme.src.approx_subset_sum import approx_subset_sum
 from utils.instance_generator.instance_generator import instance_generator
 from utils.file_manager.read_file import read_file
 from utils.file_manager.write_report import write_report
@@ -8,7 +9,7 @@ from utils.file_manager.write_report import write_report
 def menu(item_menu):
     while True:  
         if(item_menu == "1"):
-            test_name = input("Informe o nome da instância que deseja executar (ex.: p01, p02...):")
+            test_name = input("(EXATO) Informe o nome da instância que deseja executar (ex.: p01, p02...):")
             t,s,list_o = read_file("datatest/" + test_name + ".txt")
             if s and t:
                 start_time = time.perf_counter_ns()
@@ -26,23 +27,38 @@ def menu(item_menu):
                 }
 
                 file_name = test_name + ".txt"
-                write_report(file_name, data)
+                write_report(file_name, data, "exact", "reports_exact")
                 print("------------------------------------------------")
-                item_menu = input("Digite 0 para voltar ao menu ou 4 para encerrar.")
+                item_menu = input("Digite 0 para voltar ao menu ou 5 para encerrar.")
             else:
                 print("Não foi possível processar a instância especificada. ")
-                item_menu = input("Digite 0 para voltar ao menu ou 4 para encerrar.")
-        elif (item_menu == '2'):
-            print("Para criar uma nova instância aleatória será necessário informar"
-            f"\n - Quantidade de elementos do conjunto "
-            f"\n - Intervalo no qual os números se encontram (início e fim positivos)")
-            set_len = int(input("Quantidade de elementos do conjunto: "))
-            set_start = int(input("Início do intervalo de números: "))
-            set_end = int(input("Final do intervalo de números: "))
+                item_menu = input("Digite 0 para voltar ao menu ou 5 para encerrar.")
+        if(item_menu == "2"):
+            test_name = input("(APROXIMATIVO) Informe o nome da instância que deseja executar (ex.: p01, p02...):")
+            t,s,list_o = read_file("datatest/" + test_name + ".txt")
+            if s and t:
+                start_time = time.perf_counter_ns()
+                result = approx_subset_sum(s,t,0.4)
+                end_time = time.perf_counter_ns()
 
-            instance_generator(set_len, (set_start, set_end))
+                data = {
+                    "len" : len (s),
+                    "t" : t,
+                    "set" : s,
+                    "final_sum": result[0],
+                    "final_config" :str(result[1]),
+                    "duration": end_time - start_time,
+                    "duration_sec": (end_time - start_time) / 1_000_000_000,
+                    "config_o": list_o if list_o != [] else []
+                }
 
-            item_menu = '1'
+                file_name = test_name + ".txt"
+                write_report(file_name, data, "aprox", "reports_aprox")
+                print("------------------------------------------------")
+                item_menu = input("Digite 0 para voltar ao menu ou 5 para encerrar.")
+            else:
+                print("Não foi possível processar a instância especificada. ")
+                item_menu = input("Digite 0 para voltar ao menu ou 5 para encerrar.")
         elif (item_menu == '3'):
             print("-------------------------------------------------------------")
             print(f"(INSTRUÇÕES) Para adicionar uma instância de teste específica, crie na pasta datatest o arquivo <nome_da_instância>.txt com o seguinte formato:\n",
@@ -56,6 +72,18 @@ def menu(item_menu):
             print_menu()
             item_menu = input()
         elif (item_menu == '4'):
+            print("Para criar uma nova instância aleatória será necessário informar"
+            f"\n - Quantidade de elementos do conjunto "
+            f"\n - Intervalo no qual os números se encontram (início e fim positivos)")
+            set_len = int(input("Quantidade de elementos do conjunto: "))
+            set_start = int(input("Início do intervalo de números: "))
+            set_end = int(input("Final do intervalo de números: "))
+
+            instance_generator(set_len, (set_start, set_end))
+
+            item_menu = '1'
+       
+        elif (item_menu == '5'):
             break
         elif (item_menu == '0'):
             print_menu()
@@ -81,8 +109,9 @@ def subset_sum_ascii_banner():
 
 def print_menu():
     print("------------------------ MENU ----------------------------")
-    print("(1) Se deseja executar numa instância que já se encontra na pasta digite 1.")
-    print("(2) Para gerar uma nova instância aleatória digite 2.")
+    print("(1) Digie 1 para executar o EXATO numa instância que já se encontra na pasta.")
+    print("(2) Digie 2 para executar o APROXIMATIVO numa instância que já se encontra na pasta.")
     print("(3) Para instruções sobre instâncias específicas.")
-    print("(4) Para encerrar digite 4")
+    print("(4) Para gerar uma nova instância aleatória digite 4.")
+    print("(5) Para encerrar digite 5")
     print("(0) Exibir o menu novamente.")

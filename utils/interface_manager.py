@@ -65,17 +65,21 @@ def write_report(file_name, data, folder="reports"):
         f"Soma resultante (aproximação): {data['final_sum']}\n"
         f"Duração da execução (nanosegundos): {data['duration']}\n"
         f"Duração da execução (segundos): {data['duration_sec']}\n\n"
-        f"Solução aproximada se encontra à {dist}% de distância da solução ótima fornecida.\n" 
     )
 
+    if(alg == "aprox"):
+        content += (f"Solução aproximada se encontra à {dist}% de distância da solução ótima fornecida.\n")
    
     print(content)
     content += (f"-----------\n"
         f"DETALHAMENTO\n"
         f"-----------\n"
         f"Multiset: {data['set']}\n"
-        f"Configuração ótima fornecida: {config_o}\n" 
-        f"Configuração geradora da aproximação: {data['final_config']}\n")
+        f"Configuração ótima fornecida: {config_o}\n")
+
+    if(alg == "aprox"):
+        content += (f"Configuração geradora da aproximação: {data['final_config']}\n")
+   
 
     os.makedirs(folder, exist_ok=True)
     path = os.path.join(folder, file_name)

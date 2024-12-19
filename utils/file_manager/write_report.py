@@ -1,6 +1,6 @@
 import os
 
-def write_report(file_name, data, folder="reports_exact"):
+def write_report(file_name, data, alg, folder="reports_exact"):
 
     if  data['config_o'] != [] :
         config_o = str(data['config_o'])
@@ -22,17 +22,23 @@ def write_report(file_name, data, folder="reports_exact"):
         f"-----------\n"
         f"RESULTADOS\n"
         f"-----------\n"
-        f"Soma resultante: {data['final_sum']}\n"
+        f"Soma resultante (aproximação): {data['final_sum']}\n"
         f"Duração da execução (nanosegundos): {data['duration']}\n"
         f"Duração da execução (segundos): {data['duration_sec']}\n\n"
     )
 
+    if(alg == "aprox"):
+        content += (f"Solução aproximada se encontra à {dist}% de distância da solução ótima fornecida.\n")
+   
     print(content)
     content += (f"-----------\n"
         f"DETALHAMENTO\n"
         f"-----------\n"
         f"Multiset: {data['set']}\n"
         f"Configuração ótima fornecida: {config_o}\n")
+
+    if(alg == "aprox"):
+        content += (f"Configuração geradora da aproximação: {data['final_config']}\n")
 
     os.makedirs(folder, exist_ok=True)
     path = os.path.join(folder, file_name)
