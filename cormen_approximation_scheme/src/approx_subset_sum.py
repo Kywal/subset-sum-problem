@@ -1,5 +1,5 @@
-from src.merge_lists import merge_lists
-from src.trim import trim
+from cormen_approximation_scheme.src.merge_lists import merge_lists
+from cormen_approximation_scheme.src.trim import trim
 
 
 def approx_subset_sum(s: list[int], t: int, e: float):
