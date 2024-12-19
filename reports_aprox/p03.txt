@@ -7,12 +7,14 @@ Soma da configuração ótima fornecida: 2463098
 -----------
 RESULTADOS
 -----------
-Soma resultante (aproximação): 2463098
-Duração da execução (nanosegundos): 2360897
-Duração da execução (segundos): 0.002360897
+Soma resultante (aproximação): 2437381
+Duração da execução (nanosegundos): 1496245
+Duração da execução (segundos): 0.001496245
 
+Solução aproximada se encontra à 1.04% de distância da solução ótima fornecida.
 -----------
 DETALHAMENTO
 -----------
 Multiset: [518533, 1037066, 2074132, 1648264, 796528, 1593056, 686112, 1372224, 244448, 488896, 977792, 1955584, 1411168, 322336, 644672, 1289344, 78688, 157376, 314752, 629504, 1259008]
 Configuração ótima fornecida: [1037066, 796528, 629504]
+Configuração geradora da aproximação: [518533, 1289344, 629504]
