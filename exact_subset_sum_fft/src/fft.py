@@ -34,7 +34,6 @@ def fft(poly, invert):
     return Y
 
 
-
 def multiply_polynomials(poly1, poly2):
     n = 1
     while n < len(poly1) + len(poly2):
@@ -52,5 +51,9 @@ def multiply_polynomials(poly1, poly2):
 
     result = fft(g, True)
     return [round(result[i].real) for i in range(len(result))]
+
+
+
+
 
     
