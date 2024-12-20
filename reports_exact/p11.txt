@@ -2,17 +2,18 @@
 DADOS DA INSTÂNCIA 
 -------------------
 Tamanho do conjunto: 10 
-Soma objetivo: 48231
-Soma da configuração ótima fornecida: 48231
+Soma objetivo: 485464119756575
+Soma da configuração ótima fornecida: 485464119756575
 -----------
 RESULTADOS
 -----------
-Soma resultante: 48231
-Duração da execução (nanosegundos): 192666
-Duração da execução (segundos): 0.000192666
+Soma resultante: 485464119756575
+Duração da execução (nanosegundos): 3363464
+Duração da execução (segundos): 0.003363464
 
 -----------
 DETALHAMENTO
 -----------
-Multiset: [10518, 1799, 5497, 2484, 2711, 12426, 7173, 4106, 12314, 9605]
-Configuração ótima fornecida: [5497, 2484, 4106, 12314, 12426, 1799, 9605]
+Multiset: [58044059713318, 44557431433732, 69187138326639, 92342986174764, 49458771659384, 8722343343602, 78635090643035, 98276611804609, 99984256417863, 40531764501462]
+Configuração ótima fornecida: [8722343343602, 92342986174764, 78635090643035, 99984256417863, 49458771659384, 58044059713318, 98276611804609]
+Configuração geradora da soma resultante: [92342986174764, 49458771659384, 98276611804609, 58044059713318, 8722343343602, 78635090643035, 99984256417863]
