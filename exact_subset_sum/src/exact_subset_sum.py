@@ -1,13 +1,11 @@
 import math
 from collections import defaultdict
-def all_subset_sums(S: list[int], u: int):
-    import math
-    from collections import defaultdict
 
+def all_subset_sums(S: list[int], u: int):
     n = len(S)
     b = int(math.sqrt(n * math.log(n)))
-
     subsets_by_mod = defaultdict(list)  # auxiliar
+    
     for x in S:
         subsets_by_mod[x % b].append(x)
 
