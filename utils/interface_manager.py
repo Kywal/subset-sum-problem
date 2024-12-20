@@ -10,34 +10,34 @@ def menu(item_menu):
 
         if(item_menu == "1"):
 
-            test_name = input("(EXATO) Informe o nome da instância que deseja executar (ex.: p01, p02...):")
+            test_name = input("(EXATO) Informe o nome da instância que deseja executar (ex.: p01, p02...):\n")
             t,s,list_o = read_file("datatest/" + test_name + ".txt")
             if s and t:
                 data = run_exact(t,s,list_o)
                 file_name = test_name + ".txt"
                 write_report(file_name, data, "exact", "reports_exact")
-                print("------------------------------------------------")
-                item_menu = input("Digite 0 para voltar ao menu ou 5 para encerrar.")
+                print("-" * 30)
+                item_menu = input("Digite 0 para voltar ao menu ou 5 para encerrar.\n")
             else:
-                print("Não foi possível processar a instância especificada. ")
-                item_menu = input("Digite 0 para voltar ao menu ou 5 para encerrar.")
+                print("Não foi possível processar a instância especificada.")
+                item_menu = input("Digite 0 para voltar ao menu ou 5 para encerrar.\n")
 
         elif(item_menu == "2"):
 
-            test_name = input("(APROXIMATIVO) Informe o nome da instância que deseja executar (ex.: p01, p02...):")
+            test_name = input("(APROXIMATIVO) Informe o nome da instância que deseja executar (ex.: p01, p02...):\n")
             t,s,list_o = read_file("datatest/" + test_name + ".txt")
             if s and t:
                 data = run_aprox(t,s,list_o)
                 file_name = test_name + ".txt"
                 write_report(file_name, data, "aprox", "reports_aprox")
-                print("------------------------------------------------")
-                item_menu = input("Digite 0 para voltar ao menu ou 5 para encerrar.")
+                print("-" * 30)
+                item_menu = input("Digite 0 para voltar ao menu ou 5 para encerrar.\n")
             else:
-                print("Não foi possível processar a instância especificada. ")
-                item_menu = input("Digite 0 para voltar ao menu ou 5 para encerrar.")
+                print("Não foi possível processar a instância especificada.")
+                item_menu = input("Digite 0 para voltar ao menu ou 5 para encerrar.\n")
 
         elif (item_menu == '3'):
-            print("-------------------------------------------------------------")
+            print("-" * 30)
             print(f"(INSTRUÇÕES) Para adicionar uma instância de teste específica, crie na pasta datatest o arquivo <nome_da_instância>.txt com o seguinte formato:\n",
             f"<valor da soma>\n",
             f"<lista de valores do conjunto>\n",
@@ -50,13 +50,14 @@ def menu(item_menu):
             item_menu = input()
 
         elif (item_menu == '4'):
-
-            print("Para criar uma nova instância aleatória será necessário informar"
-            f"\n - Quantidade de elementos do conjunto "
-            f"\n - Intervalo no qual os números se encontram (início e fim positivos)")
-            set_len = int(input("Quantidade de elementos do conjunto: "))
-            set_start = int(input("Início do intervalo de números: "))
-            set_end = int(input("Final do intervalo de números: "))
+            print("-" * 50)
+            print("Para criar uma nova instância aleatória será necessário informar: \n"
+            f" - Quantidade de elementos do conjunto \n"
+            f" - Intervalo no qual os números se encontram (início e fim positivos)")
+            print("-" * 50)
+            set_len = int(input("Quantidade de elementos do conjunto: \n"))
+            set_start = int(input("Início do intervalo de números: \n"))
+            set_end = int(input("Final do intervalo de números: \n"))
             instance_generator(set_len, (set_start, set_end))
             item_menu = '1'
 
@@ -91,10 +92,12 @@ def subset_sum_ascii_banner():
     return subset_sum
 
 def print_menu():
-    print("------------------------ MENU ----------------------------")
-    print("(1) Digie 1 para executar o EXATO numa instância que já se encontra na pasta.")
-    print("(2) Digie 2 para executar o APROXIMATIVO numa instância que já se encontra na pasta.")
+    print("+" + "-" * 30 + "+")
+    print("|" + " " * 11 + "MENU" + " " * 15 + "|")
+    print("+" + "-" * 30 + "+")
+    print("(1) Digite 1 para executar o EXATO numa instância que já se encontra na pasta.")
+    print("(2) Digite 2 para executar o APROXIMATIVO numa instância que já se encontra na pasta.")
     print("(3) Para instruções sobre instâncias específicas.")
     print("(4) Para gerar uma nova instância aleatória digite 4.")
-    print("(5) Para encerrar digite 5")
+    print("(5) Para encerrar digite 5.")
     print("(0) Exibir o menu novamente.")
