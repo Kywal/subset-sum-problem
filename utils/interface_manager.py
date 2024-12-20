@@ -14,7 +14,7 @@ def menu(item_menu):
             if s and t:
                 data = run_exact_mp(t,s,list_o)
                 file_name = test_name + ".txt"
-                write_report(file_name, data, "exact", "reports_exact_fft")
+                write_report(file_name, data, "exact", "reports_exact_mp")
                 print("-" * 30)
                 item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
             else:
