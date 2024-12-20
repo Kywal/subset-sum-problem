@@ -35,10 +35,9 @@ def write_report(file_name, data, alg, folder="reports_exact"):
         f"DETALHAMENTO\n"
         f"-----------\n"
         f"Multiset: {data['set']}\n"
-        f"Configuração ótima fornecida: {config_o}\n")
-
-    if(alg == "aprox"):
-        content += (f"Configuração geradora da aproximação: {data['final_config']}\n")
+        f"Configuração ótima fornecida: {config_o}\n"
+        f"Configuração geradora da soma resultante: {data['final_config']}\n")
+        
 
     os.makedirs(folder, exist_ok=True)
     path = os.path.join(folder, file_name)

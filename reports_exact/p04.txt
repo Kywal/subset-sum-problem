@@ -7,12 +7,13 @@ Soma da configuração ótima fornecida: 50
 -----------
 RESULTADOS
 -----------
-Soma resultante: 50
-Duração da execução (nanosegundos): 64569
-Duração da execução (segundos): 6.4569e-05
+Soma resultante (aproximação): 50
+Duração da execução (nanosegundos): 422688
+Duração da execução (segundos): 0.000422688
 
 -----------
 DETALHAMENTO
 -----------
 Multiset: [41, 34, 21, 20, 8, 7, 7, 4, 3, 3]
 Configuração ótima fornecida: [21, 8, 7, 7, 4, 3]
+Configuração geradora da soma resultante: [8, 4, 21, 7, 7, 3]

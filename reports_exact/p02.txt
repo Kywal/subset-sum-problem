@@ -8,11 +8,12 @@ Soma da configuração ótima fornecida: 5842
 RESULTADOS
 -----------
 Soma resultante (aproximação): 5842
-Duração da execução (nanosegundos): 353167
-Duração da execução (segundos): 0.000353167
+Duração da execução (nanosegundos): 3643281
+Duração da execução (segundos): 0.003643281
 
 -----------
 DETALHAMENTO
 -----------
 Multiset: [267, 493, 869, 961, 1000, 1153, 1246, 1598, 1766, 1922]
 Configuração ótima fornecida: [869, 961, 1000, 1246, 1766]
+Configuração geradora da soma resultante: [1000, 869, 961, 1246, 1766]

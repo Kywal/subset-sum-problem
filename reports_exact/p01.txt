@@ -8,11 +8,12 @@ Soma da configuração ótima fornecida: 53
 RESULTADOS
 -----------
 Soma resultante (aproximação): 53
-Duração da execução (nanosegundos): 159749
-Duração da execução (segundos): 0.000159749
+Duração da execução (nanosegundos): 252170
+Duração da execução (segundos): 0.00025217
 
 -----------
 DETALHAMENTO
 -----------
 Multiset: [15, 22, 14, 26, 32, 9, 16, 8]
 Configuração ótima fornecida: [22, 14, 9, 8]
+Configuração geradora da soma resultante: [8, 9, 22, 14]
