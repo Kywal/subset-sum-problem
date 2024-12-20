@@ -7,13 +7,14 @@ Soma da configuração ótima fornecida: 252713692787760
 -----------
 RESULTADOS
 -----------
-Soma resultante: 252713692787760
-Duração da execução (nanosegundos): 2894002
-Duração da execução (segundos): 0.002894002
+Soma resultante: 244483146025501
+Duração da execução (nanosegundos): 455486
+Duração da execução (segundos): 0.000455486
 
+Solução aproximada se encontra à 3.26% de distância da solução ótima fornecida.
 -----------
 DETALHAMENTO
 -----------
 Multiset: [77530100515953, 44807016066073, 95108649418535, 17327290160274, 66636931741595, 80092099005078, 74129064442575, 67351947571197, 85674843851455, 2982528029358]
 Configuração ótima fornecida: [85674843851455, 66636931741595, 80092099005078, 2982528029358, 17327290160274]
-Configuração geradora da soma resultante: [17327290160274, 80092099005078, 2982528029358, 66636931741595, 85674843851455]
+Configuração geradora da soma resultante: [17327290160274, 74129064442575, 67351947571197, 85674843851455]

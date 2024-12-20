@@ -22,7 +22,7 @@ def write_report(file_name, data, alg, folder="reports_exact"):
         f"-----------\n"
         f"RESULTADOS\n"
         f"-----------\n"
-        f"Soma resultante (aproximação): {data['final_sum']}\n"
+        f"Soma resultante: {data['final_sum']}\n"
         f"Duração da execução (nanosegundos): {data['duration']}\n"
         f"Duração da execução (segundos): {data['duration_sec']}\n\n"
     )

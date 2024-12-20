@@ -7,13 +7,14 @@ Soma da configuração ótima fornecida: 307
 -----------
 RESULTADOS
 -----------
-Soma resultante: 307
-Duração da execução (nanosegundos): 131598
-Duração da execução (segundos): 0.000131598
+Soma resultante: 302
+Duração da execução (nanosegundos): 132600
+Duração da execução (segundos): 0.0001326
 
+Solução aproximada se encontra à 1.63% de distância da solução ótima fornecida.
 -----------
 DETALHAMENTO
 -----------
 Multiset: [104, 102, 201, 101]
 Configuração ótima fornecida: [104, 102, 101]
-Configuração geradora da soma resultante: [104, 102, 101]
+Configuração geradora da soma resultante: [201, 101]

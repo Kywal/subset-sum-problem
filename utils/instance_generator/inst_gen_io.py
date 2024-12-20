@@ -15,7 +15,7 @@ def write_instance(instance: str, folder="datatest"):
             slash = "/"
 
     file_name = "p"
-    filenumber = len(os.listdir(folder + slash))
+    filenumber = len(os.listdir(folder + slash))+1
 
     if filenumber != 0 and filenumber <= 9:
         file_name = folder + slash + file_name + "0" + str(filenumber) + filetype

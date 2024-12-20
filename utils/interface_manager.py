@@ -37,7 +37,6 @@ def menu(item_menu):
                 item_menu = input("Digite 0 para voltar ao menu ou 5 para encerrar.")
 
         elif (item_menu == '3'):
-
             print("-------------------------------------------------------------")
             print(f"(INSTRUÇÕES) Para adicionar uma instância de teste específica, crie na pasta datatest o arquivo <nome_da_instância>.txt com o seguinte formato:\n",
             f"<valor da soma>\n",
