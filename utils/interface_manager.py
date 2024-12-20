@@ -2,25 +2,38 @@ import os
 from utils.instance_generator.instance_generator import instance_generator
 from utils.file_manager.read_file import read_file
 from utils.file_manager.write_report import write_report
-from utils.run_algs import run_exact, run_aprox
+from utils.run_algs import run_exact_fft, run_exact_simple, run_aprox
 
 def menu(item_menu):
 
     while True:  
+        if(item_menu == "0"):
+
+            test_name = input("(EXATO FFT) Informe o nome da instância que deseja executar (ex.: p01, p02...):\n")
+            t,s,list_o = read_file("datatest/" + test_name + ".txt")
+            if s and t:
+                data = run_exact_fft(t,s,list_o)
+                file_name = test_name + ".txt"
+                write_report(file_name, data, "exact", "reports_exact_fft")
+                print("-" * 30)
+                item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
+            else:
+                print("Não foi possível processar a instância especificada.")
+                item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
 
         if(item_menu == "1"):
 
-            test_name = input("(EXATO) Informe o nome da instância que deseja executar (ex.: p01, p02...):\n")
+            test_name = input("(EXATO SIMPLE) Informe o nome da instância que deseja executar (ex.: p01, p02...):\n")
             t,s,list_o = read_file("datatest/" + test_name + ".txt")
             if s and t:
-                data = run_exact(t,s,list_o)
+                data = run_exact_simple(t,s,list_o)
                 file_name = test_name + ".txt"
-                write_report(file_name, data, "exact", "reports_exact")
+                write_report(file_name, data, "exact", "reports_exact_simple")
                 print("-" * 30)
-                item_menu = input("Digite 0 para voltar ao menu ou 5 para encerrar.\n")
+                item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
             else:
                 print("Não foi possível processar a instância especificada.")
-                item_menu = input("Digite 0 para voltar ao menu ou 5 para encerrar.\n")
+                item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
 
         elif(item_menu == "2"):
 
@@ -31,10 +44,10 @@ def menu(item_menu):
                 file_name = test_name + ".txt"
                 write_report(file_name, data, "aprox", "reports_aprox")
                 print("-" * 30)
-                item_menu = input("Digite 0 para voltar ao menu ou 5 para encerrar.\n")
+                item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
             else:
                 print("Não foi possível processar a instância especificada.")
-                item_menu = input("Digite 0 para voltar ao menu ou 5 para encerrar.\n")
+                item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
 
         elif (item_menu == '3'):
             print("-" * 30)
@@ -65,7 +78,7 @@ def menu(item_menu):
 
             break
 
-        elif (item_menu == '0'):
+        elif (item_menu == '6'):
 
             print_menu()
             item_menu = input()
@@ -95,9 +108,10 @@ def print_menu():
     print("+" + "-" * 30 + "+")
     print("|" + " " * 11 + "MENU" + " " * 15 + "|")
     print("+" + "-" * 30 + "+")
-    print("(1) Digite 1 para executar o EXATO numa instância que já se encontra na pasta.")
+    print("(0) Digite 0 para executar o EXATO FFT numa instância que já se encontra na pasta.")
+    print("(1) Digite 1 para executar o EXATO SIMPLES numa instância que já se encontra na pasta.")
     print("(2) Digite 2 para executar o APROXIMATIVO numa instância que já se encontra na pasta.")
     print("(3) Para instruções sobre instâncias específicas.")
     print("(4) Para gerar uma nova instância aleatória digite 4.")
     print("(5) Para encerrar digite 5.")
-    print("(0) Exibir o menu novamente.")
+    print("(6) Exibir o menu novamente.")

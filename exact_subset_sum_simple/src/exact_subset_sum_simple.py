@@ -1,7 +1,7 @@
 import math
 from collections import defaultdict
 
-def all_subset_sums(S: list[int], u: int):
+def all_subset_sums_simple(S: list[int], u: int):
     n = len(S)
     b = int(math.sqrt(n * math.log(n)))
     subsets_by_mod = defaultdict(list)  # auxiliar
