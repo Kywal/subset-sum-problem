@@ -86,6 +86,7 @@ def menu(item_menu):
             set_start = int(input("Início do intervalo de números: \n"))
             set_end = int(input("Final do intervalo de números: \n"))
             instance_generator(set_len, (set_start, set_end))
+            print_menu()
             item_menu = input()
 
         elif (item_menu == '5'):

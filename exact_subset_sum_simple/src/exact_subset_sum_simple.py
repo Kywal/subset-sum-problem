@@ -4,7 +4,7 @@ from collections import defaultdict
 def all_subset_sums_simple(S: list[int], u: int):
     n = len(S)
     b = int(math.sqrt(n * math.log(n)))
-    subsets_by_mod = defaultdict(list)  # auxiliar
+    subsets_by_mod = defaultdict(list)  
     
     for x in S:
         subsets_by_mod[x % b].append(x)
@@ -14,7 +14,7 @@ def all_subset_sums_simple(S: list[int], u: int):
         S_l = subsets_by_mod[l]
         Q_l = [(x - l) // b for x in S_l]
         S_card = all_subset_sums_card(Q_l, u // b)
-        R_l = [(z * b + l * j, [q * b + l for q in subset]) for (z, j, subset) in S_card if z * b + l * j <= u] # for ali para capturar o conjunto gerador, acho que aumentou o custo do role ein
+        R_l = [(z * b + l * j, [q * b + l for q in subset]) for (z, j, subset) in S_card if z * b + l * j <= u] 
         if len(R_l) != 0:
             results.append(R_l)
 
