@@ -1,5 +1,5 @@
 # subset-sum-problem
-Implementação de um esquema aproximativo para o problema da soma de subconjuntos.
+Implementação de algoritmos exatos e aproximativo para o subset_sum_problem.
 
 ## Execução
 
