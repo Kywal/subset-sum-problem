@@ -1,19 +1,19 @@
 -------------------
 DADOS DA INSTÂNCIA 
 -------------------
-Tamanho do conjunto: 10 
-Soma objetivo: 137197333887833
-Soma da configuração ótima fornecida: 137197333887833
+Tamanho do conjunto: 20 
+Soma objetivo: 8431396
+Soma da configuração ótima fornecida: 8431396
 -----------
 RESULTADOS
 -----------
-Soma resultante: 137197333887833
-Duração da execução (nanosegundos): 596909
-Duração da execução (segundos): 0.000596909
+Soma resultante: 8431396
+Duração da execução (nanosegundos): 813060539
+Duração da execução (segundos): 0.813060539
 
 -----------
 DETALHAMENTO
 -----------
-Multiset: [84997158662215, 3837850577147, 42172437919547, 14748951940786, 36876847569906, 34086213279198, 53100446457862, 2802335340078, 85913834360782, 10568801379998]
-Configuração ótima fornecida: [3837850577147, 85913834360782, 10568801379998, 36876847569906]
-Configuração geradora da soma resultante: [36876847569906, 85913834360782, 10568801379998, 3837850577147]
+Multiset: [512051, 718096, 390436, 620337, 334946, 444316, 814599, 696967, 362914, 930056, 118990, 406239, 669829, 184507, 288009, 180565, 717206, 783104, 863292, 922830]
+Configuração ótima fornecida: [814599, 390436, 930056, 696967, 717206, 334946, 718096, 512051, 444316, 863292, 118990, 184507, 922830, 783104]
+Configuração geradora da soma resultante: [717206, 783104, 512051, 718096, 930056, 184507, 814599, 334946, 863292, 390436, 118990, 444316, 696967, 922830]

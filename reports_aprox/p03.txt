@@ -1,20 +1,20 @@
 -------------------
 DADOS DA INSTÂNCIA 
 -------------------
-Tamanho do conjunto: 21 
-Soma objetivo: 2463098
-Soma da configuração ótima fornecida: 2463098
+Tamanho do conjunto: 10 
+Soma objetivo: 47
+Soma da configuração ótima fornecida: 47
 -----------
 RESULTADOS
 -----------
-Soma resultante (aproximação): 2437381
-Duração da execução (nanosegundos): 1496245
-Duração da execução (segundos): 0.001496245
+Soma resultante: 47
+Duração da execução (nanosegundos): 378819
+Duração da execução (segundos): 0.000378819
 
-Solução aproximada se encontra à 1.04% de distância da solução ótima fornecida.
+Solução aproximada se encontra à 0.0% de distância da solução ótima fornecida.
 -----------
 DETALHAMENTO
 -----------
-Multiset: [518533, 1037066, 2074132, 1648264, 796528, 1593056, 686112, 1372224, 244448, 488896, 977792, 1955584, 1411168, 322336, 644672, 1289344, 78688, 157376, 314752, 629504, 1259008]
-Configuração ótima fornecida: [1037066, 796528, 629504]
-Configuração geradora da aproximação: [518533, 1289344, 629504]
+Multiset: [21, 24, 11, 17, 30, 40, 7, 45, 7, 22]
+Configuração ótima fornecida: [30, 17]
+Configuração geradora da soma resultante: [17, 30]

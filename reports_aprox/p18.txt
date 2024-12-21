@@ -1,0 +1,20 @@
+-------------------
+DADOS DA INSTÂNCIA 
+-------------------
+Tamanho do conjunto: 50 
+Soma objetivo: 528
+Soma da configuração ótima fornecida: 528
+-----------
+RESULTADOS
+-----------
+Soma resultante: 526
+Duração da execução (nanosegundos): 8012992
+Duração da execução (segundos): 0.008012992
+
+Solução aproximada se encontra à 0.38% de distância da solução ótima fornecida.
+-----------
+DETALHAMENTO
+-----------
+Multiset: [162, 18, 151, 180, 169, 182, 42, 185, 71, 130, 137, 95, 170, 113, 192, 106, 39, 49, 148, 186, 6, 162, 194, 67, 168, 156, 197, 174, 49, 32, 20, 116, 89, 48, 47, 123, 35, 11, 192, 199, 69, 198, 28, 169, 13, 166, 157, 124, 137, 190]
+Configuração ótima fornecida: [186, 194, 148]
+Configuração geradora da soma resultante: [18, 182, 39, 49, 186, 11, 28, 13]

@@ -1,20 +1,20 @@
 -------------------
 DADOS DA INSTÂNCIA 
 -------------------
-Tamanho do conjunto: 9 
-Soma objetivo: 100
-Soma da configuração ótima fornecida: 100
+Tamanho do conjunto: 10 
+Soma objetivo: 197
+Soma da configuração ótima fornecida: 197
 -----------
 RESULTADOS
 -----------
-Soma resultante (aproximação): 98
-Duração da execução (nanosegundos): 340184
-Duração da execução (segundos): 0.000340184
+Soma resultante: 193
+Duração da execução (nanosegundos): 445029
+Duração da execução (segundos): 0.000445029
 
-Solução aproximada se encontra à 2.0% de distância da solução ótima fornecida.
+Solução aproximada se encontra à 2.03% de distância da solução ótima fornecida.
 -----------
 DETALHAMENTO
 -----------
-Multiset: [81, 80, 43, 40, 30, 26, 12, 11, 9]
-Configuração ótima fornecida: [80, 11, 9]
-Configuração geradora da aproximação: [40, 26, 12, 11, 9]
+Multiset: [26, 43, 37, 35, 27, 45, 34, 38, 21, 24]
+Configuração ótima fornecida: [38, 26, 24, 37, 45, 27]
+Configuração geradora da soma resultante: [26, 43, 45, 34, 21, 24]

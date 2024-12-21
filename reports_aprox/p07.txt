@@ -1,0 +1,20 @@
+-------------------
+DADOS DA INSTÂNCIA 
+-------------------
+Tamanho do conjunto: 20 
+Soma objetivo: 92
+Soma da configuração ótima fornecida: 92
+-----------
+RESULTADOS
+-----------
+Soma resultante: 92
+Duração da execução (nanosegundos): 1901407
+Duração da execução (segundos): 0.001901407
+
+Solução aproximada se encontra à 0.0% de distância da solução ótima fornecida.
+-----------
+DETALHAMENTO
+-----------
+Multiset: [37, 7, 25, 21, 33, 6, 21, 6, 50, 35, 44, 30, 2, 3, 32, 25, 2, 17, 11, 2]
+Configuração ótima fornecida: [11, 44, 2, 32, 3]
+Configuração geradora da soma resultante: [7, 25, 21, 33, 6]

@@ -1,20 +1,20 @@
 -------------------
 DADOS DA INSTÂNCIA 
 -------------------
-Tamanho do conjunto: 10 
-Soma objetivo: 252713692787760
-Soma da configuração ótima fornecida: 252713692787760
+Tamanho do conjunto: 50 
+Soma objetivo: 2769
+Soma da configuração ótima fornecida: 2769
 -----------
 RESULTADOS
 -----------
-Soma resultante: 244483146025501
-Duração da execução (nanosegundos): 455486
-Duração da execução (segundos): 0.000455486
+Soma resultante: 2755
+Duração da execução (nanosegundos): 15432895
+Duração da execução (segundos): 0.015432895
 
-Solução aproximada se encontra à 3.26% de distância da solução ótima fornecida.
+Solução aproximada se encontra à 0.51% de distância da solução ótima fornecida.
 -----------
 DETALHAMENTO
 -----------
-Multiset: [77530100515953, 44807016066073, 95108649418535, 17327290160274, 66636931741595, 80092099005078, 74129064442575, 67351947571197, 85674843851455, 2982528029358]
-Configuração ótima fornecida: [85674843851455, 66636931741595, 80092099005078, 2982528029358, 17327290160274]
-Configuração geradora da soma resultante: [17327290160274, 74129064442575, 67351947571197, 85674843851455]
+Multiset: [185, 140, 167, 139, 182, 14, 106, 32, 117, 128, 25, 135, 149, 181, 129, 117, 148, 143, 96, 106, 189, 92, 66, 181, 127, 144, 73, 199, 176, 5, 111, 44, 10, 178, 58, 160, 1, 90, 19, 14, 25, 188, 148, 81, 51, 176, 199, 38, 114, 56]
+Configuração ótima fornecida: [106, 56, 199, 181, 32, 148, 182, 25, 14, 58, 148, 106, 176, 185, 129, 135, 38, 189, 199, 160, 44, 178, 81]
+Configuração geradora da soma resultante: [185, 140, 167, 139, 182, 14, 32, 117, 128, 25, 135, 181, 106, 189, 66, 144, 176, 44, 160, 90, 19, 14, 81, 51, 114, 56]

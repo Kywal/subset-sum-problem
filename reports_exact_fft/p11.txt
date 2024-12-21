@@ -1,0 +1,19 @@
+-------------------
+DADOS DA INSTÂNCIA 
+-------------------
+Tamanho do conjunto: 20 
+Soma objetivo: 3751143
+Soma da configuração ótima fornecida: 3751143
+-----------
+RESULTADOS
+-----------
+Soma resultante: 3751143
+Duração da execução (nanosegundos): 987986889194
+Duração da execução (segundos): 987.986889194
+
+-----------
+DETALHAMENTO
+-----------
+Multiset: [514805, 591838, 372499, 155706, 815396, 277277, 562318, 826111, 254247, 939526, 786348, 986604, 206624, 784771, 97982, 434691, 160294, 312608, 151336, 718516]
+Configuração ótima fornecida: [312608, 277277, 206624, 939526, 372499, 97982, 826111, 718516]
+Configuração geradora da soma resultante: []

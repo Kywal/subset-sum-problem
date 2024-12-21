@@ -1,19 +1,19 @@
 -------------------
 DADOS DA INSTÂNCIA 
 -------------------
-Tamanho do conjunto: 10 
-Soma objetivo: 161633147699578
-Soma da configuração ótima fornecida: 161633147699578
+Tamanho do conjunto: 20 
+Soma objetivo: 5259733
+Soma da configuração ótima fornecida: 5259733
 -----------
 RESULTADOS
 -----------
-Soma resultante: 161633147699578
-Duração da execução (nanosegundos): 358535
-Duração da execução (segundos): 0.000358535
+Soma resultante: 5259733
+Duração da execução (nanosegundos): 966816000
+Duração da execução (segundos): 0.966816
 
 -----------
 DETALHAMENTO
 -----------
-Multiset: [29409067133431, 834045900128, 19277806218944, 90891401174334, 8576932552894, 83782372802335, 92638473605570, 58572968678299, 45668456127934, 28649213575912]
-Configuração ótima fornecida: [83782372802335, 19277806218944, 58572968678299]
-Configuração geradora da soma resultante: [19277806218944, 83782372802335, 58572968678299]
+Multiset: [262068, 406149, 648833, 172666, 624678, 546876, 211437, 85740, 85794, 502599, 131289, 481568, 89533, 506366, 284402, 231452, 7337, 979384, 293806, 30006]
+Configuração ótima fornecida: [284402, 231452, 211437, 131289, 979384, 502599, 172666, 30006, 506366, 7337, 89533, 85794, 85740, 406149, 262068, 648833, 624678]
+Configuração geradora da soma resultante: [506366, 979384, 7337, 262068, 406149, 211437, 85794, 648833, 89533, 172666, 85740, 131289, 231452, 30006, 624678, 502599, 284402]

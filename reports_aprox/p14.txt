@@ -1,0 +1,20 @@
+-------------------
+DADOS DA INSTÂNCIA 
+-------------------
+Tamanho do conjunto: 20 
+Soma objetivo: 6486708
+Soma da configuração ótima fornecida: 6486708
+-----------
+RESULTADOS
+-----------
+Soma resultante: 6373727
+Duração da execução (nanosegundos): 2877051
+Duração da execução (segundos): 0.002877051
+
+Solução aproximada se encontra à 1.74% de distância da solução ótima fornecida.
+-----------
+DETALHAMENTO
+-----------
+Multiset: [522262, 732326, 413378, 676841, 264531, 569450, 945610, 271975, 202117, 783266, 80232, 821620, 95466, 249886, 906519, 315290, 720162, 283621, 693334, 85520]
+Configuração ótima fornecida: [783266, 821620, 249886, 271975, 720162, 315290, 569450, 80232, 732326, 85520, 264531, 202117, 283621, 413378, 693334]
+Configuração geradora da soma resultante: [522262, 732326, 413378, 676841, 945610, 202117, 783266, 315290, 720162, 283621, 693334, 85520]

@@ -1,18 +1,19 @@
 -------------------
 DADOS DA INSTÂNCIA 
 -------------------
-Tamanho do conjunto: 10 
-Soma objetivo: 50
-Soma da configuração ótima fornecida: 50
+Tamanho do conjunto: 20 
+Soma objetivo: 92
+Soma da configuração ótima fornecida: 92
 -----------
 RESULTADOS
 -----------
-Soma resultante: 50
-Duração da execução (nanosegundos): 54022
-Duração da execução (segundos): 5.4022e-05
+Soma resultante: 92
+Duração da execução (nanosegundos): 32235069
+Duração da execução (segundos): 0.032235069
 
 -----------
 DETALHAMENTO
 -----------
-Multiset: [25, 27, 3, 12, 6, 15, 9, 30, 21, 19]
-Configuração ótima fornecida: [25, 6, 19]
+Multiset: [37, 7, 25, 21, 33, 6, 21, 6, 50, 35, 44, 30, 2, 3, 32, 25, 2, 17, 11, 2]
+Configuração ótima fornecida: [11, 44, 2, 32, 3]
+Configuração geradora da soma resultante: [17, 25, 11, 33, 6]
