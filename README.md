@@ -3,7 +3,7 @@ Implementação de algoritmos exatos e aproximativo para o subset_sum_problem.
 
 ## Execução
 
-1. Após clonar o repositório, acesse a pasta do projeto:
+1. Após clonar o repositório (branch feat/exact-final), acesse a pasta do projeto:
    
    ```bash
    cd subset-sum-problem
