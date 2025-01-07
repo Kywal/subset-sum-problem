@@ -15,8 +15,22 @@ def fitness(x: list[int], w: list[int], c: int):
         s = 1
     return s * (c - px) + (1 - s) * px
 
-# def crossover():
-#
+def difference_degree(parent_x: list[int], parent_y: list[int]):
+    multiset_size = len(parent_x)
+    nd = 0
+    for i in range(multiset_size):
+        if parent_x[i] != parent_y[i]:
+            nd += 1
+    ng = multiset_size
+    return nd / ng 
+
+def crossover(parent_x: list[int], parent_y: list[int]):
+    point = random.randint(1, len(parent_x) - 1)
+    child1 = parent_x[:point] + parent_y[point:]
+    child2 = parent_y[:point] + parent_x[point:]
+    return child1, child2
+
+
 # def mutate():
 #
 # def selection():
