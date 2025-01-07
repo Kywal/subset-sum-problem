@@ -108,3 +108,4 @@ def genetic_subset_sum(w: list[int], c: int, population_size: int, generations: 
         population = new_population[:population_size]
 
     # se o for acaba (ou seja, limite de geracoes) retornamos o melhor aqui
+    # return melhor
