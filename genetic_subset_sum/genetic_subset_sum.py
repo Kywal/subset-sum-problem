@@ -21,7 +21,7 @@ def fitness(x: list[int], w: list[int], c: int):
 #
 # def selection():
 
-def generate_population(multiset_size: int, population_size: int):
+def generate_first_population(multiset_size: int, population_size: int):
     population = set()
 
     for _ in range(0, population_size):
