@@ -26,22 +26,22 @@ def crossover(parent_x: [list[int], int], parent_y: [list[int], int]):
     return child1, child2
 
 
-def mutate(parent_x: list[int], parent_y: list[int]):
-    qty_mutation_x = random.randint(1, len(parent_x))
-    qty_mutation_y = random.randint(1, len(parent_y))
+def mutate(parent_x: [list[int], int], parent_y: [list[int], int]):
+    qty_mutation_x = random.randint(1, len(parent_x[0]))
+    qty_mutation_y = random.randint(1, len(parent_y[0]))
 
-    child_x = parent_x
-    child_y = parent_y
+    child_x = (parent_x[0], -1)
+    child_y = (parent_y[0], -1)
 
     invert = lambda bin_num :  1 if bin_num == 0 else 1
 
     for _ in range(qty_mutation_x):
-        mutation_index = random.randint(0, len(parent_x))
-        child_x[mutation_index] = invert(child_x[mutation_index])
+        mutation_index = random.randint(0, len(parent_x[0]))
+        child_x[0][mutation_index] = invert(child_x[0][mutation_index])
 
     for _ in range(qty_mutation_y):
-        mutation_index = random.randint(0, len(parent_y))
-        child_y[mutation_index] = invert(child_y[mutation_index])
+        mutation_index = random.randint(0, len(parent_y[0]))
+        child_y[0][mutation_index] = invert(child_y[0][mutation_index])
 
     return child_x, child_y
 
@@ -72,14 +72,24 @@ def generate_new_population(parents: list[list[int], list[int], int],
         diff_deg = parent_pair[2]
 
         if diff_deg > setting_diff_degree:
-            new_population, children_generated = generate_children(parent_pair, crossover, new_population, children_generated)
+            new_population, children_generated = generate_children(
+                parent_pair,
+                crossover,
+                new_population,
+                children_generated
+            )
 
     for parent_pair in parents:
 
         diff_deg = parent_pair[2]
 
         if diff_deg != setting_diff_degree and children_generated != population_size:
-            new_population, children_generated = generate_children(parent_pair, mutate, new_population, children_generated)
+            new_population, children_generated = generate_children(
+                parent_pair,
+                mutate,
+                new_population,
+                children_generated
+            )
 
     return new_population, children_generated
 
