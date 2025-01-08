@@ -41,6 +41,4 @@ def select_next_generation_parents(population: set[tuple[list[int], int]], child
             (first_parent, second_parent, diff_degree)
         )
 
-    # sort by parent pair difference degree
-    parents.sort(key = lambda p1_p2_diffdeg: p1_p2_diffdeg[2])
     return parents
