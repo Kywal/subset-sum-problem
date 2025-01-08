@@ -1,3 +1,4 @@
+from typing import Callable
 from avaliation import fitness
 import random
 
@@ -44,26 +45,41 @@ def mutate(parent_x: list[int], parent_y: list[int]):
 
     return child_x, child_y
 
-def generate_new_population(parents: list[list[int], list[int], int], setting_diff_degree):
-    new_population = []
-    children_generated = 0
 
+def generate_children(parents: (list[int],list[int], int),
+                      reproduction_method: Callable[[list[int],list[int]],(list[int],list[int])],
+                      new_population: list[list[int]],
+                      children_generated: int
+                      ):
+
+    child1, child2 = reproduction_method(parents[0], parents[1])
+    new_population.append(child1)
+    new_population.append(child2)
+    children_generated += 2
+
+    return new_population, children_generated
+
+
+def generate_new_population(parents: list[list[int], list[int], int],
+                            population_size: int,
+                            children_generated: int,
+                            setting_diff_degree: int
+                            ):
+
+    new_population = []
     for parent_pair in parents:
 
-        parent_x = parent_pair[0]
-        parent_y = parent_pair[1]
         diff_deg = parent_pair[2]
 
         if diff_deg > setting_diff_degree:
-            child1, child2 = crossover(parent_x, parent_y)
-            new_population.append(child1)
-            new_population.append(child2)
-            children_generated += 2
-        else:
-            child_x, child_y = mutate(parent_x, parent_y)
-            new_population.append(child_x)
-            new_population.append(child_y)
-            children_generated += 2
+            new_population, children_generated = generate_children(parent_pair, crossover, new_population, children_generated)
+
+    for parent_pair in parents:
+
+        diff_deg = parent_pair[2]
+
+        if diff_deg != setting_diff_degree and children_generated != population_size:
+            new_population, children_generated = generate_children(parent_pair, mutate, new_population, children_generated)
 
     return new_population, children_generated
 
