@@ -2,7 +2,7 @@ import os
 from utils.instance_generator.instance_generator import instance_generator
 from utils.file_manager.read_file import read_file
 from utils.file_manager.write_report import write_report
-from utils.run_algs import run_exact_fft, run_exact_simple, run_aprox, run_exact_mp
+from utils.run_algs import run_exact_fft, run_exact_simple, run_aprox, run_exact_mp,  run_genetic
 
 def menu(item_menu):
 
@@ -21,6 +21,18 @@ def menu(item_menu):
                 print("Não foi possível processar a instância especificada.")
                 item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
 
+        elif (item_menu == '8'):
+            test_name = input("(GENETICO) Informe o nome da instância que deseja executar (ex.: p01, p02...):\n")
+            t,s,list_o = read_file("datatest/" + test_name + ".txt")
+            if s and t:
+                data = run_genetic(t,s,list_o)
+                file_name = test_name + ".txt"
+                write_report(file_name, data, "genetic", "reports_genetic")
+                print("-" * 30)
+                item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
+            else:
+                print("Não foi possível processar a instância especificada.")
+                item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
         elif(item_menu == "0"):
 
             test_name = input("(EXATO FFT) Informe o nome da instância que deseja executar (ex.: p01, p02...):\n")
@@ -127,6 +139,7 @@ def print_menu():
     print("(1) Digite 1 para executar o EXATO SIMPLES numa instância que já se encontra na pasta.")
     print("(2) Digite 2 para executar o APROXIMATIVO numa instância que já se encontra na pasta.")
     print("(7) Digite 7 para executar o EXATO MP numa instância que já se encontra na pasta.")
+    print("(8) Digite 8 para executar o GENETICO numa instância que já se encontra na pasta.")
     print("(3) Para instruções sobre instâncias específicas.")
     print("(4) Para gerar uma nova instância aleatória digite 4.")
     print("(5) Para encerrar digite 5.")

@@ -1,5 +1,5 @@
-from reproduction import crossover, mutate, generate_children
-from avaliation import fitness
+from genetic_subset_sum.src.reproduction import crossover, mutate, generate_children
+from genetic_subset_sum.src.avaliation import fitness
 import random
 
 

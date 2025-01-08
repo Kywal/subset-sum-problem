@@ -1,8 +1,8 @@
-from population_generator import generate_first_population, generate_new_population
-from avaliation import sum_p, calculate_fitness_of_all_population, select_next_generation_parents
+from genetic_subset_sum.src.population_generator import generate_first_population, generate_new_population
+from genetic_subset_sum.src.avaliation import sum_p, calculate_fitness_of_all_population, select_next_generation_parents
 
 
-def genetic_subset_sum(multiset: list[int], target: int, population_size: int, generations: int, setting_degree_init: int, gamma:float = 0.9):
+def genetic_subset_sum(multiset: list[int], target: int, population_size: int, generations: int, setting_degree_init: int, gamma: float = 0.9):
     population = generate_first_population(multiset, target, population_size)
     setting_diff_degree = setting_degree_init
     best_specimen = []
