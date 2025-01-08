@@ -1,4 +1,4 @@
-from reproduction import generate_first_population, generate_new_population
+from population_generator import generate_first_population, generate_new_population
 from avaliation import sum_p, calculate_fitness_of_all_population, select_next_generation_parents
 
 
