@@ -19,10 +19,10 @@ def generate_first_population(multiset: list[int], target: int, population_size:
 
     return population
 
-def crossover(parent_x: list[int], parent_y: list[int]):
-    point = random.randint(1, len(parent_x) - 1)
-    child1 = parent_x[:point] + parent_y[point:]
-    child2 = parent_y[:point] + parent_x[point:]
+def crossover(parent_x: [list[int], int], parent_y: [list[int], int]):
+    point = random.randint(1, len(parent_x[0]) - 1)
+    child1 = (parent_x[0][:point] + parent_y[0][point:], -1)
+    child2 = (parent_y[0][:point] + parent_x[0][point:], -1)
     return child1, child2
 
 
