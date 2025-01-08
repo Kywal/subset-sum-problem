@@ -1,12 +1,12 @@
-from reproduction import crossover, mutate, generate_first_population
-from avaliation import fitness, difference_degree
+from reproduction import crossover, mutate, generate_first_population, generate_new_population
+from avaliation import fitness, difference_degree, select_next_generation_parents
 
 
-def genetic_subset_sum(w: list[int], c: int, population_size: int, generations: int, Ds_init: int, gamma:float = 0.9):
+def genetic_subset_sum(w: list[int], c: int, population_size: int, generations: int, setting_degree_init: int, gamma:float = 0.9):
     multiset_size = len(w)
     population = generate_first_population(multiset_size, population_size)
 
-    Ds = Ds_init
+    setting_diff_degree = setting_degree_init
 
     for generation in range(generations):
         
@@ -16,29 +16,18 @@ def genetic_subset_sum(w: list[int], c: int, population_size: int, generations: 
         # if melhor == c: 
         #   return melhor
 
-        nc = 0 
+        children_generated = 0
         new_population = []
 
-        while nc < population_size:
+        while children_generated < population_size:
 
-            # seleciona par de pais com selection e poe nessas variaveis 
-            parent_x = []
-            parent_y = []
+            parents = select_next_generation_parents(population, children_generated)
+            newpopulation_qtychildren = generate_new_population(parents, setting_diff_degree)
 
-            di = difference_degree(parent_x, parent_y)
+            new_population = newpopulation_qtychildren[0]
+            children_generated = newpopulation_qtychildren[1]
 
-            if di > Ds:
-                child1, child2 = crossover(parent_x, parent_y)
-                new_population.appent(child1)
-                new_population.appent(child2)
-                nc += 2
-            else:
-                child_x, child_y = mutate(parent_x,parent_y)
-                new_population.appent(child_x)
-                new_population.appent(child_y)
-                nc += 2
-
-            Ds = gamma * Ds
+            setting_diff_degree = gamma * setting_diff_degree
 
         population = new_population[:population_size]
 
