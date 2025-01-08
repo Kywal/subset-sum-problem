@@ -1,3 +1,5 @@
+import random
+
 def sum_p(x: list[int], w: list[int]):
     multiset_size = len(x)
     result = 0
@@ -21,4 +23,24 @@ def difference_degree(parent_x: list[int], parent_y: list[int]):
     ng = multiset_size
     return nd / ng
 
-# def selection():
+def select_next_generation_parents(population: set[tuple[list[int], int]], children_generated: int):
+    population_list = list(population)
+    population_size = len(population)
+    parent_pairs_qty = (population_size - children_generated) // 2
+    parents = []
+
+    for _ in range(parent_pairs_qty):
+        first_parent_index = random.randint(0,population_size-1)
+        second_parent_index = random.randint(0,population_size-1)
+
+        first_parent = population_list[first_parent_index]
+        second_parent = population_list[second_parent_index]
+        diff_degree = difference_degree(first_parent[0], second_parent[0])
+
+        parents.append(
+            (first_parent, second_parent, diff_degree)
+        )
+
+    # sort by parent pair difference degree
+    parents.sort(key = lambda p1_p2_diffdeg: p1_p2_diffdeg[2])
+    return parents
