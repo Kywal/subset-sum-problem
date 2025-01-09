@@ -1,8 +1,5 @@
 import math
 
-import math
-import cmath
-
 def fft(poly, invert):
     n = len(poly)
     if n == 1:

@@ -1,9 +1,9 @@
 import time
-from exact_subset_sum_simple.src.exact_subset_sum_simple import all_subset_sums_simple
-from exact_subset_sum_fft.src.exact_subset_sum_fft import all_subset_sums_fft
-from exact_subset_sum_mp.src.exact_subset_sum_mp import all_subset_sums_mp
+from exact_subset_sum.exact_subset_sum_simple.src.exact_subset_sum_simple import all_subset_sums_simple
+from exact_subset_sum.exact_subset_sum_fft.src.exact_subset_sum_fft import all_subset_sums_fft
+from exact_subset_sum.exact_subset_sum_mp.src.exact_subset_sum_mp import all_subset_sums_mp
 from cormen_approximation_scheme.src.approx_subset_sum import approx_subset_sum
-from genetic_subset_sum.src.genetic_subset_sum import genetic_subset_sum
+from meta_heuristics_subset_sum.genetic_subset_sum.src.genetic_subset_sum import genetic_subset_sum
 
 def run_exact_fft(t,s,list_o) -> dict[str, any]:
     start_time = time.perf_counter_ns()
