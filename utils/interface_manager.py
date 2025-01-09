@@ -28,8 +28,7 @@ def menu(item_menu):
                 print("-" * 30)
                 item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
             else:
-                print("Não foi possível processar a instância especificada.")
-                item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
+                item_menu = instance_processing_error()
 
         elif (item_menu == '8'):
             test_name = input("(GENETICO) Informe o nome da instância que deseja executar (ex.: p01, p02...):\n")
@@ -41,8 +40,7 @@ def menu(item_menu):
                 print("-" * 30)
                 item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
             else:
-                print("Não foi possível processar a instância especificada.")
-                item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
+                item_menu = instance_processing_error()
         elif(item_menu == "0"):
 
             test_name = input("(EXATO FFT) Informe o nome da instância que deseja executar (ex.: p01, p02...):\n")
@@ -54,8 +52,7 @@ def menu(item_menu):
                 print("-" * 30)
                 item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
             else:
-                print("Não foi possível processar a instância especificada.")
-                item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
+                item_menu = instance_processing_error()
 
         if(item_menu == "1"):
 
@@ -68,8 +65,7 @@ def menu(item_menu):
                 print("-" * 30)
                 item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
             else:
-                print("Não foi possível processar a instância especificada.")
-                item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
+                item_menu = instance_processing_error()
 
         elif(item_menu == "2"):
 
@@ -82,8 +78,7 @@ def menu(item_menu):
                 print("-" * 30)
                 item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
             else:
-                print("Não foi possível processar a instância especificada.")
-                item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
+                item_menu = instance_processing_error()
 
         elif (item_menu == '3'):
             print("-" * 30)
@@ -154,3 +149,9 @@ def print_menu():
     print("(4) Para gerar uma nova instância aleatória digite 4.")
     print("(5) Para encerrar digite 5.")
     print("(6) Exibir o menu novamente.")
+
+def instance_processing_error():
+    print("Não foi possível processar a instância especificada.")
+    item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
+    
+    return item_menu
