@@ -7,13 +7,13 @@ Soma da configuração ótima fornecida: 159
 -----------
 RESULTADOS
 -----------
-Soma resultante: 305
-Duração da execução (nanosegundos): 63164790
-Duração da execução (segundos): 0.06316479
+Soma resultante: 159
+Duração da execução (nanosegundos): 477045
+Duração da execução (segundos): 0.000477045
 
 -----------
 DETALHAMENTO
 -----------
 Multiset: [41, 17, 14, 36, 27, 46, 29, 46, 13, 36]
 Configuração ótima fornecida: [36, 36, 41, 46]
-Configuração geradora da soma resultante: [41, 17, 14, 36, 27, 46, 29, 46, 13, 36]
+Configuração geradora da soma resultante: [14, 36, 27, 46, 36]

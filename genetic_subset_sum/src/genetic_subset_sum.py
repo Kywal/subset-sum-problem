@@ -8,12 +8,11 @@ def genetic_subset_sum(multiset: list[int], target: int, population_size: int, g
     best_specimen = []
 
     for generation in range(generations):
-
         # sort first population by fitness
         population.sort(key = lambda specimen : specimen[1])
         best_specimen = population[0]
         print(best_specimen)
-        
+
         if sum_p(best_specimen[0], multiset) == target:
             return best_specimen
 

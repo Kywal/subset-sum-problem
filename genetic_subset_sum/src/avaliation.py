@@ -7,9 +7,9 @@ def sum_p(x: list[int], w: list[int]):
         result += x[i] * w[i]
     return result
 
-def fitness(x: list[int], w: list[int], c: int):
+def fitness(solution: list[int], w: list[int], c: int):
     s = 0
-    px = sum_p(x, w)
+    px = sum_p(solution, w)
     if c - px >= 0:
         s = 1
     return s * (c - px) + (1 - s) * px
@@ -45,8 +45,10 @@ def select_next_generation_parents(population: set[tuple[list[int], int]], child
 
 def calculate_fitness_of_all_population(multiset: list[int], target: int, population: list[[list[int], int]]):
 
-    for individual in population:
-        individual = (individual[0],fitness(individual[0], multiset, target))
+    for i in range(len(population)):
+        individual = population[i]
+        fitness_value = fitness(individual[0], multiset, target)
+        population[i] = (individual[0], fitness_value)
 
     return population
 
