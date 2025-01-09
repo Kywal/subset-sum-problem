@@ -12,7 +12,7 @@ def generate_first_population(multiset: list[int], target: int, population_size:
         specimen = [[0 for _ in range(multiset_size)], -1]
 
         for _ in range(0, qty_of_ones_on_dna):
-            one_index = random.randint(0, multiset_size)
+            one_index = random.randint(0, multiset_size - 1)
             specimen[0][one_index] = 1
 
         specimen[1] = fitness(specimen[0], multiset, target)

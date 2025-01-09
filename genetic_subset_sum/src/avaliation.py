@@ -46,7 +46,7 @@ def select_next_generation_parents(population: set[tuple[list[int], int]], child
 def calculate_fitness_of_all_population(multiset: list[int], target: int, population: list[[list[int], int]]):
 
     for individual in population:
-        individual[1] = fitness(individual[0], multiset, target)
+        individual = (individual[0],fitness(individual[0], multiset, target))
 
     return population
 

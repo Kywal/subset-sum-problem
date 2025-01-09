@@ -74,9 +74,10 @@ def run_genetic(t,s,list_o) -> dict[str, any]:
     start_time = time.perf_counter_ns()
     result = genetic_subset_sum(s, t, 50, 100, 1)
     end_time = time.perf_counter_ns()
-
-    final_subset = [s[i] for i in range(len(s)) if result[i] == 1]
-
+    
+    final_subset = [s[i] for i in range(len(result[0])) if result[0][i] == 1]
+    print(final_subset)
+    
     data = {
         "len" : len (s),
         "t" : t,
