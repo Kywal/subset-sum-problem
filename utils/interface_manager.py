@@ -25,8 +25,7 @@ def menu(item_menu):
                 data = run_exact_mp(t,s,list_o)
                 file_name = test_name + file_type
                 write_report(file_name, data, "exact", report_exact_mp_path)
-                print("-" * 30)
-                item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
+                item_menu = print_ending_report_writing()
             else:
                 item_menu = instance_processing_error()
 
@@ -37,8 +36,7 @@ def menu(item_menu):
                 data = run_genetic(t,s,list_o)
                 file_name = test_name + file_type
                 write_report(file_name, data, "genetic", report_genetic_path)
-                print("-" * 30)
-                item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
+                item_menu = print_ending_report_writing()
             else:
                 item_menu = instance_processing_error()
         elif(item_menu == "0"):
@@ -49,8 +47,7 @@ def menu(item_menu):
                 data = run_exact_fft(t,s,list_o)
                 file_name = test_name + file_type
                 write_report(file_name, data, "exact", report_exact_fft_path)
-                print("-" * 30)
-                item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
+                item_menu = print_ending_report_writing()
             else:
                 item_menu = instance_processing_error()
 
@@ -62,8 +59,7 @@ def menu(item_menu):
                 data = run_exact_simple(t,s,list_o)
                 file_name = test_name + file_type
                 write_report(file_name, data, "exact", report_exact_simple_path)
-                print("-" * 30)
-                item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
+                item_menu = print_ending_report_writing()
             else:
                 item_menu = instance_processing_error()
 
@@ -75,8 +71,7 @@ def menu(item_menu):
                 data = run_aprox(t,s,list_o)
                 file_name = test_name + file_type
                 write_report(file_name, data, "aprox", report_aprox_path)
-                print("-" * 30)
-                item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
+                item_menu = print_ending_report_writing()
             else:
                 item_menu = instance_processing_error()
 
@@ -154,4 +149,11 @@ def instance_processing_error():
     print("Não foi possível processar a instância especificada.")
     item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
     
+    return item_menu
+
+def print_ending_report_writing():
+    qty_dashes_after_write_report = 30
+
+    print("-" * qty_dashes_after_write_report)
+    item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
     return item_menu
