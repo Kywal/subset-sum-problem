@@ -6,15 +6,25 @@ from utils.run_algs import run_exact_fft, run_exact_simple, run_aprox, run_exact
 
 def menu(item_menu):
 
+    datatest_path = "all_datatests/datatest"
+    report_path = "all_reports/"
+    file_type = ".txt"
+
+    report_aprox_path = report_path + "reports_aprox"
+    report_exact_fft_path = report_path + "reports_exact_ff"
+    report_exact_mp_path = report_path + "reports_exact_mp"
+    report_exact_simple_path = report_path + "reports_exact_simple"
+    report_genetic_path = report_path + "reports_genetic"
+
     while True:  
         if(item_menu == "7"):
 
             test_name = input("(EXATO MP) Informe o nome da instância que deseja executar (ex.: p01, p02...):\n")
-            t,s,list_o = read_file("datatest/" + test_name + ".txt")
+            t,s,list_o = read_file(datatest_path + test_name + file_type)
             if s and t:
                 data = run_exact_mp(t,s,list_o)
-                file_name = test_name + ".txt"
-                write_report(file_name, data, "exact", "reports_exact_mp")
+                file_name = test_name + file_type
+                write_report(file_name, data, "exact", report_exact_mp_path)
                 print("-" * 30)
                 item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
             else:
@@ -23,11 +33,11 @@ def menu(item_menu):
 
         elif (item_menu == '8'):
             test_name = input("(GENETICO) Informe o nome da instância que deseja executar (ex.: p01, p02...):\n")
-            t,s,list_o = read_file("datatest/" + test_name + ".txt")
+            t,s,list_o = read_file(datatest_path + test_name + file_type)
             if s and t:
                 data = run_genetic(t,s,list_o)
-                file_name = test_name + ".txt"
-                write_report(file_name, data, "genetic", "reports_genetic")
+                file_name = test_name + file_type
+                write_report(file_name, data, "genetic", report_genetic_path)
                 print("-" * 30)
                 item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
             else:
@@ -36,11 +46,11 @@ def menu(item_menu):
         elif(item_menu == "0"):
 
             test_name = input("(EXATO FFT) Informe o nome da instância que deseja executar (ex.: p01, p02...):\n")
-            t,s,list_o = read_file("datatest/" + test_name + ".txt")
+            t,s,list_o = read_file(datatest_path + test_name + file_type)
             if s and t:
                 data = run_exact_fft(t,s,list_o)
-                file_name = test_name + ".txt"
-                write_report(file_name, data, "exact", "reports_exact_fft")
+                file_name = test_name + file_type
+                write_report(file_name, data, "exact", report_exact_fft_path)
                 print("-" * 30)
                 item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
             else:
@@ -50,11 +60,11 @@ def menu(item_menu):
         if(item_menu == "1"):
 
             test_name = input("(EXATO SIMPLE) Informe o nome da instância que deseja executar (ex.: p01, p02...):\n")
-            t,s,list_o = read_file("datatest/" + test_name + ".txt")
+            t,s,list_o = read_file(datatest_path + test_name + file_type)
             if s and t:
                 data = run_exact_simple(t,s,list_o)
-                file_name = test_name + ".txt"
-                write_report(file_name, data, "exact", "reports_exact_simple")
+                file_name = test_name + file_type
+                write_report(file_name, data, "exact", report_exact_simple_path)
                 print("-" * 30)
                 item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
             else:
@@ -64,11 +74,11 @@ def menu(item_menu):
         elif(item_menu == "2"):
 
             test_name = input("(APROXIMATIVO) Informe o nome da instância que deseja executar (ex.: p01, p02...):\n")
-            t,s,list_o = read_file("datatest/" + test_name + ".txt")
+            t,s,list_o = read_file(datatest_path + test_name + file_type)
             if s and t:
                 data = run_aprox(t,s,list_o)
-                file_name = test_name + ".txt"
-                write_report(file_name, data, "aprox", "reports_aprox")
+                file_name = test_name + file_type
+                write_report(file_name, data, "aprox", report_aprox_path)
                 print("-" * 30)
                 item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
             else:
