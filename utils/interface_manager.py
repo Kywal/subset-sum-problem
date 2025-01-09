@@ -76,15 +76,7 @@ def menu(item_menu):
                 item_menu = instance_processing_error()
 
         elif (item_menu == '3'):
-            print("-" * 30)
-            print(f"(INSTRUÇÕES) Para adicionar uma instância de teste específica, crie na pasta datatest o arquivo <nome_da_instância>.txt com o seguinte formato:\n",
-            f"<valor da soma>\n",
-            f"<lista de valores do conjunto>\n",
-            f"<lista com valores da solução ótima, se houver, se não for possível fornecer, deixe uma lista vazia []>\n")
-            print("Exemplo de arquivo:\n",
-            f"53\n",
-            f"[15, 22, 14, 26, 32, 9,16, 8]\n",
-            f"[22,14,9,8]\n")
+            print_add_instance_instructions()
             print_menu()
             item_menu = input()
 
@@ -144,6 +136,19 @@ def print_menu():
     print("(4) Para gerar uma nova instância aleatória digite 4.")
     print("(5) Para encerrar digite 5.")
     print("(6) Exibir o menu novamente.")
+
+def print_add_instance_instructions():
+    print("-" * 30)
+    print(
+        f"(INSTRUÇÕES) Para adicionar uma instância de teste específica, crie na pasta datatest o arquivo <nome_da_instância>.txt com o seguinte formato:\n",
+        f"<valor da soma>\n",
+        f"<lista de valores do conjunto>\n",
+        f"<lista com valores da solução ótima, se houver, se não for possível fornecer, deixe uma lista vazia []>\n")
+    print("Exemplo de arquivo:\n",
+          f"53\n",
+          f"[15, 22, 14, 26, 32, 9,16, 8]\n",
+          f"[22,14,9,8]\n")
+
 
 def instance_processing_error():
     print("Não foi possível processar a instância especificada.")
