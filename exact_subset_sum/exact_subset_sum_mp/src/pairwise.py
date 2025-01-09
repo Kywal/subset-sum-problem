@@ -1,4 +1,4 @@
-from multiply_polynomials import multiply_polynomials
+from exact_subset_sum.exact_subset_sum_mp.src.multiply_polynomials import multiply_polynomials
 
 def pairwise_u_ari2(X: list, Y: list, u: int):
     result = []

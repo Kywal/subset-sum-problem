@@ -1,6 +1,6 @@
 import math
 from collections import defaultdict
-from pairwise import pairwise_u_ari2, pairwise_u_mp
+from exact_subset_sum.exact_subset_sum_mp.src.pairwise import pairwise_u_ari2, pairwise_u_mp
 
 def all_subset_sums_mp(S: list[int], u: int):
     n = len(S)
