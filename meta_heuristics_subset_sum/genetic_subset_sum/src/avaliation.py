@@ -31,11 +31,18 @@ def select_next_generation_parents(population: set[tuple[list[int], int]], child
 
     for _ in range(parent_pairs_qty):
         first_parent_index = random.randint(0,population_size-1)
-        second_parent_index = random.randint(0,population_size-1)
-
         first_parent = population_list[first_parent_index]
+        population_list.pop(first_parent_index)
+
+        population_size = len(population_list)
+
+        second_parent_index = random.randint(0,population_size-1)
         second_parent = population_list[second_parent_index]
+        population_list.pop(second_parent_index)
+
         diff_degree = difference_degree(first_parent[0], second_parent[0])
+
+        population_size = len(population_list)
 
         parents.append(
             (first_parent, second_parent, diff_degree)
