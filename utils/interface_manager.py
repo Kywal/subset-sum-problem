@@ -6,7 +6,7 @@ from utils.run_algs import run_exact_fft, run_exact_simple, run_aprox, run_exact
 
 def menu(item_menu):
 
-    datatest_path = "all_datatests/datatest"
+    datatest_path = "all_datatests/datatest/"
     report_path = "all_reports/"
     file_type = ".txt"
 
