@@ -25,8 +25,8 @@ def difference_degree(parent_x: list[int], parent_y: list[int]):
 
 def select_next_generation_parents(population: set[tuple[list[int], int]], children_generated: int):
     population_list = list(population)
-    population_size = len(population)
-    parent_pairs_qty = (population_size - children_generated) // 2
+    population_size = len(population) 
+    parent_pairs_qty = ((population_size * 2) - children_generated) // 2
     parents = []
 
     for _ in range(parent_pairs_qty):

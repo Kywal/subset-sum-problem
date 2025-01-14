@@ -10,6 +10,8 @@ def genetic_subset_sum(multiset: list[int], target: int, population_size: int, g
 
     for generation in range(generations):
         population.sort(key = lambda specimen : specimen[1])
+        half_population = population[:len(population) // 2]
+
         best_specimen = population[0]
         print(best_specimen)
 
@@ -23,7 +25,7 @@ def genetic_subset_sum(multiset: list[int], target: int, population_size: int, g
         while children_generated < population_size:
             cont+=1
 
-            parents = select_next_generation_parents(population, children_generated)
+            parents = select_next_generation_parents(half_population, children_generated)
             np, children_generated = generate_new_population(
                 parents,
                 population_size,
