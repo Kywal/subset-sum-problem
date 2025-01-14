@@ -23,24 +23,33 @@ def difference_degree(parent_x: list[int], parent_y: list[int]):
     ng = multiset_size
     return nd / ng
 
-def select_next_generation_parents(population: set[tuple[list[int], int]], children_generated: int, population_original_size: int):
-    population_list = list(population)
+def select_next_generation_parents(population: list[tuple[list[int], int]], children_generated: int, population_original_size: int):
     population_size = len(population)
     parent_pairs_qty = (population_original_size - children_generated) // 2
     parents = []
-
+    attempt_limit = 5
     for _ in range(parent_pairs_qty):
-        first_parent_index = random.randint(0,population_size-1)
-        first_parent = population_list[first_parent_index]
+        attempt_count = 0
+        while attempt_count < attempt_limit: 
+            first_parent_index = random.randint(0,population_size-1)
+            first_parent = population[first_parent_index]
 
-        second_parent_index = random.randint(0,population_size-1)
-        second_parent = population_list[second_parent_index]
+            second_parent_index = random.randint(0,population_size-1)
+            second_parent = population[second_parent_index]
 
-        diff_degree = difference_degree(first_parent[0], second_parent[0])
+            diff_degree = difference_degree(first_parent[0], second_parent[0])
 
-        parents.append(
-            (first_parent, second_parent, diff_degree)
-        )
+            if diff_degree != 0:  
+                parents.append(
+                    (first_parent, second_parent, diff_degree)
+                )
+                break 
+            attempt_count += 1
+
+            if attempt_count >= (attempt_limit - 1):
+                raise ValueError("População não é mais diversa o suficiente.")
+
+        
 
     return parents
 
