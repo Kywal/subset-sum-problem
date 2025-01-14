@@ -3,7 +3,7 @@ from meta_heuristics_subset_sum.genetic_subset_sum.src.avaliation import sum_p, 
 from math import floor
 
 
-def genetic_subset_sum(multiset: list[int], target: int, population_size: int, generations: int, setting_degree_init: int, gamma: float = 0.9):
+def genetic_subset_sum(multiset: list[int], target: int, population_size: int, generations: int, setting_degree_init: float = 0.6, gamma: float = 0.999, mutation_percentage: float = 0.5):
     population = generate_first_population(multiset, target, population_size)
     setting_diff_degree = setting_degree_init
     best_specimen = []
@@ -20,7 +20,7 @@ def genetic_subset_sum(multiset: list[int], target: int, population_size: int, g
         children_generated = 0
         new_population = []
 
-        elite_percentage = 0.3
+        elite_percentage = 0.5
         elite_upper_bound = floor(len(population) * elite_percentage)
         fittest_population = population[:elite_upper_bound]
 
@@ -34,7 +34,8 @@ def genetic_subset_sum(multiset: list[int], target: int, population_size: int, g
                 parents,
                 population_size,
                 children_generated,
-                setting_diff_degree
+                setting_diff_degree,
+                mutation_percentage
             )
 
             new_population += new_children
