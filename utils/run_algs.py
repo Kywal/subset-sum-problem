@@ -72,7 +72,7 @@ def run_exact_mp(t,s,list_o) -> dict[str, any]:
 
 def run_genetic(t,s,list_o) -> dict[str, any]:
     start_time = time.perf_counter_ns()
-    result = genetic_subset_sum(s, t, 50, 100, 1)
+    result = genetic_subset_sum(s, t, 20, 100, 0.6)
     end_time = time.perf_counter_ns()
     
     final_subset = [s[i] for i in range(len(result[0])) if result[0][i] == 1]

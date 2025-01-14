@@ -39,16 +39,19 @@ def generate_new_population(parents: list[list[int], list[int], int],
                 children_generated
             )
 
-    for parent_pair in parents:
+    if children_generated == population_size:
+        return new_population, children_generated
+    else:
+        for parent_pair in parents:
 
-        diff_deg = parent_pair[2]
+            diff_deg = parent_pair[2]
 
-        if diff_deg <= setting_diff_degree and children_generated <= population_size:
-            new_population, children_generated = generate_children(
-                parent_pair,
-                mutate,
-                new_population,
-                children_generated
-            )
+            if diff_deg < setting_diff_degree:
+                new_population, children_generated = generate_children(
+                    parent_pair,
+                    mutate,
+                    new_population,
+                    children_generated
+                )
 
     return new_population, children_generated
