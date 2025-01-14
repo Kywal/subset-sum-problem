@@ -3,9 +3,20 @@ import random
 from math import floor
 
 def crossover(parent_x: [list[int], int], parent_y: [list[int], int], mutate_percentage: float):
-    point = random.randint(1, len(parent_x[0]) - 1)
-    child1 = (parent_x[0][:point] + parent_y[0][point:], -1)
-    child2 = (parent_y[0][:point] + parent_x[0][point:], -1)
+    child1_list = []
+    child2_list = []
+    
+    for i in range(len(parent_x[0])):
+        if random.uniform(0.0, 1.0) < 0.5:
+            child1_list.append(parent_x[0][i])
+            child2_list.append(parent_y[0][i])
+        else:
+            child1_list.append(parent_y[0][i])
+            child2_list.append(parent_x[0][i])
+    
+    child1 = (child1_list, -1)
+    child2 = (child2_list, -1)
+    
     return child1, child2
 
 
