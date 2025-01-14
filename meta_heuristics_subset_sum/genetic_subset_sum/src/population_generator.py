@@ -23,7 +23,8 @@ def generate_first_population(multiset: list[int], target: int, population_size:
 def generate_new_population(parents: list[list[int], list[int], int],
                             population_size: int,
                             children_generated: int,
-                            setting_diff_degree: int
+                            setting_diff_degree: int,
+                            mutation_percentage: float
                             ):
 
     new_population = []
@@ -36,7 +37,8 @@ def generate_new_population(parents: list[list[int], list[int], int],
                 parent_pair,
                 crossover,
                 new_population,
-                children_generated
+                children_generated,
+                mutation_percentage
             )
 
     if children_generated == population_size:
@@ -51,7 +53,8 @@ def generate_new_population(parents: list[list[int], list[int], int],
                     parent_pair,
                     mutate,
                     new_population,
-                    children_generated
+                    children_generated,
+                    mutation_percentage
                 )
 
     return new_population, children_generated

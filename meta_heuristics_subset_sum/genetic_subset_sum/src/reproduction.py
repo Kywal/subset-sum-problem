@@ -1,16 +1,20 @@
 from typing import Callable
 import random
+from math import floor
 
-def crossover(parent_x: [list[int], int], parent_y: [list[int], int]):
+def crossover(parent_x: [list[int], int], parent_y: [list[int], int], mutate_percentage: float):
     point = random.randint(1, len(parent_x[0]) - 1)
     child1 = (parent_x[0][:point] + parent_y[0][point:], -1)
     child2 = (parent_y[0][:point] + parent_x[0][point:], -1)
     return child1, child2
 
 
-def mutate(parent_x: [list[int], int], parent_y: [list[int], int]):
-    qty_mutation_x = random.randint(1, len(parent_x[0]))
-    qty_mutation_y = random.randint(1, len(parent_y[0]))
+def mutate(parent_x: [list[int], int], parent_y: [list[int], int], mutate_percentage: float):
+    mutation_x_index = floor(mutate_percentage * len(parent_x[0]))
+    mutation_y_index = floor(mutate_percentage * len(parent_y[0]))
+
+    qty_mutation_x = random.randint(1, mutation_x_index)
+    qty_mutation_y = random.randint(1, mutation_y_index)
 
     child_x = (parent_x[0], -1)
     child_y = (parent_y[0], -1)
@@ -29,12 +33,13 @@ def mutate(parent_x: [list[int], int], parent_y: [list[int], int]):
 
 
 def generate_children(parents: (list[int],list[int], int),
-                      reproduction_method: Callable[[list[int],list[int]],tuple[list[int],list[int]]],
+                      reproduction_method: Callable[[list[int],list[int], float],tuple[list[int],list[int]]],
                       new_population: list[list[int]],
-                      children_generated: int
+                      children_generated: int,
+                      mutate_percentage: float,
                       ):
 
-    child1, child2 = reproduction_method(parents[0], parents[1])
+    child1, child2 = reproduction_method(parents[0], parents[1], mutate_percentage)
     new_population.append(child1)
     new_population.append(child2)
     children_generated += 2
