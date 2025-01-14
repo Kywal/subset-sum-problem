@@ -1,5 +1,5 @@
-from genetic_subset_sum.src.reproduction import crossover, mutate, generate_children
-from genetic_subset_sum.src.avaliation import fitness
+from meta_heuristics_subset_sum.genetic_subset_sum.src.reproduction import crossover, mutate, generate_children
+from meta_heuristics_subset_sum.genetic_subset_sum.src.avaliation import fitness
 import random
 
 
@@ -43,7 +43,7 @@ def generate_new_population(parents: list[list[int], list[int], int],
 
         diff_deg = parent_pair[2]
 
-        if diff_deg != setting_diff_degree and children_generated != population_size:
+        if diff_deg <= setting_diff_degree and children_generated <= population_size:
             new_population, children_generated = generate_children(
                 parent_pair,
                 mutate,

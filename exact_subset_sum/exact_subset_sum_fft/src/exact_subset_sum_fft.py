@@ -1,6 +1,6 @@
 import math
 from collections import defaultdict
-from exact_subset_sum_fft.src.pairwise import pairwise_u_ari2, pairwise_u_fft
+from exact_subset_sum.exact_subset_sum_fft.src.pairwise import pairwise_u_ari2, pairwise_u_fft
 
 def all_subset_sums_fft(S: list[int], u: int):
     n = len(S)

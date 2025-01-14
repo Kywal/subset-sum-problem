@@ -1,4 +1,4 @@
-from exact_subset_sum_fft.src.fft import fft, multiply_polynomials
+from exact_subset_sum.exact_subset_sum_fft.src.fft import multiply_polynomials
 
 def pairwise_u_ari2(X: list, Y: list, u: int):
     result = []
