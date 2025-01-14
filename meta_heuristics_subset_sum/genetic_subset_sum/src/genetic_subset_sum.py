@@ -26,7 +26,7 @@ def genetic_subset_sum(multiset: list[int], target: int, population_size: int, g
 
         while children_generated < population_size:
 
-            parents = select_next_generation_parents(fittest_population, children_generated)
+            parents = select_next_generation_parents(fittest_population, children_generated, len(population))
             new_children, children_generated = generate_new_population(
                 parents,
                 population_size,

@@ -23,26 +23,20 @@ def difference_degree(parent_x: list[int], parent_y: list[int]):
     ng = multiset_size
     return nd / ng
 
-def select_next_generation_parents(population: set[tuple[list[int], int]], children_generated: int):
+def select_next_generation_parents(population: set[tuple[list[int], int]], children_generated: int, population_original_size: int):
     population_list = list(population)
     population_size = len(population)
-    parent_pairs_qty = (population_size - children_generated) // 2
+    parent_pairs_qty = (population_original_size - children_generated) // 2
     parents = []
 
     for _ in range(parent_pairs_qty):
         first_parent_index = random.randint(0,population_size-1)
         first_parent = population_list[first_parent_index]
-        population_list.pop(first_parent_index)
-
-        population_size = len(population_list)
 
         second_parent_index = random.randint(0,population_size-1)
         second_parent = population_list[second_parent_index]
-        population_list.pop(second_parent_index)
 
         diff_degree = difference_degree(first_parent[0], second_parent[0])
-
-        population_size = len(population_list)
 
         parents.append(
             (first_parent, second_parent, diff_degree)
