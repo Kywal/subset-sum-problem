@@ -46,6 +46,8 @@ def genetic_subset_sum(multiset: list[int], target: int, population_size: int, g
         setting_diff_degree = gamma * setting_diff_degree
 
         new_population = calculate_fitness_of_all_population(multiset, target, new_population)
+        population = calculate_fitness_of_all_population(multiset, target, population)
+        population.sort(key=lambda specimen: specimen[1])
         new_population.sort(key=lambda specimen: specimen[1])
         population = mergesort_populations(population, new_population, population_size)
         new_population.sort(key = lambda specimen : specimen[1])
