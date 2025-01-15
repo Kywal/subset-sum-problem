@@ -180,8 +180,10 @@ def ending_report_writing_process():
 def run_all_tests(datatest_path, file_type, report_genetic_path):
     grouped_durations = []
     grouped_distances = []
+    grouped_distances_avg = []
     all_durations = []
     all_distances = []
+    all_distances_avg = []
 
     for i in range(1, 26):
         test_name = f"p{i:02d}"
@@ -191,24 +193,31 @@ def run_all_tests(datatest_path, file_type, report_genetic_path):
             
             all_durations.append(data['avg_duration'])
             all_distances.append(round(100*((abs(data['best_final_sum']-sum(data['config_o'])))/sum(data['config_o'])),2))
+            all_distances_avg.append(round(100*((abs(data['avg_solutions']-sum(data['config_o'])))/sum(data['config_o'])),2))
             
             if i % 5 == 0:
                 print(all_durations[-5:])
                 avg_duration_group = calculate_average(all_durations[-5:])
                 avg_distance_group = calculate_average(all_distances[-5:])
+                avg_distance_avg_group = calculate_average(all_distances_avg[-5:])
                 grouped_durations.append(avg_duration_group)
                 grouped_distances.append(avg_distance_group)
+                grouped_distances_avg.append(avg_distance_avg_group)
                 
             file_name = f"mult_{test_name}{file_type}"
             write_report_mult(file_name, data, "genetic", report_genetic_path)
 
     avg_duration_total = round(sum(all_durations) / len(all_durations), 2)
     avg_distance_total = round(sum(all_distances) / len(all_distances), 2)
+    avg_distance_avg_total = round(sum(all_distances_avg) / len(all_distances_avg), 2)
 
     print("Médias das durações por grupo:", grouped_durations)
-    print("Médias das distâncias por grupo:", grouped_distances)
+    print("Médias das distâncias da melhor para a ótima por grupo:", grouped_distances)
+    print("Médias das distâncias da média das soluções para a ótima por grupo:", grouped_distances_avg)
     print("Média geral de durações:", avg_duration_total)
-    print("Média geral de distâncias:", avg_distance_total)
+    print("Média geral de distâncias entre a melhor e a ótima:", avg_distance_total)
+    print("Média geral de distâncias entre a melhor e a média:", avg_distance_avg_total)
+
 
 
 def calculate_average(data_list):

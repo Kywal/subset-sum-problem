@@ -8,19 +8,19 @@ Soma da configuração ótima fornecida: 92
 RESULTADOS
 -----------
 Melhor soma encontrada: 92
-Média das somas encontradas: 336.03
-Media da duração da execução (nanosegundos): 523586.47
-Media da duração da execução (segundos): 0.00052
+Média das somas encontradas: 332.43
+Media da duração da execução (nanosegundos): 465153.53
+Media da duração da execução (segundos): 0.00047
 
 -----------
 Melhor solução encontrada se encontra à 0.0% de distância da solução ótima fornecida.
-Média das soluções encontradas se encontra à 265.25% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 261.34% de distância da solução ótima fornecida.
 -----------
 A solução ótima foi alcançada 2 vezes de 30
-Soluções encontradas: [365, 409, 286, 256, 409, 333, 92, 409, 233, 396, 377, 409, 199, 406, 392, 326, 360, 344, 365, 409, 374, 344, 409, 356, 337, 409, 294, 92, 376, 315] 
+Soluções encontradas: [409, 92, 173, 409, 392, 409, 384, 368, 409, 223, 372, 274, 172, 409, 398, 409, 384, 92, 320, 409, 365, 365, 365, 242, 363, 326, 365, 304, 362, 409] 
 -----------
 DETALHAMENTO
 -----------
 Multiset: [37, 7, 25, 21, 33, 6, 21, 6, 50, 35, 44, 30, 2, 3, 32, 25, 2, 17, 11, 2]
 Configuração ótima fornecida: [11, 44, 2, 32, 3]
-Configuração geradora da soma resultante: [7, 21, 6, 30, 3, 25]
+Configuração geradora da soma resultante: [37, 7, 21, 2, 25]

@@ -8,16 +8,16 @@ Soma da configuração ótima fornecida: 263
 RESULTADOS
 -----------
 Melhor soma encontrada: 0
-Média das somas encontradas: 8740.57
-Media da duração da execução (nanosegundos): 1119452.13
-Media da duração da execução (segundos): 0.00112
+Média das somas encontradas: 9497.4
+Media da duração da execução (nanosegundos): 1168269.47
+Media da duração da execução (segundos): 0.00117
 
 -----------
 Melhor solução encontrada se encontra à 100.0% de distância da solução ótima fornecida.
-Média das soluções encontradas se encontra à 3223.41% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 3511.18% de distância da solução ótima fornecida.
 -----------
 A solução ótima foi alcançada 0 vezes de 30
-Soluções encontradas: [7992, 8889, 9812, 10620, 5270, 10777, 10326, 10373, 10777, 9568, 9208, 7318, 5043, 10746, 10459, 9469, 10686, 3554, 8227, 10022, 9416, 9873, 3864, 6450, 10720, 7269, 4726, 10585, 10476, 9702] 
+Soluções encontradas: [9385, 10260, 10632, 8270, 9527, 10324, 10559, 10752, 9442, 10758, 9662, 10777, 10552, 10194, 10777, 10743, 10111, 10757, 7651, 8747, 9377, 7817, 10565, 6840, 10099, 5818, 6000, 9534, 9311, 9681] 
 -----------
 DETALHAMENTO
 -----------

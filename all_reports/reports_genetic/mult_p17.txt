@@ -7,20 +7,20 @@ Soma da configuração ótima fornecida: 2719
 -----------
 RESULTADOS
 -----------
-Melhor soma encontrada: 0
-Média das somas encontradas: 4001.73
-Media da duração da execução (nanosegundos): 738808.43
-Media da duração da execução (segundos): 0.00074
+Melhor soma encontrada: 2719
+Média das somas encontradas: 4037.4
+Media da duração da execução (nanosegundos): 635602.97
+Media da duração da execução (segundos): 0.00064
 
 -----------
-Melhor solução encontrada se encontra à 100.0% de distância da solução ótima fornecida.
-Média das soluções encontradas se encontra à 47.18% de distância da solução ótima fornecida.
+Melhor solução encontrada se encontra à 0.0% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 48.49% de distância da solução ótima fornecida.
 -----------
-A solução ótima foi alcançada 0 vezes de 30
-Soluções encontradas: [4408, 4408, 4277, 4188, 4277, 3199, 4070, 4408, 4390, 4408, 4408, 3336, 4271, 3956, 3235, 3510, 3939, 4332, 4070, 4408, 3595, 4332, 4229, 3309, 4181, 3265, 4345, 2848, 4165, 4285] 
+A solução ótima foi alcançada 1 vezes de 30
+Soluções encontradas: [2719, 4408, 4408, 3950, 3558, 3621, 4189, 4138, 4229, 4408, 4355, 4346, 3901, 4181, 4385, 4265, 4408, 4185, 3656, 4284, 3236, 4408, 4408, 4018, 4408, 4138, 4210, 2660, 4217, 3825] 
 -----------
 DETALHAMENTO
 -----------
 Multiset: [77, 76, 100, 38, 28, 68, 79, 63, 76, 119, 140, 54, 164, 105, 51, 18, 179, 24, 98, 101, 79, 110, 123, 131, 20, 121, 191, 84, 137, 37, 76, 96, 178, 166, 62, 43, 141, 22, 40, 23, 70, 95, 61, 169, 53, 124, 62, 37, 123, 76]
 Configuração ótima fornecida: [131, 169, 38, 105, 54, 51, 76, 96, 76, 123, 100, 79, 62, 101, 22, 23, 24, 141, 37, 140, 191, 76, 63, 76, 137, 28, 62, 43, 68, 119, 84, 124]
-Configuração geradora da soma resultante: None
+Configuração geradora da soma resultante: [77, 100, 38, 28, 68, 63, 76, 119, 140, 164, 105, 179, 98, 101, 110, 191, 84, 76, 178, 166, 22, 23, 70, 61, 169, 53, 37, 123]

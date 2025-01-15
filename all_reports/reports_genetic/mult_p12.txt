@@ -7,20 +7,20 @@ Soma da configuração ótima fornecida: 2227794
 -----------
 RESULTADOS
 -----------
-Melhor soma encontrada: 0
-Média das somas encontradas: 8465884.83
-Media da duração da execução (nanosegundos): 517429.77
-Media da duração da execução (segundos): 0.00052
+Melhor soma encontrada: 1976877
+Média das somas encontradas: 8069757.23
+Media da duração da execução (nanosegundos): 472346.37
+Media da duração da execução (segundos): 0.00047
 
 -----------
-Melhor solução encontrada se encontra à 100.0% de distância da solução ótima fornecida.
-Média das soluções encontradas se encontra à 280.01% de distância da solução ótima fornecida.
+Melhor solução encontrada se encontra à 11.26% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 262.23% de distância da solução ótima fornecida.
 -----------
-A solução ótima foi alcançada 0 vezes de 30
-Soluções encontradas: [4888447, 9986455, 6423899, 9986455, 8466899, 7892733, 9986455, 8418832, 7590750, 3948592, 8589465, 6407489, 9986455, 8785827, 9066118, 9986455, 9986455, 9542775, 9986455, 6843945, 8308289, 7515516, 7715293, 7333883, 9986455, 9986455, 6531461, 9986455, 9855327, 9986455] 
+A solução ótima foi alcançada 1 vezes de 30
+Soluções encontradas: [7783254, 8561807, 9986455, 9156456, 9378219, 8642747, 8786745, 6693288, 8595297, 5796772, 9170043, 7301343, 1976877, 9986455, 8715143, 9132342, 5674208, 9986455, 8664142, 4785048, 8219572, 9292872, 9502331, 9119012, 9170043, 9986455, 4454473, 3601953, 9986455, 9986455] 
 -----------
 DETALHAMENTO
 -----------
 Multiset: [567173, 920337, 650125, 471838, 829999, 469814, 12951, 608236, 693583, 747505, 76118, 816866, 131128, 484124, 816412, 173860, 279373, 245877, 443680, 547456]
 Configuração ótima fornecida: [816412, 12951, 443680, 76118, 747505, 131128]
-Configuração geradora da soma resultante: None
+Configuração geradora da soma resultante: [471838, 608236, 76118, 131128, 245877, 443680]

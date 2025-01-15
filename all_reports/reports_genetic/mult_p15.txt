@@ -7,20 +7,20 @@ Soma da configuração ótima fornecida: 5259733
 -----------
 RESULTADOS
 -----------
-Melhor soma encontrada: 5203217
-Média das somas encontradas: 6034921.5
-Media da duração da execução (nanosegundos): 392110.13
-Media da duração da execução (segundos): 0.00039
+Melhor soma encontrada: 5169191
+Média das somas encontradas: 5872982.9
+Media da duração da execução (nanosegundos): 372290.7
+Media da duração da execução (segundos): 0.00037
 
 -----------
-Melhor solução encontrada se encontra à 1.07% de distância da solução ótima fornecida.
-Média das soluções encontradas se encontra à 14.74% de distância da solução ótima fornecida.
+Melhor solução encontrada se encontra à 1.72% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 11.66% de distância da solução ótima fornecida.
 -----------
 A solução ótima foi alcançada 1 vezes de 30
-Soluções encontradas: [6581983, 4798341, 6035107, 6581983, 6581983, 4590045, 6450694, 5389943, 6581983, 5203217, 6079384, 6581983, 6035107, 6350531, 5949313, 6581983, 6581983, 5075707, 6090040, 5543218, 5989823, 6581983, 6581983, 5397781, 6581983, 6581983, 5957305, 5563037, 6551977, 5595262] 
+Soluções encontradas: [6581983, 6581983, 6574646, 5592218, 5933150, 4991226, 6574646, 5049671, 6581983, 5669468, 5673235, 6581983, 5602599, 5430551, 5084297, 6288177, 6079384, 5475558, 6581983, 5831010, 6281013, 5169191, 5602599, 5602599, 5602599, 5957305, 4510633, 6086301, 6581983, 6035513] 
 -----------
 DETALHAMENTO
 -----------
 Multiset: [262068, 406149, 648833, 172666, 624678, 546876, 211437, 85740, 85794, 502599, 131289, 481568, 89533, 506366, 284402, 231452, 7337, 979384, 293806, 30006]
 Configuração ótima fornecida: [284402, 231452, 211437, 131289, 979384, 502599, 172666, 30006, 506366, 7337, 89533, 85794, 85740, 406149, 262068, 648833, 624678]
-Configuração geradora da soma resultante: [262068, 648833, 546876, 211437, 85794, 502599, 131289, 481568, 506366, 284402, 231452, 7337, 979384, 293806, 30006]
+Configuração geradora da soma resultante: [262068, 406149, 172666, 624678, 211437, 85740, 502599, 481568, 89533, 506366, 284402, 231452, 7337, 979384, 293806, 30006]
