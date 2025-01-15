@@ -28,7 +28,7 @@ def genetic_subset_sum(multiset: list[int], target: int, population_size: int, g
 
         while children_generated < population_size:
             try:
-                parents = select_next_generation_parents(fittest_population, children_generated, len(population))
+                parents = select_next_generation_parents(fittest_population, children_generated, population_size)
             except ValueError as e:
                 print(e)
                 return best_specimen
@@ -44,9 +44,12 @@ def genetic_subset_sum(multiset: list[int], target: int, population_size: int, g
 
             new_population = calculate_fitness_of_all_population(multiset, target, new_population)
             setting_diff_degree = gamma * setting_diff_degree
-
-        new_population.sort(key=lambda specimen: specimen[1])
-        population = mergesort_populations(population, new_population, population_size)
+        
+        new_population.sort(key = lambda specimen : specimen[1])
+        #population = mergesort_populations(population, new_population, population_size)
+        #population = sorted(population + new_population, key=lambda x: x[1])[:population_size]
+        population = new_population
         best_specimen = population[0]
+        
 
     return best_specimen
