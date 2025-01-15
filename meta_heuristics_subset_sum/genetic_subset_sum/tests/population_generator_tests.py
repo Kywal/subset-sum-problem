@@ -13,4 +13,4 @@ def generate_first_population_test(multiset: list[int], target: int, population_
     population.sort(key=lambda s: s[1])
     print_population(population, multiset)
 
-# generate_first_population_test([1, 2, 3, 4, 5, 6, 7, 8, 9, 100], 10, 10)
+generate_first_population_test([1, 2, 3, 4, 5, 6, 7, 8, 9, 100], 10, 10)
