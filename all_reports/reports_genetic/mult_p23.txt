@@ -1,0 +1,26 @@
+-------------------
+DADOS DA INSTÂNCIA 
+-------------------
+Tamanho do conjunto: 100 
+Soma objetivo: 1651
+Soma da configuração ótima fornecida: 1651
+-----------
+RESULTADOS
+-----------
+Melhor soma encontrada: 0
+Média das somas encontradas: 8318.27
+Media da duração da execução (nanosegundos): 1156629.5
+Media da duração da execução (segundos): 0.00116
+
+-----------
+Melhor solução encontrada se encontra à 100.0% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 403.83% de distância da solução ótima fornecida.
+-----------
+A solução ótima foi alcançada 0 vezes de 30
+Soluções encontradas: [7908, 9313, 8947, 8394, 8842, 9267, 8632, 7028, 5506, 7802, 9130, 7595, 9265, 9455, 7974, 8666, 8361, 7774, 9455, 8643, 8874, 9341, 6994, 8343, 7445, 9216, 9455, 6844, 7403, 7676] 
+-----------
+DETALHAMENTO
+-----------
+Multiset: [18, 100, 83, 22, 17, 114, 59, 121, 34, 34, 194, 68, 46, 114, 142, 128, 63, 109, 62, 62, 145, 104, 191, 52, 68, 42, 109, 53, 85, 24, 37, 2, 87, 164, 180, 96, 175, 63, 88, 12, 43, 128, 147, 74, 29, 93, 107, 4, 49, 29, 1, 7, 101, 146, 190, 91, 96, 40, 199, 24, 159, 140, 60, 186, 152, 113, 200, 26, 51, 41, 20, 200, 28, 192, 60, 35, 20, 74, 180, 33, 180, 169, 103, 31, 96, 114, 185, 76, 116, 200, 36, 142, 88, 97, 95, 60, 171, 196, 172, 193]
+Configuração ótima fornecida: [191, 114, 145, 33, 68, 74, 140, 200, 37, 51, 180, 46, 40, 128, 180, 24]
+Configuração geradora da soma resultante: None

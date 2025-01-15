@@ -1,0 +1,26 @@
+-------------------
+DADOS DA INSTÂNCIA 
+-------------------
+Tamanho do conjunto: 20 
+Soma objetivo: 2227794
+Soma da configuração ótima fornecida: 2227794
+-----------
+RESULTADOS
+-----------
+Melhor soma encontrada: 0
+Média das somas encontradas: 8465884.83
+Media da duração da execução (nanosegundos): 517429.77
+Media da duração da execução (segundos): 0.00052
+
+-----------
+Melhor solução encontrada se encontra à 100.0% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 280.01% de distância da solução ótima fornecida.
+-----------
+A solução ótima foi alcançada 0 vezes de 30
+Soluções encontradas: [4888447, 9986455, 6423899, 9986455, 8466899, 7892733, 9986455, 8418832, 7590750, 3948592, 8589465, 6407489, 9986455, 8785827, 9066118, 9986455, 9986455, 9542775, 9986455, 6843945, 8308289, 7515516, 7715293, 7333883, 9986455, 9986455, 6531461, 9986455, 9855327, 9986455] 
+-----------
+DETALHAMENTO
+-----------
+Multiset: [567173, 920337, 650125, 471838, 829999, 469814, 12951, 608236, 693583, 747505, 76118, 816866, 131128, 484124, 816412, 173860, 279373, 245877, 443680, 547456]
+Configuração ótima fornecida: [816412, 12951, 443680, 76118, 747505, 131128]
+Configuração geradora da soma resultante: None

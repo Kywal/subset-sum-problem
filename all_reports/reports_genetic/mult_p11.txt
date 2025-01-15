@@ -1,0 +1,26 @@
+-------------------
+DADOS DA INSTÂNCIA 
+-------------------
+Tamanho do conjunto: 20 
+Soma objetivo: 3751143
+Soma da configuração ótima fornecida: 3751143
+-----------
+RESULTADOS
+-----------
+Melhor soma encontrada: 3406157
+Média das somas encontradas: 7705282.27
+Media da duração da execução (nanosegundos): 549984.97
+Media da duração da execução (segundos): 0.00055
+
+-----------
+Melhor solução encontrada se encontra à 9.2% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 105.41% de distância da solução ótima fornecida.
+-----------
+A solução ótima foi alcançada 1 vezes de 30
+Soluções encontradas: [8124830, 4645422, 9949497, 7874851, 9949497, 5978794, 8495166, 9949497, 9949497, 5678869, 3085313, 5213824, 9357659, 9949497, 4689634, 5150126, 8223623, 9949497, 7785435, 6107731, 9520884, 7783985, 8962893, 7930094, 9949497, 9011813, 3406157, 9949497, 4958391, 9576998] 
+-----------
+DETALHAMENTO
+-----------
+Multiset: [514805, 591838, 372499, 155706, 815396, 277277, 562318, 826111, 254247, 939526, 786348, 986604, 206624, 784771, 97982, 434691, 160294, 312608, 151336, 718516]
+Configuração ótima fornecida: [312608, 277277, 206624, 939526, 372499, 97982, 826111, 718516]
+Configuração geradora da soma resultante: [562318, 826111, 986604, 312608, 718516]

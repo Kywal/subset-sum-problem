@@ -1,0 +1,26 @@
+-------------------
+DADOS DA INSTÂNCIA 
+-------------------
+Tamanho do conjunto: 10 
+Soma objetivo: 123
+Soma da configuração ótima fornecida: 123
+-----------
+RESULTADOS
+-----------
+Melhor soma encontrada: 123
+Média das somas encontradas: 134.57
+Media da duração da execução (nanosegundos): 213900.1
+Media da duração da execução (segundos): 0.00021
+
+-----------
+Melhor solução encontrada se encontra à 0.0% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 9.41% de distância da solução ótima fornecida.
+-----------
+A solução ótima foi alcançada 20 vezes de 30
+Soluções encontradas: [123, 188, 123, 145, 188, 123, 123, 123, 148, 123, 123, 188, 123, 145, 123, 123, 123, 123, 120, 123, 123, 123, 145, 123, 123, 122, 123, 188, 123, 123] 
+-----------
+DETALHAMENTO
+-----------
+Multiset: [32, 8, 15, 19, 1, 43, 16, 7, 22, 25]
+Configuração ótima fornecida: [22, 1, 16, 43, 19, 15, 7]
+Configuração geradora da soma resultante: [32, 8, 15, 19, 1, 16, 7, 25]

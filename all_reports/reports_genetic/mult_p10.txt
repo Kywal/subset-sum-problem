@@ -1,0 +1,26 @@
+-------------------
+DADOS DA INSTÂNCIA 
+-------------------
+Tamanho do conjunto: 20 
+Soma objetivo: 192
+Soma da configuração ótima fornecida: 192
+-----------
+RESULTADOS
+-----------
+Melhor soma encontrada: 192
+Média das somas encontradas: 337.43
+Media da duração da execução (nanosegundos): 527819.7
+Media da duração da execução (segundos): 0.00053
+
+-----------
+Melhor solução encontrada se encontra à 0.0% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 75.74% de distância da solução ótima fornecida.
+-----------
+A solução ótima foi alcançada 5 vezes de 30
+Soluções encontradas: [192, 192, 441, 395, 401, 389, 441, 205, 194, 192, 280, 369, 427, 218, 416, 441, 412, 374, 305, 192, 441, 441, 441, 140, 406, 414, 395, 336, 192, 441] 
+-----------
+DETALHAMENTO
+-----------
+Multiset: [4, 11, 32, 1, 2, 46, 47, 24, 2, 13, 18, 35, 21, 6, 35, 27, 33, 45, 14, 25]
+Configuração ótima fornecida: [35, 27, 46, 47, 13, 18, 6]
+Configuração geradora da soma resultante: [11, 32, 1, 46, 13, 35, 21, 33]

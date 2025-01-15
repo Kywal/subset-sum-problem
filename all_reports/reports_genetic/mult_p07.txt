@@ -1,0 +1,26 @@
+-------------------
+DADOS DA INSTÂNCIA 
+-------------------
+Tamanho do conjunto: 20 
+Soma objetivo: 92
+Soma da configuração ótima fornecida: 92
+-----------
+RESULTADOS
+-----------
+Melhor soma encontrada: 92
+Média das somas encontradas: 336.03
+Media da duração da execução (nanosegundos): 523586.47
+Media da duração da execução (segundos): 0.00052
+
+-----------
+Melhor solução encontrada se encontra à 0.0% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 265.25% de distância da solução ótima fornecida.
+-----------
+A solução ótima foi alcançada 2 vezes de 30
+Soluções encontradas: [365, 409, 286, 256, 409, 333, 92, 409, 233, 396, 377, 409, 199, 406, 392, 326, 360, 344, 365, 409, 374, 344, 409, 356, 337, 409, 294, 92, 376, 315] 
+-----------
+DETALHAMENTO
+-----------
+Multiset: [37, 7, 25, 21, 33, 6, 21, 6, 50, 35, 44, 30, 2, 3, 32, 25, 2, 17, 11, 2]
+Configuração ótima fornecida: [11, 44, 2, 32, 3]
+Configuração geradora da soma resultante: [7, 21, 6, 30, 3, 25]

@@ -1,0 +1,26 @@
+-------------------
+DADOS DA INSTÂNCIA 
+-------------------
+Tamanho do conjunto: 20 
+Soma objetivo: 89
+Soma da configuração ótima fornecida: 89
+-----------
+RESULTADOS
+-----------
+Melhor soma encontrada: 0
+Média das somas encontradas: 538.93
+Media da duração da execução (nanosegundos): 538293.3
+Media da duração da execução (segundos): 0.00054
+
+-----------
+Melhor solução encontrada se encontra à 100.0% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 505.54% de distância da solução ótima fornecida.
+-----------
+A solução ótima foi alcançada 0 vezes de 30
+Soluções encontradas: [566, 605, 605, 464, 403, 563, 605, 557, 541, 605, 605, 605, 559, 605, 347, 582, 605, 605, 467, 448, 605, 532, 440, 425, 520, 451, 581, 577, 605, 490] 
+-----------
+DETALHAMENTO
+-----------
+Multiset: [7, 48, 23, 24, 47, 36, 50, 16, 42, 28, 7, 50, 14, 15, 40, 39, 46, 34, 14, 25]
+Configuração ótima fornecida: [7, 42, 40]
+Configuração geradora da soma resultante: None

@@ -49,6 +49,9 @@ def menu(item_menu):
                 item_menu = ending_report_writing_process()
             else:
                 item_menu = instance_processing_error()
+        elif (item_menu == '10'):
+            run_all_tests(datatest_path, file_type, report_genetic_path)
+           
         elif(item_menu == "0"):
 
             test_name = input("(EXATO FFT) Informe o nome da instância que deseja executar (ex.: p01, p02...):\n")
@@ -173,3 +176,40 @@ def ending_report_writing_process():
     print("-" * qty_dashes_after_write_report)
     item_menu = input("Digite 6 para voltar ao menu ou 5 para encerrar.\n")
     return item_menu
+
+def run_all_tests(datatest_path, file_type, report_genetic_path):
+    grouped_durations = []
+    grouped_distances = []
+    all_durations = []
+    all_distances = []
+
+    for i in range(1, 26):
+        test_name = f"p{i:02d}"
+        t, s, list_o = read_file(datatest_path + test_name + file_type)
+        if s and t:
+            data = run_genetic_many_times(t, s, list_o)
+            
+            all_durations.append(data['avg_duration'])
+            all_distances.append(round(100*((abs(data['best_final_sum']-sum(data['config_o'])))/sum(data['config_o'])),2))
+            
+            if i % 5 == 0:
+                print(all_durations[-5:])
+                avg_duration_group = calculate_average(all_durations[-5:])
+                avg_distance_group = calculate_average(all_distances[-5:])
+                grouped_durations.append(avg_duration_group)
+                grouped_distances.append(avg_distance_group)
+                
+            file_name = f"mult_{test_name}{file_type}"
+            write_report_mult(file_name, data, "genetic", report_genetic_path)
+
+    avg_duration_total = round(sum(all_durations) / len(all_durations), 2)
+    avg_distance_total = round(sum(all_distances) / len(all_distances), 2)
+
+    print("Médias das durações por grupo:", grouped_durations)
+    print("Médias das distâncias por grupo:", grouped_distances)
+    print("Média geral de durações:", avg_duration_total)
+    print("Média geral de distâncias:", avg_distance_total)
+
+
+def calculate_average(data_list):
+    return round(sum(data_list) / len(data_list), 2)

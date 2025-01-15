@@ -1,0 +1,26 @@
+-------------------
+DADOS DA INSTÂNCIA 
+-------------------
+Tamanho do conjunto: 20 
+Soma objetivo: 584
+Soma da configuração ótima fornecida: 584
+-----------
+RESULTADOS
+-----------
+Melhor soma encontrada: 584
+Média das somas encontradas: 579.77
+Media da duração da execução (nanosegundos): 335275.07
+Media da duração da execução (segundos): 0.00034
+
+-----------
+Melhor solução encontrada se encontra à 0.0% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 0.72% de distância da solução ótima fornecida.
+-----------
+A solução ótima foi alcançada 24 vezes de 30
+Soluções encontradas: [584, 584, 584, 584, 540, 584, 584, 571, 584, 584, 564, 584, 584, 579, 584, 584, 584, 544, 584, 584, 579, 584, 584, 584, 584, 584, 584, 584, 584, 584] 
+-----------
+DETALHAMENTO
+-----------
+Multiset: [33, 32, 43, 37, 15, 39, 21, 12, 10, 47, 49, 3, 47, 41, 4, 40, 5, 44, 42, 20]
+Configuração ótima fornecida: [49, 33, 32, 4, 42, 40, 47, 41, 43, 3, 39, 5, 47, 37, 10, 15, 12, 21, 44, 20]
+Configuração geradora da soma resultante: [33, 32, 43, 37, 15, 39, 21, 12, 10, 47, 49, 3, 47, 41, 4, 40, 5, 44, 42, 20]

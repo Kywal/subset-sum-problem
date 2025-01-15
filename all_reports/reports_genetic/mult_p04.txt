@@ -1,0 +1,26 @@
+-------------------
+DADOS DA INSTÂNCIA 
+-------------------
+Tamanho do conjunto: 10 
+Soma objetivo: 250
+Soma da configuração ótima fornecida: 250
+-----------
+RESULTADOS
+-----------
+Melhor soma encontrada: 250
+Média das somas encontradas: 259.9
+Media da duração da execução (nanosegundos): 222806.63
+Media da duração da execução (segundos): 0.00022
+
+-----------
+Melhor solução encontrada se encontra à 0.0% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 3.96% de distância da solução ótima fornecida.
+-----------
+A solução ótima foi alcançada 9 vezes de 30
+Soluções encontradas: [316, 316, 316, 247, 255, 234, 250, 250, 278, 250, 288, 250, 269, 250, 203, 300, 232, 194, 278, 300, 250, 231, 269, 241, 246, 250, 300, 234, 250, 250] 
+-----------
+DETALHAMENTO
+-----------
+Multiset: [32, 30, 44, 28, 40, 16, 31, 38, 10, 47]
+Configuração ótima fornecida: [10, 16, 31, 47, 44, 32, 30, 40]
+Configuração geradora da soma resultante: [32, 30, 44, 40, 16, 31, 10, 47]
