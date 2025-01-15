@@ -7,17 +7,17 @@ Soma da configuração ótima fornecida: 528
 -----------
 RESULTADOS
 -----------
-Melhor soma encontrada: 1918
-Média das somas encontradas: 4952.97
-Media da duração da execução (nanosegundos): 699072.83
-Media da duração da execução (segundos): 0.0007
+Melhor soma encontrada: 3287
+Média das somas encontradas: 4758.9
+Media da duração da execução (nanosegundos): 2174610.53
+Media da duração da execução (segundos): 0.00217
 
 -----------
-Melhor solução encontrada se encontra à 263.26% de distância da solução ótima fornecida.
-Média das soluções encontradas se encontra à 838.06% de distância da solução ótima fornecida.
+Melhor solução encontrada se encontra à 522.54% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 801.31% de distância da solução ótima fornecida.
 -----------
 A solução ótima foi alcançada 1 vezes de 30
-Soluções encontradas: [4937, 5397, 4358, 5737, 4890, 5463, 5220, 5699, 4980, 1918, 3390, 5861, 4930, 5214, 3478, 5266, 5509, 5861, 5302, 5663, 5260, 5861, 5153, 5826, 5475, 4771, 5006, 2072, 5574, 4518] 
+Soluções encontradas: [5347, 5165, 4133, 3350, 4349, 4307, 5311, 3398, 4466, 5223, 5215, 5586, 5095, 4847, 4840, 3977, 3940, 5667, 5028, 5018, 4768, 5181, 4973, 5525, 3287, 5642, 5268, 4056, 3962, 5843] 
 -----------
 DETALHAMENTO
 -----------

@@ -7,20 +7,20 @@ Soma da configuração ótima fornecida: 5259733
 -----------
 RESULTADOS
 -----------
-Melhor soma encontrada: 5179604
-Média das somas encontradas: 5896356.63
-Media da duração da execução (nanosegundos): 401338.2
-Media da duração da execução (segundos): 0.0004
+Melhor soma encontrada: 5240145
+Média das somas encontradas: 5160622.53
+Media da duração da execução (nanosegundos): 1054727.33
+Media da duração da execução (segundos): 0.00105
 
 -----------
-Melhor solução encontrada se encontra à 1.52% de distância da solução ótima fornecida.
-Média das soluções encontradas se encontra à 12.1% de distância da solução ótima fornecida.
+Melhor solução encontrada se encontra à 0.37% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 1.88% de distância da solução ótima fornecida.
 -----------
 A solução ótima foi alcançada 1 vezes de 30
-Soluções encontradas: [6581983, 5608526, 6581983, 6079384, 6581983, 5066767, 6581983, 5179604, 6175834, 5381344, 6175834, 4739382, 5573018, 4658680, 6370546, 4830400, 4716463, 4880396, 4793844, 5602599, 6211841, 6581983, 6581983, 6581983, 6035107, 6581983, 6581983, 6581983, 6581983, 6409317] 
+Soluções encontradas: [5133422, 4884357, 4453815, 4782789, 5543012, 5096233, 5061628, 6581983, 5055723, 5047760, 2870457, 6581983, 5055723, 5240145, 5494141, 4904706, 4764763, 5222732, 5010493, 6100415, 5933150, 6361161, 5047173, 5534220, 5602599, 2870932, 4496667, 5108213, 5801103, 5177178] 
 -----------
 DETALHAMENTO
 -----------
 Multiset: [262068, 406149, 648833, 172666, 624678, 546876, 211437, 85740, 85794, 502599, 131289, 481568, 89533, 506366, 284402, 231452, 7337, 979384, 293806, 30006]
 Configuração ótima fornecida: [284402, 231452, 211437, 131289, 979384, 502599, 172666, 30006, 506366, 7337, 89533, 85794, 85740, 406149, 262068, 648833, 624678]
-Configuração geradora da soma resultante: [262068, 406149, 648833, 172666, 624678, 211437, 85740, 85794, 502599, 131289, 506366, 231452, 7337, 979384, 293806, 30006]
+Configuração geradora da soma resultante: [262068, 406149, 172666, 624678, 546876, 85740, 85794, 502599, 131289, 89533, 506366, 284402, 231452, 7337, 979384, 293806, 30006]

@@ -7,20 +7,20 @@ Soma da configuração ótima fornecida: 2828
 -----------
 RESULTADOS
 -----------
-Melhor soma encontrada: 2288
-Média das somas encontradas: 3909.8
-Media da duração da execução (nanosegundos): 638355.33
-Media da duração da execução (segundos): 0.00064
+Melhor soma encontrada: 2804
+Média das somas encontradas: 3210.23
+Media da duração da execução (nanosegundos): 2787889.37
+Media da duração da execução (segundos): 0.00279
 
 -----------
-Melhor solução encontrada se encontra à 19.09% de distância da solução ótima fornecida.
-Média das soluções encontradas se encontra à 38.25% de distância da solução ótima fornecida.
+Melhor solução encontrada se encontra à 0.85% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 13.52% de distância da solução ótima fornecida.
 -----------
 A solução ótima foi alcançada 1 vezes de 30
-Soluções encontradas: [4259, 4259, 3636, 3896, 3817, 4000, 4259, 3692, 2288, 4259, 4027, 3253, 3934, 4208, 4206, 4255, 4149, 4130, 4072, 4259, 3579, 4259, 4259, 3879, 2953, 4061, 3615, 3782, 4200, 3849] 
+Soluções encontradas: [3767, 2656, 3490, 4063, 2794, 3869, 2607, 2830, 3778, 3442, 2620, 2761, 2939, 2070, 2387, 1627, 3754, 3831, 3834, 4259, 3274, 2885, 4061, 2509, 2804, 4064, 3791, 2928, 2774, 3839] 
 -----------
 DETALHAMENTO
 -----------
 Multiset: [2, 67, 81, 143, 5, 74, 114, 10, 44, 155, 196, 159, 33, 4, 151, 189, 53, 195, 22, 135, 44, 59, 78, 145, 22, 143, 96, 51, 97, 129, 65, 20, 94, 128, 110, 42, 8, 69, 165, 198, 28, 82, 55, 38, 32, 20, 185, 5, 172, 47]
 Configuração ótima fornecida: [151, 42, 69, 159, 155, 2, 110, 53, 20, 8, 65, 135, 67, 114, 44, 185, 20, 38, 96, 55, 59, 165, 82, 22, 195, 22, 198, 33, 47, 189, 196, 32]
-Configuração geradora da soma resultante: [143, 74, 159, 4, 151, 189, 195, 22, 44, 78, 22, 143, 97, 65, 8, 69, 165, 198, 38, 20, 185, 172, 47]
+Configuração geradora da soma resultante: [67, 81, 5, 114, 155, 196, 159, 33, 151, 189, 53, 22, 135, 44, 145, 22, 96, 129, 65, 20, 128, 8, 198, 28, 82, 38, 32, 185, 5, 172, 47]
