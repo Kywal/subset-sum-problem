@@ -7,20 +7,20 @@ Soma da configuração ótima fornecida: 528
 -----------
 RESULTADOS
 -----------
-Melhor soma encontrada: 1918
-Média das somas encontradas: 4952.97
-Media da duração da execução (nanosegundos): 699072.83
-Media da duração da execução (segundos): 0.0007
+Melhor soma encontrada: 527
+Média das somas encontradas: 358.93
+Media da duração da execução (nanosegundos): 11981160.87
+Media da duração da execução (segundos): 0.01198
 
 -----------
-Melhor solução encontrada se encontra à 263.26% de distância da solução ótima fornecida.
-Média das soluções encontradas se encontra à 838.06% de distância da solução ótima fornecida.
+Melhor solução encontrada se encontra à 0.19% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 32.02% de distância da solução ótima fornecida.
 -----------
 A solução ótima foi alcançada 1 vezes de 30
-Soluções encontradas: [4937, 5397, 4358, 5737, 4890, 5463, 5220, 5699, 4980, 1918, 3390, 5861, 4930, 5214, 3478, 5266, 5509, 5861, 5302, 5663, 5260, 5861, 5153, 5826, 5475, 4771, 5006, 2072, 5574, 4518] 
+Soluções encontradas: [0, 297, 427, 276, 0, 0, 337, 156, 324, 527, 508, 106, 0, 336, 296, 449, 533, 423, 318, 625, 408, 737, 646, 349, 954, 251, 254, 386, 845, 0] 
 -----------
 DETALHAMENTO
 -----------
 Multiset: [162, 18, 151, 180, 169, 182, 42, 185, 71, 130, 137, 95, 170, 113, 192, 106, 39, 49, 148, 186, 6, 162, 194, 67, 168, 156, 197, 174, 49, 32, 20, 116, 89, 48, 47, 123, 35, 11, 192, 199, 69, 198, 28, 169, 13, 166, 157, 124, 137, 190]
 Configuração ótima fornecida: [186, 194, 148]
-Configuração geradora da soma resultante: None
+Configuração geradora da soma resultante: [192, 198, 137]

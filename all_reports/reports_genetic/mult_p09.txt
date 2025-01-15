@@ -7,20 +7,20 @@ Soma da configuração ótima fornecida: 584
 -----------
 RESULTADOS
 -----------
-Melhor soma encontrada: 584
-Média das somas encontradas: 577.73
-Media da duração da execução (nanosegundos): 188405.9
-Media da duração da execução (segundos): 0.00019
+Melhor soma encontrada: 495
+Média das somas encontradas: 421.5
+Media da duração da execução (nanosegundos): 8374368.8
+Media da duração da execução (segundos): 0.00837
 
 -----------
-Melhor solução encontrada se encontra à 0.0% de distância da solução ótima fornecida.
-Média das soluções encontradas se encontra à 1.07% de distância da solução ótima fornecida.
+Melhor solução encontrada se encontra à 15.24% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 27.83% de distância da solução ótima fornecida.
 -----------
-A solução ótima foi alcançada 25 vezes de 30
-Soluções encontradas: [584, 584, 584, 532, 584, 529, 584, 581, 584, 584, 584, 543, 584, 584, 584, 584, 584, 584, 584, 584, 584, 584, 547, 584, 584, 584, 584, 584, 584, 584] 
+A solução ótima foi alcançada 1 vezes de 30
+Soluções encontradas: [421, 411, 449, 391, 439, 483, 377, 422, 452, 495, 381, 485, 452, 462, 406, 372, 395, 428, 415, 374, 443, 423, 398, 393, 359, 403, 422, 435, 435, 424] 
 -----------
 DETALHAMENTO
 -----------
 Multiset: [33, 32, 43, 37, 15, 39, 21, 12, 10, 47, 49, 3, 47, 41, 4, 40, 5, 44, 42, 20]
 Configuração ótima fornecida: [49, 33, 32, 4, 42, 40, 47, 41, 43, 3, 39, 5, 47, 37, 10, 15, 12, 21, 44, 20]
-Configuração geradora da soma resultante: [33, 32, 43, 37, 15, 39, 21, 12, 10, 47, 49, 3, 47, 41, 4, 40, 5, 44, 42, 20]
+Configuração geradora da soma resultante: [33, 32, 43, 15, 39, 21, 12, 10, 49, 3, 47, 41, 4, 40, 44, 42, 20]

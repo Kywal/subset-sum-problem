@@ -28,33 +28,28 @@ def generate_new_population(parents: list[list[int], list[int], int],
                             ):
 
     new_population = []
+    new_parents = []
     for parent_pair in parents:
 
         diff_deg = parent_pair[2]
 
         if diff_deg > setting_diff_degree:
-            new_population, children_generated = generate_children(
-                parent_pair,
-                crossover,
-                new_population,
-                children_generated,
-                mutation_percentage
-            )
+            child1, child2 = crossover(parent_pair[0], parent_pair[1], mutate_percentage)
+            new_population.append(child1)
+            new_population.append(child2)
+            children_generated += 2
 
     if children_generated == population_size:
-        return new_population, children_generated
+        return new_population, children_generated, new_parents
+
     else:
         for parent_pair in parents:
 
             diff_deg = parent_pair[2]
 
             if diff_deg < setting_diff_degree:
-                new_population, children_generated = generate_children(
-                    parent_pair,
-                    mutate,
-                    new_population,
-                    children_generated,
-                    mutation_percentage
-                )
+                child1, child2 = mutate(parent_pair[0], parent_pair[1], mutate_percentage)
+                new_parents.append(child1)
+                new_parents.append(child2)
 
-    return new_population, children_generated
+    return new_population, children_generated, new_parents
