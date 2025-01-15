@@ -8,13 +8,13 @@ from math import floor
 def genetic_subset_sum(multiset: list[int], target: int, population_size: int, generations: int, setting_degree_init: float = 0.6, gamma: float = 0.999, mutation_percentage: float = 0.5):
     population = generate_first_population(multiset, target, population_size)
     setting_diff_degree = setting_degree_init
-    best_specimen = []
+
+    # sort first population by fitness
+    population.sort(key = lambda specimen : specimen[1])
+    best_specimen = population[0]
 
     for generation in range(generations):
-        # sort first population by fitness
-        population.sort(key = lambda specimen : specimen[1])
-        best_specimen = population[0]
-        #print(best_specimen)
+        print(best_specimen)
 
         if sum_p(best_specimen[0], multiset) == target:
             return best_specimen
@@ -28,9 +28,10 @@ def genetic_subset_sum(multiset: list[int], target: int, population_size: int, g
 
         while children_generated < population_size:
             try:
-                parents = select_next_generation_parents(fittest_population, children_generated, population_size)
+                parents = select_next_generation_parents(fittest_population, children_generated, len(population))
             except ValueError as e:
                 print(e)
+                print(best_specimen)
                 return best_specimen
             new_children, children_generated = generate_new_population(
                 parents,
@@ -42,14 +43,16 @@ def genetic_subset_sum(multiset: list[int], target: int, population_size: int, g
 
             new_population += new_children
 
-            new_population = calculate_fitness_of_all_population(multiset, target, new_population)
-            setting_diff_degree = gamma * setting_diff_degree
-        
+        setting_diff_degree = gamma * setting_diff_degree
+
+        new_population = calculate_fitness_of_all_population(multiset, target, new_population)
+        new_population.sort(key=lambda specimen: specimen[1])
+        population = mergesort_populations(population, new_population, population_size)
         new_population.sort(key = lambda specimen : specimen[1])
-        #population = mergesort_populations(population, new_population, population_size)
-        population = sorted(population + new_population, key=lambda x: x[1])[:population_size]
-        population = new_population
+
+        population = mergesort_populations(population, new_population, population_size)
+        # population = sorted(population + new_population, key=lambda x: x[1])[:population_size]
+        # population = new_population
         best_specimen = population[0]
-        
 
     return best_specimen

@@ -27,8 +27,8 @@ def mutate(parent_x: [list[int], int], parent_y: [list[int], int], mutate_percen
     qty_mutation_x = random.randint(1, mutation_x_index)
     qty_mutation_y = random.randint(1, mutation_y_index)
 
-    child_x = (parent_x[0], -1)
-    child_y = (parent_y[0], -1)
+    child_x = [parent_x[0], -1]
+    child_y = [parent_y[0], -1]
 
     invert = lambda bin_num :  1 if bin_num == 0 else 1
 
@@ -44,8 +44,8 @@ def mutate(parent_x: [list[int], int], parent_y: [list[int], int], mutate_percen
 
 
 def generate_children(parents: (list[int],list[int], int),
-                      reproduction_method: Callable[[list[int],list[int], float],tuple[list[int],list[int]]],
-                      new_population: list[list[int]],
+                      reproduction_method: Callable[[list[int],list[int], float], tuple[list[list[int], int],list[list[int], int]]],
+                      new_population: list[list[int], int],
                       children_generated: int,
                       mutate_percentage: float,
                       ):

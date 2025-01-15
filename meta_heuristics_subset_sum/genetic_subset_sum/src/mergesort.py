@@ -1,7 +1,7 @@
 import sys
 
 
-def mergesort_populations(old_population: list[tuple[list[int], int]], new_population: list[tuple[list[int], int]], population_size: int):
+def mergesort_populations(old_population: [list[list[int], int]], new_population: [list[list[int], int]], population_size: int):
     pop_iter = iter(old_population)
     new_pop_iter = iter(new_population)
 
