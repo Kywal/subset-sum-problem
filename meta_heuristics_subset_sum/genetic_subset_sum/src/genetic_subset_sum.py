@@ -47,12 +47,12 @@ def genetic_subset_sum(multiset: list[int], target: int, population_size: int, g
 
         new_population = calculate_fitness_of_all_population(multiset, target, new_population)
         population = calculate_fitness_of_all_population(multiset, target, population)
+
         population.sort(key=lambda specimen: specimen[1])
         new_population.sort(key=lambda specimen: specimen[1])
-        population = mergesort_populations(population, new_population, population_size)
-        new_population.sort(key = lambda specimen : specimen[1])
 
         population = mergesort_populations(population, new_population, population_size)
+
         # population = sorted(population + new_population, key=lambda x: x[1])[:population_size]
         # population = new_population
         best_specimen = population[0]
