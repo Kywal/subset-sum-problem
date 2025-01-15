@@ -7,20 +7,20 @@ Soma da configuração ótima fornecida: 92
 -----------
 RESULTADOS
 -----------
-Melhor soma encontrada: 91
-Média das somas encontradas: 74.13
-Media da duração da execução (nanosegundos): 7760041.23
-Media da duração da execução (segundos): 0.00776
+Melhor soma encontrada: 92
+Média das somas encontradas: 92.0
+Media da duração da execução (nanosegundos): 9051498.13
+Media da duração da execução (segundos): 0.00905
 
 -----------
-Melhor solução encontrada se encontra à 1.09% de distância da solução ótima fornecida.
-Média das soluções encontradas se encontra à 19.42% de distância da solução ótima fornecida.
+Melhor solução encontrada se encontra à 0.0% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 0.0% de distância da solução ótima fornecida.
 -----------
-A solução ótima foi alcançada 5 vezes de 30
-Soluções encontradas: [89, 80, 61, 83, 63, 86, 90, 69, 49, 64, 80, 91, 78, 90, 69, 75, 46, 91, 91, 91, 76, 81, 43, 61, 69, 80, 41, 87, 59, 91] 
+A solução ótima foi alcançada 30 vezes de 30
+Soluções encontradas: [92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92, 92] 
 -----------
 DETALHAMENTO
 -----------
 Multiset: [37, 7, 25, 21, 33, 6, 21, 6, 50, 35, 44, 30, 2, 3, 32, 25, 2, 17, 11, 2]
 Configuração ótima fornecida: [11, 44, 2, 32, 3]
-Configuração geradora da soma resultante: [37, 25, 21, 6, 2]
+Configuração geradora da soma resultante: [30, 3, 32, 25, 2]

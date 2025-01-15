@@ -50,6 +50,9 @@ def write_report(file_name, data, alg, folder="reports_exact"):
 
 def write_report_mult(file_name, data, alg, folder="reports_exact"):
 
+    dist_best_to_solution = 0
+    dist_avg_to_solution = 0
+
     if  data['config_o'] != [] :
         config_o = str(data['config_o'])
         sum_o = str(data['value_config_o'])

@@ -27,7 +27,7 @@ def select_next_generation_parents(population: list[tuple[list[int], int]], chil
     population_size = len(population)
     parent_pairs_qty = (population_original_size - children_generated) // 2
     parents = []
-    attempt_limit = 5
+    attempt_limit = 30
     for _ in range(parent_pairs_qty):
         attempt_count = 0
         while attempt_count < attempt_limit: 

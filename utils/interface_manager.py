@@ -190,19 +190,24 @@ def run_all_tests(datatest_path, file_type, report_genetic_path):
         t, s, list_o = read_file(datatest_path + test_name + file_type)
         if s and t:
             data = run_genetic_many_times(t, s, list_o)
-            
+
             all_durations.append(data['avg_duration'])
-            all_distances.append(round(100*((abs(data['best_final_sum']-sum(data['config_o'])))/sum(data['config_o'])),2))
-            all_distances_avg.append(round(100*((abs(data['avg_solutions']-sum(data['config_o'])))/sum(data['config_o'])),2))
+
+            if data['config_o'] != []:
+                all_distances.append(
+                    round(100*(
+                            (abs(data['best_final_sum']-sum(data['config_o'])))/sum(data['config_o'])),2)
+                )
+                all_distances_avg.append(round(100*((abs(data['avg_solutions']-sum(data['config_o'])))/sum(data['config_o'])),2))
             
-            if i % 5 == 0:
-                print(all_durations[-5:])
-                avg_duration_group = calculate_average(all_durations[-5:])
-                avg_distance_group = calculate_average(all_distances[-5:])
-                avg_distance_avg_group = calculate_average(all_distances_avg[-5:])
-                grouped_durations.append(avg_duration_group)
-                grouped_distances.append(avg_distance_group)
-                grouped_distances_avg.append(avg_distance_avg_group)
+                if i % 5 == 0:
+                    print(all_durations[-5:])
+                    avg_duration_group = calculate_average(all_durations[-5:])
+                    avg_distance_group = calculate_average(all_distances[-5:])
+                    avg_distance_avg_group = calculate_average(all_distances_avg[-5:])
+                    grouped_durations.append(avg_duration_group)
+                    grouped_distances.append(avg_distance_group)
+                    grouped_distances_avg.append(avg_distance_avg_group)
                 
             file_name = f"mult_{test_name}{file_type}"
             write_report_mult(file_name, data, "genetic", report_genetic_path)

@@ -8,19 +8,19 @@ Soma da configuração ótima fornecida: 2769
 RESULTADOS
 -----------
 Melhor soma encontrada: 2769
-Média das somas encontradas: 2636.77
-Media da duração da execução (nanosegundos): 14552729.03
-Media da duração da execução (segundos): 0.01455
+Média das somas encontradas: 2768.93
+Media da duração da execução (nanosegundos): 45666734.87
+Media da duração da execução (segundos): 0.04567
 
 -----------
 Melhor solução encontrada se encontra à 0.0% de distância da solução ótima fornecida.
-Média das soluções encontradas se encontra à 4.78% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 0.0% de distância da solução ótima fornecida.
 -----------
-A solução ótima foi alcançada 2 vezes de 30
-Soluções encontradas: [2072, 2593, 2612, 2615, 2622, 2603, 2754, 2769, 2175, 2769, 2666, 2733, 2758, 2767, 2700, 2654, 2707, 2659, 2597, 2648, 2752, 2744, 2603, 2203, 2737, 2758, 2558, 2751, 2758, 2766] 
+A solução ótima foi alcançada 29 vezes de 30
+Soluções encontradas: [2769, 2769, 2769, 2769, 2769, 2769, 2769, 2769, 2769, 2769, 2769, 2769, 2769, 2769, 2769, 2769, 2769, 2769, 2767, 2769, 2769, 2769, 2769, 2769, 2769, 2769, 2769, 2769, 2769, 2769] 
 -----------
 DETALHAMENTO
 -----------
 Multiset: [185, 140, 167, 139, 182, 14, 106, 32, 117, 128, 25, 135, 149, 181, 129, 117, 148, 143, 96, 106, 189, 92, 66, 181, 127, 144, 73, 199, 176, 5, 111, 44, 10, 178, 58, 160, 1, 90, 19, 14, 25, 188, 148, 81, 51, 176, 199, 38, 114, 56]
 Configuração ótima fornecida: [106, 56, 199, 181, 32, 148, 182, 25, 14, 58, 148, 106, 176, 185, 129, 135, 38, 189, 199, 160, 44, 178, 81]
-Configuração geradora da soma resultante: [185, 140, 167, 182, 14, 128, 25, 135, 149, 148, 143, 92, 144, 176, 44, 10, 178, 58, 1, 90, 19, 25, 81, 51, 176, 38, 114, 56]
+Configuração geradora da soma resultante: [185, 140, 139, 182, 14, 106, 32, 117, 128, 25, 135, 129, 117, 106, 66, 144, 73, 176, 44, 10, 178, 1, 19, 25, 81, 51, 176, 114, 56]

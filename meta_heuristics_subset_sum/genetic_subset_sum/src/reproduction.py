@@ -30,7 +30,7 @@ def mutate(parent_x: [list[int], int], parent_y: [list[int], int], mutate_percen
     child_x = (parent_x[0], -1)
     child_y = (parent_y[0], -1)
 
-    invert = lambda bin_num :  1 if bin_num == 0 else 1
+    invert = lambda bin_num :  1 if bin_num == 0 else 0
 
     for _ in range(qty_mutation_x):
         mutation_index = random.randint(0, len(parent_x[0])-1)
