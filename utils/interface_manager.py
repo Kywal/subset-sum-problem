@@ -1,8 +1,8 @@
 import os
 from utils.instance_generator.instance_generator import instance_generator
 from utils.file_manager.read_file import read_file
-from utils.file_manager.write_report import write_report
-from utils.run_algs import run_exact_fft, run_exact_simple, run_aprox, run_exact_mp,  run_genetic
+from utils.file_manager.write_report import write_report,  write_report_mult
+from utils.run_algs import run_exact_fft, run_exact_simple, run_aprox, run_exact_mp,  run_genetic, run_genetic_many_times
 
 def menu(item_menu):
 
@@ -36,6 +36,16 @@ def menu(item_menu):
                 data = run_genetic(t,s,list_o)
                 file_name = test_name + file_type
                 write_report(file_name, data, "genetic", report_genetic_path)
+                item_menu = ending_report_writing_process()
+            else:
+                item_menu = instance_processing_error()
+        elif (item_menu == '9'):
+            test_name = input("(GENETICO TESTES) Informe o nome da instância que deseja executar (ex.: p01, p02...):\n")
+            t,s,list_o = read_file(datatest_path + test_name + file_type)
+            if s and t:
+                data = run_genetic_many_times(t,s,list_o)
+                file_name = "mult_" + test_name + file_type
+                write_report_mult(file_name, data, "genetic", report_genetic_path)
                 item_menu = ending_report_writing_process()
             else:
                 item_menu = instance_processing_error()

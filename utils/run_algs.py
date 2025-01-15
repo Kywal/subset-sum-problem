@@ -89,3 +89,63 @@ def run_genetic(t,s,list_o) -> dict[str, any]:
         "config_o": list_o if list_o != [] else []
     }
     return data
+
+def run_genetic_many_timnes(t,s,list_o) -> dict[str,any]:
+    import time
+
+def run_genetic_many_times(t, s, list_o) -> dict:
+    num_runs = 30
+    best_solution = None
+    best_value = 0 
+    sum_solutions = 0
+    find_solution = 0
+    all_durations = []
+    all_solutions = []
+    all_solutions_values = []
+
+    for _ in range(num_runs):
+        start_time = time.perf_counter_ns()
+        result = genetic_subset_sum(s, t, 20, 100, 0.6)
+        end_time = time.perf_counter_ns()
+        
+        final_subset = [s[i] for i in range(len(result[0])) if result[0][i] == 1]
+        final_sum = sum(final_subset)
+        
+        sum_solutions += final_sum
+        all_durations.append(end_time - start_time)
+        all_solutions.append(final_subset) 
+        all_solutions_values.append(final_sum)
+
+        if final_sum <= t:
+            if final_sum > best_value:
+                best_value = final_sum
+                best_solution = final_subset
+
+        if final_sum == t:
+            find_solution += 1
+
+    
+    avg_duration = sum(all_durations) / num_runs
+    avg_solutions = sum_solutions / num_runs
+
+    if (find_solution == 0):
+        find_solution = all_solutions_values.count(best_value)
+    
+    data = {
+        "len" : len (s),
+        "t" : t,
+        "set" : s,
+        "best_final_sum": best_value,
+        "best_final_config": str(best_solution),
+        "avg_duration": round(avg_duration, 2),  
+        "avg_duration_sec": round(avg_duration / 1_000_000_000, 5),  
+        "avg_solutions": round(avg_solutions, 2),
+        "all_solutions_values": all_solutions_values,
+        "all_durations": all_durations,
+        "config_o": list_o if list_o != [] else [],
+        "value_config_o":  sum(list_o) if list_o != [] else [],
+        "find_solution": find_solution,
+        "num_runs": num_runs 
+    }
+
+    return data

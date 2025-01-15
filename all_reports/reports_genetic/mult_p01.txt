@@ -1,0 +1,26 @@
+-------------------
+DADOS DA INSTÂNCIA 
+-------------------
+Tamanho do conjunto: 10 
+Soma objetivo: 159
+Soma da configuração ótima fornecida: 159
+-----------
+RESULTADOS
+-----------
+Melhor soma encontrada: 159
+Média das somas encontradas: 219.53
+Media da duração da execução (nanosegundos): 2168061.37
+Media da duração da execução (segundos): 0.00217
+
+-----------
+Melhor solução encontrada se encontra à 0.0% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 38.07% de distância da solução ótima fornecida.
+-----------
+A solução ótima foi alcançada 10 vezes de 30
+Soluções encontradas: [292, 159, 159, 189, 264, 305, 305, 159, 305, 259, 305, 274, 159, 155, 159, 159, 223, 222, 155, 159, 159, 305, 259, 165, 218, 159, 242, 249, 305, 159] 
+-----------
+DETALHAMENTO
+-----------
+Multiset: [41, 17, 14, 36, 27, 46, 29, 46, 13, 36]
+Configuração ótima fornecida: [36, 36, 41, 46]
+Configuração geradora da soma resultante: [14, 36, 27, 46, 36]
