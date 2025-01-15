@@ -128,7 +128,10 @@ def run_genetic_many_times(t, s, list_o) -> dict:
     avg_duration = sum(all_durations) / num_runs
     avg_solutions = sum_solutions / num_runs
 
-    if (find_solution == 0):
+    if (find_solution == 0 and best_value ==0):
+        best_value = min(all_solutions_values)
+        find_solution = all_solutions_values.count(best_value)
+    elif (find_solution == 0 ):
         find_solution = all_solutions_values.count(best_value)
     
     data = {

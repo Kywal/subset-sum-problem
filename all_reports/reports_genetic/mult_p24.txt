@@ -7,17 +7,17 @@ Soma da configuração ótima fornecida: 1711
 -----------
 RESULTADOS
 -----------
-Melhor soma encontrada: 0
-Média das somas encontradas: 7964.2
-Media da duração da execução (nanosegundos): 1071362.87
-Media da duração da execução (segundos): 0.00107
+Melhor soma encontrada: 4581
+Média das somas encontradas: 7919.67
+Media da duração da execução (nanosegundos): 1139625.0
+Media da duração da execução (segundos): 0.00114
 
 -----------
-Melhor solução encontrada se encontra à 100.0% de distância da solução ótima fornecida.
-Média das soluções encontradas se encontra à 365.47% de distância da solução ótima fornecida.
+Melhor solução encontrada se encontra à 167.74% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 362.87% de distância da solução ótima fornecida.
 -----------
-A solução ótima foi alcançada 0 vezes de 30
-Soluções encontradas: [9329, 8538, 9293, 6384, 3712, 7755, 7849, 9277, 9032, 8034, 5961, 7039, 7207, 9471, 9172, 8712, 5724, 8903, 5267, 9123, 9471, 9238, 9300, 9126, 8051, 9274, 3754, 8820, 8867, 7243] 
+A solução ótima foi alcançada 1 vezes de 30
+Soluções encontradas: [4691, 6584, 9351, 6927, 9471, 6725, 7418, 9038, 6647, 7956, 8602, 7812, 7512, 9335, 4581, 5190, 9369, 6397, 9471, 9159, 8631, 9305, 8697, 9279, 9315, 7038, 9272, 9471, 8851, 5495] 
 -----------
 DETALHAMENTO
 -----------

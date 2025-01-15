@@ -7,20 +7,20 @@ Soma da configuração ótima fornecida: 2965
 -----------
 RESULTADOS
 -----------
-Melhor soma encontrada: 2735
-Média das somas encontradas: 4178.07
-Media da duração da execução (nanosegundos): 672566.4
-Media da duração da execução (segundos): 0.00067
+Melhor soma encontrada: 2965
+Média das somas encontradas: 4123.3
+Media da duração da execução (nanosegundos): 589937.73
+Media da duração da execução (segundos): 0.00059
 
 -----------
-Melhor solução encontrada se encontra à 7.76% de distância da solução ótima fornecida.
-Média das soluções encontradas se encontra à 40.91% de distância da solução ótima fornecida.
+Melhor solução encontrada se encontra à 0.0% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 39.07% de distância da solução ótima fornecida.
 -----------
-A solução ótima foi alcançada 1 vezes de 30
-Soluções encontradas: [3885, 4172, 3133, 4683, 4516, 2735, 4602, 4509, 3489, 4318, 4616, 4616, 4055, 4427, 4333, 4683, 4020, 4288, 4420, 3306, 3822, 4492, 3570, 4188, 4671, 4683, 4247, 4525, 4013, 4325] 
+A solução ótima foi alcançada 2 vezes de 30
+Soluções encontradas: [3107, 4602, 3905, 4248, 4602, 4351, 4500, 4499, 4683, 4553, 4563, 2465, 4525, 3682, 3908, 3692, 4241, 4324, 4366, 3986, 2965, 2965, 4354, 4487, 4683, 4509, 4683, 4683, 4683, 2885] 
 -----------
 DETALHAMENTO
 -----------
 Multiset: [194, 1, 15, 135, 146, 169, 76, 69, 122, 101, 145, 162, 158, 15, 98, 98, 51, 16, 24, 17, 130, 23, 108, 81, 59, 89, 182, 22, 147, 110, 192, 37, 174, 100, 87, 72, 196, 56, 67, 12, 98, 93, 27, 15, 45, 188, 155, 125, 165, 16]
 Configuração ótima fornecida: [101, 145, 51, 89, 192, 23, 22, 135, 100, 188, 15, 12, 182, 56, 130, 169, 93, 87, 1, 98, 72, 125, 16, 158, 98, 67, 194, 196, 81, 15, 17, 37]
-Configuração geradora da soma resultante: [1, 135, 146, 76, 122, 101, 145, 98, 98, 51, 24, 17, 23, 81, 59, 89, 182, 110, 192, 174, 100, 72, 196, 93, 15, 45, 125, 165]
+Configuração geradora da soma resultante: [194, 15, 135, 146, 69, 122, 101, 158, 98, 51, 16, 24, 17, 130, 23, 108, 81, 59, 89, 110, 192, 37, 174, 87, 72, 196, 56, 12, 27, 15, 45, 125, 165, 16]
