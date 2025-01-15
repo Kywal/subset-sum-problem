@@ -1,5 +1,7 @@
 from meta_heuristics_subset_sum.genetic_subset_sum.src.population_generator import generate_first_population, generate_new_population
 from meta_heuristics_subset_sum.genetic_subset_sum.src.avaliation import sum_p, calculate_fitness_of_all_population, select_next_generation_parents
+from meta_heuristics_subset_sum.genetic_subset_sum.src.mergesort import mergesort_populations
+
 from math import floor
 
 
@@ -44,7 +46,7 @@ def genetic_subset_sum(multiset: list[int], target: int, population_size: int, g
             setting_diff_degree = gamma * setting_diff_degree
 
         new_population.sort(key=lambda specimen: specimen[1])
-        population = new_population[:population_size]
+        population = mergesort_populations(population, new_population, population_size)
         best_specimen = population[0]
 
     return best_specimen
