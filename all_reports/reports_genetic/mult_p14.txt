@@ -7,20 +7,20 @@ Soma da configuração ótima fornecida: 6486708
 -----------
 RESULTADOS
 -----------
-Melhor soma encontrada: 6480227
-Média das somas encontradas: 6400053.53
-Media da duração da execução (nanosegundos): 41189630.73
-Media da duração da execução (segundos): 0.04119
+Melhor soma encontrada: 6486703
+Média das somas encontradas: 6483949.4
+Media da duração da execução (nanosegundos): 15283093.3
+Media da duração da execução (segundos): 0.01528
 
 -----------
-Melhor solução encontrada se encontra à 0.1% de distância da solução ótima fornecida.
-Média das soluções encontradas se encontra à 1.34% de distância da solução ótima fornecida.
+Melhor solução encontrada se encontra à 0.0% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 0.04% de distância da solução ótima fornecida.
 -----------
 A solução ótima foi alcançada 1 vezes de 30
-Soluções encontradas: [6463448, 6372503, 6469893, 6395049, 6479643, 6321315, 6471638, 6376833, 6429949, 6359588, 6440675, 6472174, 6478149, 6265540, 6404718, 6333422, 6443788, 6377762, 6453942, 6455344, 6351346, 6325512, 6375298, 6433381, 6434909, 6392747, 6280526, 6322198, 6480227, 6340089] 
+Soluções encontradas: [6482624, 6485839, 6484134, 6484308, 6484077, 6485856, 6481508, 6486328, 6485324, 6486668, 6482090, 6484525, 6478356, 6473850, 6485311, 6481579, 6484910, 6486479, 6478883, 6485131, 6486545, 6482362, 6485371, 6486703, 6485839, 6486051, 6482957, 6486395, 6485441, 6483038] 
 -----------
 DETALHAMENTO
 -----------
 Multiset: [522262, 732326, 413378, 676841, 264531, 569450, 945610, 271975, 202117, 783266, 80232, 821620, 95466, 249886, 906519, 315290, 720162, 283621, 693334, 85520]
 Configuração ótima fornecida: [783266, 821620, 249886, 271975, 720162, 315290, 569450, 80232, 732326, 85520, 264531, 202117, 283621, 413378, 693334]
-Configuração geradora da soma resultante: [522262, 413378, 676841, 264531, 945610, 271975, 202117, 783266, 80232, 906519, 720162, 693334]
+Configuração geradora da soma resultante: [732326, 676841, 264531, 945610, 271975, 783266, 80232, 821620, 906519, 720162, 283621]

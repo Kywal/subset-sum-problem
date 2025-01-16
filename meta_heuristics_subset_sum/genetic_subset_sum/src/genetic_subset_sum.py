@@ -11,17 +11,16 @@ def genetic_subset_sum(multiset: list[int], target: int, population_size: int, g
     best_specimen = []
 
     for generation in range(generations):
-        # sort first population by fitness
         population.sort(key = lambda specimen : specimen[1])
         best_specimen = population[0]
 
-        if sum_p(best_specimen[0], multiset) == target:
+        if best_specimen[1] == 0:
             return best_specimen
 
         children_generated = 0
         new_population = []
 
-        elite_percentage = 1
+        elite_percentage = 0.5
         elite_upper_bound = floor(len(population) * elite_percentage)
         fittest_population = population[:elite_upper_bound]
 

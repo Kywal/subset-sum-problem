@@ -8,19 +8,19 @@ Soma da configuração ótima fornecida: 2828
 RESULTADOS
 -----------
 Melhor soma encontrada: 2828
-Média das somas encontradas: 2815.97
-Media da duração da execução (nanosegundos): 96028980.57
-Media da duração da execução (segundos): 0.09603
+Média das somas encontradas: 2828.0
+Media da duração da execução (nanosegundos): 7962965.37
+Media da duração da execução (segundos): 0.00796
 
 -----------
 Melhor solução encontrada se encontra à 0.0% de distância da solução ótima fornecida.
-Média das soluções encontradas se encontra à 0.43% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 0.0% de distância da solução ótima fornecida.
 -----------
-A solução ótima foi alcançada 17 vezes de 30
-Soluções encontradas: [2828, 2828, 2786, 2804, 2828, 2828, 2826, 2734, 2828, 2828, 2815, 2828, 2828, 2828, 2814, 2828, 2727, 2828, 2828, 2809, 2828, 2828, 2818, 2827, 2828, 2817, 2800, 2828, 2826, 2828] 
+A solução ótima foi alcançada 30 vezes de 30
+Soluções encontradas: [2828, 2828, 2828, 2828, 2828, 2828, 2828, 2828, 2828, 2828, 2828, 2828, 2828, 2828, 2828, 2828, 2828, 2828, 2828, 2828, 2828, 2828, 2828, 2828, 2828, 2828, 2828, 2828, 2828, 2828] 
 -----------
 DETALHAMENTO
 -----------
 Multiset: [2, 67, 81, 143, 5, 74, 114, 10, 44, 155, 196, 159, 33, 4, 151, 189, 53, 195, 22, 135, 44, 59, 78, 145, 22, 143, 96, 51, 97, 129, 65, 20, 94, 128, 110, 42, 8, 69, 165, 198, 28, 82, 55, 38, 32, 20, 185, 5, 172, 47]
 Configuração ótima fornecida: [151, 42, 69, 159, 155, 2, 110, 53, 20, 8, 65, 135, 67, 114, 44, 185, 20, 38, 96, 55, 59, 165, 82, 22, 195, 22, 198, 33, 47, 189, 196, 32]
-Configuração geradora da soma resultante: [5, 114, 44, 159, 33, 4, 151, 189, 53, 195, 44, 145, 22, 143, 51, 129, 65, 128, 110, 42, 165, 198, 28, 82, 55, 38, 32, 185, 172, 47]
+Configuração geradora da soma resultante: [143, 155, 196, 159, 4, 151, 195, 22, 135, 59, 78, 145, 143, 96, 51, 129, 65, 20, 94, 42, 69, 165, 198, 38, 32, 20, 5, 172, 47]

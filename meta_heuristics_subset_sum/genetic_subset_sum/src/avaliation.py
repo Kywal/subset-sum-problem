@@ -7,20 +7,20 @@ def sum_p(x: list[int], w: list[int]):
         result += x[i] * w[i]
     return result
 
-def fitness(solution: list[int], w: list[int], c: int):
+def fitness(solution: list[int], multiset: list[int], target: int):
     s = 0
-    px = sum_p(solution, w)
-    if c - px >= 0:
+    px = sum_p(solution, multiset)
+    if target >= px:
         s = 1
-    return s * (c - px) + (1 - s) * px
+    return s * (target - px) + (1 - s) * px
 
 def difference_degree(parent_x: list[int], parent_y: list[int]):
-    multiset_size = len(parent_x)
+    individuo_size = len(parent_x)
     nd = 0
-    for i in range(multiset_size):
+    for i in range(individuo_size):
         if parent_x[i] != parent_y[i]:
             nd += 1
-    ng = multiset_size
+    ng = individuo_size
     return nd / ng
 
 def select_next_generation_parents(population: list[tuple[list[int], int]], children_generated: int, population_original_size: int):
@@ -48,8 +48,6 @@ def select_next_generation_parents(population: list[tuple[list[int], int]], chil
 
             if attempt_count >= (attempt_limit - 1):
                 raise ValueError("População não é mais diversa o suficiente.")
-
-        
 
     return parents
 

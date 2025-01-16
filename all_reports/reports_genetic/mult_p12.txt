@@ -7,20 +7,20 @@ Soma da configuração ótima fornecida: 2227794
 -----------
 RESULTADOS
 -----------
-Melhor soma encontrada: 2227794
-Média das somas encontradas: 2092541.97
-Media da duração da execução (nanosegundos): 43634024.6
-Media da duração da execução (segundos): 0.04363
+Melhor soma encontrada: 2227710
+Média das somas encontradas: 2223738.37
+Media da duração da execução (nanosegundos): 21348730.6
+Media da duração da execução (segundos): 0.02135
 
 -----------
 Melhor solução encontrada se encontra à 0.0% de distância da solução ótima fornecida.
-Média das soluções encontradas se encontra à 6.07% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 0.18% de distância da solução ótima fornecida.
 -----------
 A solução ótima foi alcançada 1 vezes de 30
-Soluções encontradas: [2106849, 1979120, 2139593, 2242845, 2137163, 2227794, 2227645, 2197449, 2066876, 2042030, 2215117, 2165274, 2067939, 2154022, 1756911, 2030536, 2206653, 1742548, 2423237, 2163613, 1741126, 2051986, 2024428, 1975141, 2130590, 2070800, 2050990, 2196088, 2158072, 2083824] 
+Soluções encontradas: [2224274, 2226471, 2227228, 2221673, 2227274, 2226535, 2221612, 2226535, 2226280, 2215117, 2222174, 2222355, 2221219, 2225607, 2223368, 2226989, 2226989, 2223877, 2221388, 2226672, 2222935, 2215313, 2215187, 2220887, 2226535, 2218202, 2226471, 2227645, 2227710, 2227629] 
 -----------
 DETALHAMENTO
 -----------
 Multiset: [567173, 920337, 650125, 471838, 829999, 469814, 12951, 608236, 693583, 747505, 76118, 816866, 131128, 484124, 816412, 173860, 279373, 245877, 443680, 547456]
 Configuração ótima fornecida: [816412, 12951, 443680, 76118, 747505, 131128]
-Configuração geradora da soma resultante: [12951, 747505, 76118, 131128, 816412, 443680]
+Configuração geradora da soma resultante: [471838, 693583, 816412, 245877]

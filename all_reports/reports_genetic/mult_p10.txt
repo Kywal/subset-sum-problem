@@ -9,8 +9,8 @@ RESULTADOS
 -----------
 Melhor soma encontrada: 192
 Média das somas encontradas: 192.0
-Media da duração da execução (nanosegundos): 2589165.3
-Media da duração da execução (segundos): 0.00259
+Media da duração da execução (nanosegundos): 1264018.27
+Media da duração da execução (segundos): 0.00126
 
 -----------
 Melhor solução encontrada se encontra à 0.0% de distância da solução ótima fornecida.
@@ -23,4 +23,4 @@ DETALHAMENTO
 -----------
 Multiset: [4, 11, 32, 1, 2, 46, 47, 24, 2, 13, 18, 35, 21, 6, 35, 27, 33, 45, 14, 25]
 Configuração ótima fornecida: [35, 27, 46, 47, 13, 18, 6]
-Configuração geradora da soma resultante: [4, 11, 1, 47, 24, 2, 13, 35, 6, 35, 14]
+Configuração geradora da soma resultante: [4, 11, 32, 1, 6, 35, 33, 45, 25]

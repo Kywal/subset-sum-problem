@@ -7,20 +7,20 @@ Soma da configuração ótima fornecida: 1711
 -----------
 RESULTADOS
 -----------
-Melhor soma encontrada: 2652
-Média das somas encontradas: 3309.8
-Media da duração da execução (nanosegundos): 531867403.2
-Media da duração da execução (segundos): 0.53187
+Melhor soma encontrada: 1711
+Média das somas encontradas: 1711.0
+Media da duração da execução (nanosegundos): 18025526.23
+Media da duração da execução (segundos): 0.01803
 
 -----------
-Melhor solução encontrada se encontra à 55.0% de distância da solução ótima fornecida.
-Média das soluções encontradas se encontra à 93.44% de distância da solução ótima fornecida.
+Melhor solução encontrada se encontra à 0.0% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 0.0% de distância da solução ótima fornecida.
 -----------
-A solução ótima foi alcançada 1 vezes de 30
-Soluções encontradas: [3034, 3019, 3285, 3470, 3543, 3631, 3191, 3091, 3043, 3449, 3092, 2652, 3356, 2862, 3338, 3438, 3104, 3591, 3087, 3385, 3344, 3728, 3757, 3701, 3229, 3387, 3268, 3532, 3310, 3377] 
+A solução ótima foi alcançada 30 vezes de 30
+Soluções encontradas: [1711, 1711, 1711, 1711, 1711, 1711, 1711, 1711, 1711, 1711, 1711, 1711, 1711, 1711, 1711, 1711, 1711, 1711, 1711, 1711, 1711, 1711, 1711, 1711, 1711, 1711, 1711, 1711, 1711, 1711] 
 -----------
 DETALHAMENTO
 -----------
 Multiset: [59, 119, 60, 126, 123, 99, 178, 151, 146, 186, 52, 7, 130, 89, 167, 11, 191, 10, 83, 59, 142, 96, 14, 24, 3, 146, 198, 77, 136, 190, 197, 54, 35, 28, 72, 72, 20, 184, 48, 37, 28, 37, 48, 111, 22, 53, 12, 72, 125, 8, 156, 89, 102, 164, 93, 131, 76, 119, 32, 121, 31, 52, 79, 111, 54, 58, 25, 105, 199, 194, 12, 151, 29, 86, 154, 131, 112, 25, 192, 179, 185, 36, 199, 8, 38, 15, 197, 138, 173, 15, 77, 40, 167, 137, 94, 175, 76, 156, 7, 141]
 Configuração ótima fornecida: [102, 89, 14, 141, 12, 8, 37, 28, 94, 112, 53, 154, 119, 178, 146, 29, 197, 191, 7]
-Configuração geradora da soma resultante: None
+Configuração geradora da soma resultante: [59, 35, 37, 28, 111, 22, 53, 102, 76, 32, 79, 58, 12, 151, 112, 25, 38, 173, 40, 137, 175, 156]

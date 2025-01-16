@@ -90,10 +90,7 @@ def run_genetic(t,s,list_o) -> dict[str, any]:
     }
     return data
 
-def run_genetic_many_timnes(t,s,list_o) -> dict[str,any]:
-    import time
-
-def run_genetic_many_times(t, s, list_o) -> dict:
+def run_genetic_many_times(t, s, list_o) -> dict[str,any]:
     num_runs = 30
     best_solution = None
     best_value = 0 
@@ -105,7 +102,7 @@ def run_genetic_many_times(t, s, list_o) -> dict:
 
     for _ in range(num_runs):
         start_time = time.perf_counter_ns()
-        result = genetic_subset_sum(s, t, 20, 100, 0.6)
+        result = genetic_subset_sum(s, t, 50, 100, 0.1)
         end_time = time.perf_counter_ns()
         
         final_subset = [s[i] for i in range(len(result[0])) if result[0][i] == 1]

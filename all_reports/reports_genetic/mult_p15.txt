@@ -7,20 +7,20 @@ Soma da configuração ótima fornecida: 5259733
 -----------
 RESULTADOS
 -----------
-Melhor soma encontrada: 5253534
-Média das somas encontradas: 5136044.3
-Media da duração da execução (nanosegundos): 44885406.13
-Media da duração da execução (segundos): 0.04489
+Melhor soma encontrada: 5259733
+Média das somas encontradas: 5258099.67
+Media da duração da execução (nanosegundos): 15134678.83
+Media da duração da execução (segundos): 0.01513
 
 -----------
-Melhor solução encontrada se encontra à 0.12% de distância da solução ótima fornecida.
-Média das soluções encontradas se encontra à 2.35% de distância da solução ótima fornecida.
+Melhor solução encontrada se encontra à 0.0% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 0.03% de distância da solução ótima fornecida.
 -----------
-A solução ótima foi alcançada 1 vezes de 30
-Soluções encontradas: [5147357, 4941836, 5177140, 5253534, 4969534, 5175853, 5230171, 5040989, 5249399, 5171943, 5137508, 5137859, 5240145, 5239315, 5140036, 5219384, 5056578, 5249877, 5205851, 5128932, 5111018, 5120532, 4790284, 5090437, 5197592, 5243033, 5239345, 4964380, 5116898, 5094569] 
+A solução ótima foi alcançada 5 vezes de 30
+Soluções encontradas: [5256226, 5258186, 5255752, 5259733, 5250514, 5258951, 5258377, 5259021, 5259733, 5259173, 5253166, 5258881, 5259733, 5257020, 5259173, 5258152, 5257535, 5258663, 5258676, 5259627, 5258820, 5259733, 5258196, 5259733, 5258962, 5259016, 5255407, 5259532, 5258013, 5259286] 
 -----------
 DETALHAMENTO
 -----------
 Multiset: [262068, 406149, 648833, 172666, 624678, 546876, 211437, 85740, 85794, 502599, 131289, 481568, 89533, 506366, 284402, 231452, 7337, 979384, 293806, 30006]
 Configuração ótima fornecida: [284402, 231452, 211437, 131289, 979384, 502599, 172666, 30006, 506366, 7337, 89533, 85794, 85740, 406149, 262068, 648833, 624678]
-Configuração geradora da soma resultante: [262068, 648833, 624678, 546876, 211437, 85794, 481568, 89533, 506366, 284402, 231452, 7337, 979384, 293806]
+Configuração geradora da soma resultante: [262068, 406149, 648833, 172666, 624678, 211437, 85740, 85794, 502599, 131289, 89533, 506366, 284402, 231452, 7337, 979384, 30006]

@@ -8,19 +8,19 @@ Soma da configuração ótima fornecida: 123
 RESULTADOS
 -----------
 Melhor soma encontrada: 123
-Média das somas encontradas: 122.9
-Media da duração da execução (nanosegundos): 905939.5
-Media da duração da execução (segundos): 0.00091
+Média das somas encontradas: 123.0
+Media da duração da execução (nanosegundos): 526829.0
+Media da duração da execução (segundos): 0.00053
 
 -----------
 Melhor solução encontrada se encontra à 0.0% de distância da solução ótima fornecida.
-Média das soluções encontradas se encontra à 0.08% de distância da solução ótima fornecida.
+Média das soluções encontradas se encontra à 0.0% de distância da solução ótima fornecida.
 -----------
-A solução ótima foi alcançada 28 vezes de 30
-Soluções encontradas: [123, 123, 123, 123, 123, 123, 121, 123, 123, 123, 123, 123, 123, 123, 123, 123, 123, 123, 123, 123, 123, 122, 123, 123, 123, 123, 123, 123, 123, 123] 
+A solução ótima foi alcançada 30 vezes de 30
+Soluções encontradas: [123, 123, 123, 123, 123, 123, 123, 123, 123, 123, 123, 123, 123, 123, 123, 123, 123, 123, 123, 123, 123, 123, 123, 123, 123, 123, 123, 123, 123, 123] 
 -----------
 DETALHAMENTO
 -----------
 Multiset: [32, 8, 15, 19, 1, 43, 16, 7, 22, 25]
 Configuração ótima fornecida: [22, 1, 16, 43, 19, 15, 7]
-Configuração geradora da soma resultante: [32, 1, 43, 22, 25]
+Configuração geradora da soma resultante: [32, 8, 15, 19, 1, 16, 7, 25]
