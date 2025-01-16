@@ -3,7 +3,7 @@ Implementação de algoritmos exatos e aproximativo para o subset_sum_problem.
 
 ## Execução
 
-1. Após clonar o repositório (branch feat/exact-final), acesse a pasta do projeto:
+1. Após clonar o repositório (branch feat/genetic-final), acesse a pasta do projeto:
    
    ```bash
    cd subset-sum-problem
@@ -12,7 +12,7 @@ Implementação de algoritmos exatos e aproximativo para o subset_sum_problem.
     ```bash
     python main.py
     ```
-3. Será exibido um menu com 8 opções, sendo as 4 primeiras para escolher executar entre um dos algoritmos e as 4 últimas referentes as ao gerador de instâncias, instruções e interação com o menu:
+3. Será exibido um menu com 8 opções, sendo as 5 primeiras para escolher executar entre um dos algoritmos e as 4 últimas referentes as ao gerador de instâncias, instruções e interação com o menu:
     ```bash
    +------------------------------+
    |           MENU               |
@@ -21,13 +21,14 @@ Implementação de algoritmos exatos e aproximativo para o subset_sum_problem.
    (1) Digite 1 para executar o EXATO SIMPLES numa instância que já se encontra na pasta.
    (2) Digite 2 para executar o APROXIMATIVO numa instância que já se encontra na pasta.
    (7) Digite 7 para executar o EXATO MP numa instância que já se encontra na pasta.
+   (8) Digite 8 para executar o GENETICO numa instância que já se encontra na pasta.
    (3) Para instruções sobre instâncias específicas.
    (4) Para gerar uma nova instância aleatória digite 4.
    (5) Para encerrar digite 5.
    (6) Exibir o menu novamente.
     ```
 
-4. Digitando 0, 1, 2 ou 7 será possível executar um dos algoritmos em uma instância que já está na pasta *datatest*. Para isso será solicitado informar o nome da instância, isto é, o nome do arquivo sem extensão, como no exemplo abaixo no qual foi escolhida a instância *p01*.
+4. Digitando 0, 1, 2, 7 ou 8 será possível executar um dos algoritmos em uma instância que já está na pasta *datatest*. Para isso será solicitado informar o nome da instância, isto é, o nome do arquivo sem extensão, como no exemplo abaixo no qual foi escolhida a instância *p01*.
    ```bash
    Informe o nome da instância que deseja executar (ex.: p01, p02...):p01
    ```
@@ -51,3 +52,5 @@ Implementação de algoritmos exatos e aproximativo para o subset_sum_problem.
    [15, 22, 14, 26, 32, 9,16, 8]
    [22,14,9,8]
    ```
+
+8. Comandos ocultos: digitando 9 ou 10 no menu é possível acessar os comandos ocultos. O primeiro deles roda o genético para uma instância escolhida 30 vezes, trazendo outros resultados e gerando relatórios denominados mult_p<n>.txt. O 10 roda o genético para todas as instâncias de teste, obtendo resultados médios ainda mais significativos.
